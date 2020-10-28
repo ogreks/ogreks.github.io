@@ -1,0 +1,22 @@
+class:
+  class_name: 友情鏈接
+  link_list:
+    1:
+      name: Cat at ngint
+      link: https://bawcat.wiki
+      avatar: https://bawcat.wiki/img/favicon.ico
+      descr: 一个喜欢分享和记录的博主
+
+# class2:
+#   class_name: 鏈接無效
+#   link_list:
+#     1:
+#       name: 夢xxx
+#       link: https://blog.xxx.com
+#       avatar: https://xxxx/avatar.png
+#       descr: xxxx
+#     2:
+#       name: xx
+#       link: https://www.axxxx.cn/
+#       avatar: https://x
+#       descr: xx
