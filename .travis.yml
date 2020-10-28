@@ -12,10 +12,11 @@ cache:
 install:
   - npm install
 
-
 branches:
   only:
     - hexo # build hexo branch only
+
+
 script:
   - hexo clean
   - npm install && npm update
