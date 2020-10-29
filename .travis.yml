@@ -24,6 +24,8 @@ script:
   - echo "bawcat.wiki">./public/CNAME # 生成指定 CNAME
   - echo "google.com, pub-1585951485038445, DIRECT, f08c47fec0942fa0">./public/ads.txt # 写入广告代码
   - cp README.md ./public/
+
+
 deploy:
   provider: pages
   skip-cleanup: true
