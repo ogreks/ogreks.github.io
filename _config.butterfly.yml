@@ -420,7 +420,7 @@ cnzz_analytics:
 # Google Adsense (谷歌廣告)
 google_adsense:
   enable: true
-  auto_ads: true
+  auto_ads: false
   js: https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js
   client: ca-pub-1585951485038445
   enable_page_level_ads: true
@@ -429,7 +429,7 @@ google_adsense:
 ad:
   index: <ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-fb+5w+4e-db+86" data-ad-client="ca-pub-1585951485038445" data-ad-slot="4634156417"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({})</script>
   aside: 
-  post:
+  post: <ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-fb+5w+4e-db+86" data-ad-client="ca-pub-1585951485038445" data-ad-slot="4634156417"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({})</script>
 
 # Verification (站長驗證)
 # --------------------------------------
