@@ -390,9 +390,9 @@ footer:
   custom_text: Hi, welcome to my <a href="https://bawcat.wiki/">blog</a>!
   copyright: true # Copyright of theme and framework
   ICP: # Chinese ICP License
-    enable: false
-    url:
-    text:
+    enable: true
+    url: https://beian.miit.gov.cn
+    text: 鄂ICP备20014190号-1
     icon: /img/icp.png
 
 # Analysis
