@@ -3,7 +3,7 @@ title: Golang 关于变量
 date: 2021-06-03 12:00:00
 categories:
 - golang
-  tags:
+tags:
 - golang
 - go
 - 指针
