@@ -6,8 +6,8 @@
 title: Cat at ngint
 subtitle: 夜の猫
 description: 夜の猫~博客 分享技术和生活之中的琐事 记录生活和随笔
-keywords: Higanbana,Depravity-pig,小猪爱上佩奇,黑白cat,程序员,技术分享,业务处理,夜の猫,degenerate
-author: Depravity-pig
+keywords: Higanbana,Depravity-pig,小猪爱上佩奇,黑白cat,程序员,技术分享,业务处理,夜の猫,degenerate,ogreks
+author: ogreks
 language: zh-CN
 timezone: Asia/Shanghai
 
@@ -106,7 +106,7 @@ theme: butterfly
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repo: git@github.com:MagicConch17/MagicConch17.github.io.git
+  repo: git@github.com:ogreks/ogreks.github.io.git
   branch: hexo
 
 # hexo-generator-search

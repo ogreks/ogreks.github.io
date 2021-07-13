@@ -41,8 +41,8 @@ copy:
 # formal:
 #   icon: link || the description
 social:
-  fab fa-github: https://magicconch17.github.io || Github
-  fas fa-envelope: mailto:higanbana98@hotmail.com || Email
+  fab fa-github: https://github.com/ogreks || Github
+  fas fa-envelope: mailto:ogreks@hotmail.com || Email
 
 # search (搜索)
 # --------------------------------------
@@ -420,7 +420,7 @@ cnzz_analytics:
 # Google Adsense (谷歌廣告)
 google_adsense:
   enable: true
-  auto_ads: false
+  auto_ads: true
   js: https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js
   client: ca-pub-1585951485038445
   enable_page_level_ads: true
@@ -631,7 +631,7 @@ aside:
     button:
       icon: fab fa-github
       text: Github
-      link: https://magicconch17.github.io
+      link: https://github.com/ogreks
   card_announcement:
     enable: true
     content: 近期外出学习中~!<-_->
