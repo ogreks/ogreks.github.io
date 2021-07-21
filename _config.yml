@@ -125,3 +125,24 @@ nofollow:
   field: site
   exclude:
     - 'bawcat.wiki'
+
+feed:
+  enable: true
+  type: rss
+  path: rss.xml
+  limit: 20
+  hub:
+  content:
+  content_limit: 140
+  content_limit_delim: ' '
+  order_by: -date
+  icon: icon.png
+  autodiscovery: true
+  template:
+
+sitemap:
+  path: sitemap.xml
+  template: 
+  rel: false
+  tags: true
+  categories: true
