@@ -1,0 +1,288 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>docker 命令笔记 | Cat at ngint</title><meta name="keywords" content="Higanbana,Depravity-pig,小猪爱上佩奇,黑白cat,程序员,技术分享,业务处理,夜の猫,degenerate,ogreks"><meta name="author" content="ogreks"><meta name="copyright" content="ogreks"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><meta name="description" content="docker简介(docker 命令笔记)为什么要使用docker简单粗暴的一句话，docker已经实现了在linux 容器化技术上，达到‘任何时间、任何地点’可以一键部署等完美操作，当然，这只是docker的 一部分骚操作   更快速的交付和部署  更高效的资源利用  更轻松的迁移和扩展  更简单的更新和管理  docker 核心概念docker 大部分的操作都围绕这它的三大核心概念：镜像、容器">
+<meta property="og:type" content="article">
+<meta property="og:title" content="docker 命令笔记">
+<meta property="og:url" content="https://bawcat.wiki/2020/06/26/docker/docker%20%E5%91%BD%E4%BB%A4%E7%AC%94%E8%AE%B0/index.html">
+<meta property="og:site_name" content="Cat at ngint">
+<meta property="og:description" content="docker简介(docker 命令笔记)为什么要使用docker简单粗暴的一句话，docker已经实现了在linux 容器化技术上，达到‘任何时间、任何地点’可以一键部署等完美操作，当然，这只是docker的 一部分骚操作   更快速的交付和部署  更高效的资源利用  更轻松的迁移和扩展  更简单的更新和管理  docker 核心概念docker 大部分的操作都围绕这它的三大核心概念：镜像、容器">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://s2.ax1x.com/2019/10/19/KnfBWD.jpg">
+<meta property="article:published_time" content="2020-06-26T15:45:17.000Z">
+<meta property="article:modified_time" content="2021-07-21T10:57:54.077Z">
+<meta property="article:author" content="ogreks">
+<meta property="article:tag" content="Higanbana,Depravity-pig,小猪爱上佩奇,黑白cat,程序员,技术分享,业务处理,夜の猫,degenerate,ogreks">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://s2.ax1x.com/2019/10/19/KnfBWD.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://bawcat.wiki/2020/06/26/docker/docker%20%E5%91%BD%E4%BB%A4%E7%AC%94%E8%AE%B0/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//www.google-analytics.com" crossorigin="crossorigin"/><link rel="preconnect" href="//hm.baidu.com"/><link rel="preconnect" href="//fonts.googleapis.com" crossorigin="crossorigin"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="preconnect" href="//zz.bdstatic.com"/><meta name="google-site-verification" content="bQJ2Z-cGSzo601zPgZCymg7xocKmxPaa-ywkrfqCCzE"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css"><script async="async" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><script>(adsbygoogle = window.adsbygoogle || []).push({
+  google_ad_client: 'ca-pub-1585951485038445',
+  enable_page_level_ads: 'true'
+});</script><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?ee3207232054a7c75056c0814202a0ba";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script><script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-160270185-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'UA-160270185-1');
+</script><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web&amp;display=swap"><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  noticeOutdate: {"limitDay":365,"position":"top","messagePrev":"It has been","messageNext":"days since the last update, the content of the article may be outdated."},
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  ClickShowText: undefined,
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#121212","position":"bottom-left"},
+  justifiedGallery: {
+    js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+    css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+  },
+  isPhotoFigcaption: true,
+  islazyload: true,
+  isanchor: false
+};
+
+var saveToLocal = {
+  set: function setWithExpiry(key, value, ttl) {
+    const now = new Date()
+    const expiryDay = ttl * 86400000
+    const item = {
+      value: value,
+      expiry: now.getTime() + expiryDay,
+    }
+    localStorage.setItem(key, JSON.stringify(item))
+  },
+
+  get: function getWithExpiry(key) {
+    const itemStr = localStorage.getItem(key)
+
+    if (!itemStr) {
+      return undefined
+    }
+    const item = JSON.parse(itemStr)
+    const now = new Date()
+
+    if (now.getTime() > item.expiry) {
+      localStorage.removeItem(key)
+      return undefined
+    }
+    return item.value
+  }
+}</script><script id="config_change">var GLOBAL_CONFIG_SITE = { 
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2021-07-21 18:57:54'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(function () {  window.activateDarkMode = function () {
+    document.documentElement.setAttribute('data-theme', 'dark')
+    if (document.querySelector('meta[name="theme-color"]') !== null) {
+      document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+    }
+  }
+  window.activateLightMode = function () {
+    document.documentElement.setAttribute('data-theme', 'light')
+   if (document.querySelector('meta[name="theme-color"]') !== null) {
+      document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+    }
+  }
+  const autoChangeMode = '1'
+  const t = saveToLocal.get('theme')
+  if (autoChangeMode === '1') {
+    const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+    const isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+    const isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+    const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+    if (t === undefined) {
+      if (isLightMode) activateLightMode()
+      else if (isDarkMode) activateDarkMode()
+      else if (isNotSpecified || hasNoSupport) {
+        const now = new Date()
+        const hour = now.getHours()
+        const isNight = hour <= 6 || hour >= 18
+        isNight ? activateDarkMode() : activateLightMode()
+      }
+      window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+        if (saveToLocal.get('theme') === undefined) {
+          e.matches ? activateDarkMode() : activateLightMode()
+        }
+      })
+    } else if (t === 'light') activateLightMode()
+    else activateDarkMode()
+  } else if (autoChangeMode === '2') {
+    const now = new Date()
+    const hour = now.getHours()
+    const isNight = hour <= 6 || hour >= 18
+    if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+    else if (t === 'light') activateLightMode()
+    else activateDarkMode()
+  } else {
+    if (t === 'dark') activateDarkMode()
+    else if (t === 'light') activateLightMode()
+  }const asideStatus = saveToLocal.get('aside-status')
+if (asideStatus !== undefined) {
+   if (asideStatus === 'hide') {
+     document.documentElement.classList.add('hide-aside')
+   } else {
+     document.documentElement.classList.remove('hide-aside')
+   }
+}})()</script><meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/rss.xml" title="Cat at ngint" type="application/atom+xml">
+</head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="author-avatar"><img class="avatar-img" data-lazy-src="https://s2.ax1x.com/2019/10/19/KnfGQJ.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">74</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">标签</div><div class="length-num">123</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">分类</div><div class="length-num">28</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div></div></div></div><div id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(https://s2.ax1x.com/2019/10/19/KnfBWD.jpg)"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Cat at ngint</a></span><span id="menus"><div id="search_button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div></div><span class="close" id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></span></span></nav><div id="post-info"><h1 class="post-title">docker 命令笔记</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2020-06-26T15:45:17.000Z" title="发表于 2020-06-26 23:45:17">2020-06-26</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2021-07-21T10:57:54.077Z" title="更新于 2021-07-21 18:57:54">2021-07-21</time></span></div><div class="meta-secondline"> <span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">969</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>3分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h2 id="docker简介-docker-命令笔记"><a href="#docker简介-docker-命令笔记" class="headerlink" title="docker简介(docker 命令笔记)"></a>docker简介(docker 命令笔记)</h2><h3 id="为什么要使用docker"><a href="#为什么要使用docker" class="headerlink" title="为什么要使用docker"></a>为什么要使用docker</h3><p>简单粗暴的一句话，docker已经实现了在linux 容器化技术上，达到‘任何时间、任何地点’可以一键部署等完美操作，当然，这只是docker的 一部分骚操作</p>
+<ul>
+<li> 更快速的交付和部署</li>
+<li> 更高效的资源利用</li>
+<li> 更轻松的迁移和扩展</li>
+<li> 更简单的更新和管理</li>
+</ul>
+<h4 id="docker-核心概念"><a href="#docker-核心概念" class="headerlink" title="docker 核心概念"></a>docker 核心概念</h4><p>docker 大部分的操作都围绕这它的三大核心概念：镜像、容器和仓库。因此、这三大概念也尤为重要</p>
+<h4 id="安装docker"><a href="#安装docker" class="headerlink" title="安装docker"></a>安装docker</h4><blockquote>
+<p><a target="_blank" rel="noopener external nofollow noreferrer" href="https://docs.docker.com/install/linux/docker-ce/centos/">官方教程:https://docs.docker.com/install/linux/docker-ce/centos/</a></p>
+</blockquote>
+<h3 id="使用docker镜像"><a href="#使用docker镜像" class="headerlink" title="使用docker镜像"></a>使用docker镜像</h3><p>镜像是docker 三大核心概念中最重要的</p>
+<p>docker 运行容器前需要本地存在对应的镜像，如果镜像不存在，docker 会尝试先从默认镜像仓库下载（默认使用docker hub 公共注册服务器中的仓库）</p>
+<p>如果你的服务器在国外（香港也算 台湾也算，非大陆）推荐docker hub</p>
+<p>如果在国内 推荐阿里云的镜像仓库 地址:请自行百度</p>
+<h4 id="命令格式"><a href="#命令格式" class="headerlink" title="命令格式"></a>命令格式</h4><h5 id="docker-image-pull"><a href="#docker-image-pull" class="headerlink" title="docker [image] pull"></a>docker [image] pull</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker [image] pull</span><br></pre></td></tr></table></figure>
+
+<p>例如：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker pull ubuntu:18.04</span><br></pre></td></tr></table></figure>
+<p>对于docker 镜像而言 如果不显式指定tag 则默认会选择latest标签，这回下载仓库中最新版本的镜像 </p>
+<p>如果从非官方的仓库进行下载，则需要在仓库名称钱指定完整的仓库地址。例如从网易蜂巢的镜像源来下载ubuntu:18.04:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker pull hub.c.163.com/public/ubuntu:18.04</span><br></pre></td></tr></table></figure>
+<p>pull 子命令支持的选型主要包括：</p>
+<ul>
+<li>-a , –all-tags=true|false:是否获取仓库中的所有镜像，默认为否；</li>
+<li>–disable-content-trust:取消镜像的内容校验，默认为真。</li>
+</ul>
+<p>另外，有时需要使用镜像代理服务来加速 <strong>docker</strong> 镜像获取过程，可以在docker服务启动配置中增加–registry-mirror=proxy_URL来指定镜像代理服务地址（如<a target="_blank" rel="noopener external nofollow noreferrer" href="https://registry.docker-cn.com)/">https://registry.docker-cn.com）</a></p>
+<h5 id="docker-images-docker-image-ls"><a href="#docker-images-docker-image-ls" class="headerlink" title="docker images | docker image ls"></a>docker images | docker image ls</h5><p>使用docker images 或者 docker image ls 命令可以列出本地主机上已有镜像的基本信息。</p>
+<h5 id="docker-tag-image-new-image"><a href="#docker-tag-image-new-image" class="headerlink" title="docker tag [image] [new image]"></a>docker tag [image] [new image]</h5><p>使用 tag 命令为镜像添加标签<br>为了方便在后续的工作中使用特定镜像，还可以使用 docker tag 命令来为本地镜像任意的添加新的名称或者标签。</p>
+<h5 id="docker-image-inspect"><a href="#docker-image-inspect" class="headerlink" title="docker [image] inspect"></a>docker [image] inspect</h5><p>使用该命令可以获取镜像的详细信息，包括制作者、适应框架、各层的数字摘要等</p>
+<h5 id="docker-history-image"><a href="#docker-history-image" class="headerlink" title="docker history [image]"></a>docker history [image]</h5><p>使用该命令则可以查看历史镜像</p>
+<h5 id="docker-search-option-keyword"><a href="#docker-search-option-keyword" class="headerlink" title="docker search [option] keyword"></a>docker search [option] keyword</h5><p>命令选项支持</p>
+<ul>
+<li>-f –filter filter:过滤输出内容</li>
+<li>–format string:格式化输出内容；</li>
+<li>–limit int: 限制输出结果个数,默认25个</li>
+<li>–no-trunc: 不截断输出结果</li>
+</ul>
+<h5 id="docker-rm-rmi-prune"><a href="#docker-rm-rmi-prune" class="headerlink" title="docker rm | rmi | prune"></a>docker rm | rmi | prune</h5><h6 id="通过标签删除镜像"><a href="#通过标签删除镜像" class="headerlink" title="通过标签删除镜像"></a>通过标签删除镜像</h6><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># 删除镜像（注意：镜像）</span><br><span class="line">docker rmi </span><br><span class="line">docker image rm </span><br></pre></td></tr></table></figure>
+<p>命令选项支持</p>
+<ul>
+<li>-f ,-force: 强制删除镜像，即使存在依赖容器</li>
+<li>-no-prune: 不要清理未带标签的父镜像</li>
+</ul>
+<h6 id="通过镜像id-删除镜像"><a href="#通过镜像id-删除镜像" class="headerlink" title="通过镜像id 删除镜像"></a>通过镜像id 删除镜像</h6><p>当使用docker rmi 命令，并且后面跟上镜像的ID(也可以是能够区分的部分ID串前缀）时，会先尝试删除所有指向该镜像的标签，然后删除该镜像文件本身</p>
+<h6 id="清理镜像"><a href="#清理镜像" class="headerlink" title="清理镜像"></a>清理镜像</h6><p>当镜像使用超过一段时间之后，系统中可能会遗留一些临时的镜像文件，以及一些没有被使用的镜像，可以通过<em>docker image prune</em>来进行清理</p>
+<p>命令的选项支持</p>
+<ul>
+<li>-a , -all 删除所有无用镜像，不光是临时镜像</li>
+<li>-filter filter 只清理符合给定过滤器的镜像</li>
+<li>-f , -force 强制删除镜像，而不进行提示确认</li>
+</ul>
+<h5 id="docker-ps-a"><a href="#docker-ps-a" class="headerlink" title="docker ps -a"></a>docker ps -a</h5><p>该命令可以让你看到本机上面存在的所有容器</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined" rel="external nofollow noreferrer">ogreks</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://bawcat.wiki/2020/06/26/docker/docker%20%E5%91%BD%E4%BB%A4%E7%AC%94%E8%AE%B0/">https://bawcat.wiki/2020/06/26/docker/docker 命令笔记/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="external nofollow noreferrer" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://bawcat.wiki" target="_blank">Cat at ngint</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="https://s2.ax1x.com/2019/10/19/KnfBWD.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i> 打赏<div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="https://ae01.alicdn.com/kf/Ued8241ec3d55425489539eb85ab806df0.png" rel="external nofollow noreferrer" target="_blank"><img class="post-qr-code-img" data-lazy-src="https://ae01.alicdn.com/kf/Ued8241ec3d55425489539eb85ab806df0.png" alt="微信"/></a><div class="post-qr-code-desc">微信</div></li><li class="reward-item"><a href="https://ae01.alicdn.com/kf/U2b9b5730a27d48f7ab8a660651e46861f.png" rel="external nofollow noreferrer" target="_blank"><img class="post-qr-code-img" data-lazy-src="https://ae01.alicdn.com/kf/U2b9b5730a27d48f7ab8a660651e46861f.png" alt="支付寶"/></a><div class="post-qr-code-desc">支付寶</div></li></ul></div></div></div><div class="post-ad"><ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-fb+5w+4e-db+86" data-ad-client="ca-pub-1585951485038445" data-ad-slot="4634156417"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({})</script></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2020/07/03/php/php-php-install-log-2020-07-03/"><img class="prev-cover" data-lazy-src="https://s2.ax1x.com/2019/10/19/Kn0gZ4.png" onerror="onerror=null;src='/img/404.jpg'"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">关于php 编译安装 遇到的坑总结</div></div></a></div><div class="next-post pull-right"><a href="/2020/06/26/java/java-swing-helloSwing-2020-04-14/"><img class="next-cover" data-lazy-src="https://s1.ax1x.com/2020/06/26/NypXtO.png" onerror="onerror=null;src='/img/404.jpg'"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">初识 Swing</div></div></a></div></nav><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div class="vcomment" id="vcomment"></div></div></div></div></div><div class="aside_content" id="aside_content"><div class="card-widget card-info"><div class="card-content"><div class="card-info-avatar is-center"><img class="avatar-img" data-lazy-src="https://s2.ax1x.com/2019/10/19/KnfGQJ.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/><div class="author-info__name">ogreks</div><div class="author-info__description">夜の猫~博客 分享技术和生活之中的琐事 记录生活和随笔</div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">74</div></a></div><div class="card-info-data-item is-center"><a href="/tags/"><div class="headline">标签</div><div class="length-num">123</div></a></div><div class="card-info-data-item is-center"><a href="/categories/"><div class="headline">分类</div><div class="length-num">28</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/ogreks"><i class="fab fa-github"></i><span>Github</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/ogreks" rel="external nofollow noreferrer" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:ogreks@hotmail.com" rel="external nofollow noreferrer" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div></div><div class="card-widget card-announcement"><div class="card-content"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">近期外出学习中~!<-_-></div></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="card-content"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#docker%E7%AE%80%E4%BB%8B-docker-%E5%91%BD%E4%BB%A4%E7%AC%94%E8%AE%B0"><span class="toc-number">1.</span> <span class="toc-text">docker简介(docker 命令笔记)</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E4%BD%BF%E7%94%A8docker"><span class="toc-number">1.1.</span> <span class="toc-text">为什么要使用docker</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#docker-%E6%A0%B8%E5%BF%83%E6%A6%82%E5%BF%B5"><span class="toc-number">1.1.1.</span> <span class="toc-text">docker 核心概念</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AE%89%E8%A3%85docker"><span class="toc-number">1.1.2.</span> <span class="toc-text">安装docker</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8docker%E9%95%9C%E5%83%8F"><span class="toc-number">1.2.</span> <span class="toc-text">使用docker镜像</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%91%BD%E4%BB%A4%E6%A0%BC%E5%BC%8F"><span class="toc-number">1.2.1.</span> <span class="toc-text">命令格式</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#docker-image-pull"><span class="toc-number">1.2.1.1.</span> <span class="toc-text">docker [image] pull</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#docker-images-docker-image-ls"><span class="toc-number">1.2.1.2.</span> <span class="toc-text">docker images | docker image ls</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#docker-tag-image-new-image"><span class="toc-number">1.2.1.3.</span> <span class="toc-text">docker tag [image] [new image]</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#docker-image-inspect"><span class="toc-number">1.2.1.4.</span> <span class="toc-text">docker [image] inspect</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#docker-history-image"><span class="toc-number">1.2.1.5.</span> <span class="toc-text">docker history [image]</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#docker-search-option-keyword"><span class="toc-number">1.2.1.6.</span> <span class="toc-text">docker search [option] keyword</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#docker-rm-rmi-prune"><span class="toc-number">1.2.1.7.</span> <span class="toc-text">docker rm | rmi | prune</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#%E9%80%9A%E8%BF%87%E6%A0%87%E7%AD%BE%E5%88%A0%E9%99%A4%E9%95%9C%E5%83%8F"><span class="toc-number">1.2.1.7.1.</span> <span class="toc-text">通过标签删除镜像</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#%E9%80%9A%E8%BF%87%E9%95%9C%E5%83%8Fid-%E5%88%A0%E9%99%A4%E9%95%9C%E5%83%8F"><span class="toc-number">1.2.1.7.2.</span> <span class="toc-text">通过镜像id 删除镜像</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#%E6%B8%85%E7%90%86%E9%95%9C%E5%83%8F"><span class="toc-number">1.2.1.7.3.</span> <span class="toc-text">清理镜像</span></a></li></ol></li><li class="toc-item toc-level-5"><a class="toc-link" href="#docker-ps-a"><span class="toc-number">1.2.1.8.</span> <span class="toc-text">docker ps -a</span></a></li></ol></li></ol></li></ol></li></ol></div></div></div><div class="card-widget card-recent-post"><div class="card-content"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2021/06/03/golang/%E5%8F%98%E9%87%8F/" title="Golang 关于变量"><img data-lazy-src="https://z3.ax1x.com/2021/06/03/21nFg0.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Golang 关于变量"/></a><div class="content"><a class="title" href="/2021/06/03/golang/%E5%8F%98%E9%87%8F/" title="Golang 关于变量">Golang 关于变量</a><time datetime="2021-06-03T04:00:00.000Z" title="发表于 2021-06-03 12:00:00">2021-06-03</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2020/11/29/%E7%A8%8B%E5%BA%8F%E4%BA%BA%E7%94%9F/ffmpeg-2020-11-29-FFmpeg-Tutorial/" title="FFmpeg Tutorial"><img data-lazy-src="https://www.wangbase.com/blogimg/asset/202001/bg2020011401.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="FFmpeg Tutorial"/></a><div class="content"><a class="title" href="/2020/11/29/%E7%A8%8B%E5%BA%8F%E4%BA%BA%E7%94%9F/ffmpeg-2020-11-29-FFmpeg-Tutorial/" title="FFmpeg Tutorial">FFmpeg Tutorial</a><time datetime="2020-11-29T11:38:11.000Z" title="发表于 2020-11-29 19:38:11">2020-11-29</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2020/07/03/php/php-php-install-log-2020-07-03/" title="关于php 编译安装 遇到的坑总结"><img data-lazy-src="https://s2.ax1x.com/2019/10/19/Kn0gZ4.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="关于php 编译安装 遇到的坑总结"/></a><div class="content"><a class="title" href="/2020/07/03/php/php-php-install-log-2020-07-03/" title="关于php 编译安装 遇到的坑总结">关于php 编译安装 遇到的坑总结</a><time datetime="2020-07-03T18:16:04.000Z" title="发表于 2020-07-04 02:16:04">2020-07-04</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2020/06/26/docker/docker%20%E5%91%BD%E4%BB%A4%E7%AC%94%E8%AE%B0/" title="docker 命令笔记"><img data-lazy-src="https://s2.ax1x.com/2019/10/19/KnfBWD.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="docker 命令笔记"/></a><div class="content"><a class="title" href="/2020/06/26/docker/docker%20%E5%91%BD%E4%BB%A4%E7%AC%94%E8%AE%B0/" title="docker 命令笔记">docker 命令笔记</a><time datetime="2020-06-26T15:45:17.000Z" title="发表于 2020-06-26 23:45:17">2020-06-26</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2020/06/26/java/java-swing-helloSwing-2020-04-14/" title="初识 Swing"><img data-lazy-src="https://s1.ax1x.com/2020/06/26/NypXtO.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="初识 Swing"/></a><div class="content"><a class="title" href="/2020/06/26/java/java-swing-helloSwing-2020-04-14/" title="初识 Swing">初识 Swing</a><time datetime="2020-06-26T15:36:05.000Z" title="发表于 2020-06-26 23:36:05">2020-06-26</time></div></div></div></div></div></div></div></main><footer id="footer" style="background-image: url(https://s2.ax1x.com/2019/10/19/KnfBWD.jpg)"><div id="footer-wrap"><div class="copyright">&copy;2018 - 2021 By ogreks</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener external nofollow noreferrer" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">Hi, welcome to my <a href="https://bawcat.wiki/">blog</a>!</div><div class="icp"><a target="_blank" rel="noopener external nofollow noreferrer" href="https://beian.miit.gov.cn"><img class="icp-icon" src="/img/icp.png" alt="ICP"/><span>鄂ICP备20014190号-1</span></a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="chat_btn" type="button" title="rightside.chat_btn"><i class="fas fa-sms"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div></div><hr/><div id="local-search-results"><div id="local-hits"></div><div id="local-stats"><div class="local-search-stats__hr" id="hr"><span>由</span> <a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/wzpan/hexo-generator-search" style="color:#49B1F5;">hexo-generator-search</a>
+ <span>提供支持</span></div></div></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div></div><div><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module" defer></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.spacingElementById('content-inner')
+  else {
+    $.getScript('https://cdn.jsdelivr.net/npm/pangu/dist/browser/pangu.min.js', () => {
+      pangu.spacingElementById('content-inner')
+    })
+  }
+}
+
+function panguInit () {
+  if (false){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguFn)</script><script src="/js/search/local-search.js"></script><div class="js-pjax"><script>function loadValine () {
+  function initValine () {
+    let initData = {
+      el: '#vcomment',
+      appId: '4ksYN3DtgYpnlRXs8yr4ogoS-gzGzoHsz',
+      appKey: 'lH9xhyHyRa3ITvxu1RQ2sN2V',
+      placeholder: 'ヾﾉ≧∀≦)o 为什么不留下你的神评!',
+      avatar: 'monsterid',
+      meta: 'nick,mail,link'.split(','),
+      pageSize: '10',
+      lang: 'zh-CN',
+      recordIP: true,
+      serverURLs: '',
+      emojiCDN: '',
+      emojiMaps: "",
+      enableQQ: false,
+      path: window.location.pathname,
+    }
+
+    if (true) { 
+      initData.requiredFields= ('nick,mail'.split(','))
+    }
+    
+    if (false) {
+      const otherData = false
+      initData = Object.assign({}, initData, otherData)
+    }
+    
+    const valine = new Valine(initData)
+  }
+
+  if (typeof Valine === 'function') initValine() 
+  else $.getScript('https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js', initValine)
+}
+
+if ('Valine' === 'Valine' || !true) {
+  if (true) btf.loadComment(document.querySelector('#vcomment'),loadValine)
+  else setTimeout(() => loadValine(), 0)
+} else {
+  function loadOtherComment () {
+    loadValine()
+  }
+}</script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><script>(function(){
+  const bp = document.createElement('script');
+  const curProtocol = window.location.protocol.split(':')[0];
+  if (curProtocol === 'https'){
+  bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+  bp.dataset.pjax = ''
+  const s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(bp, s);
+})()</script></div></body></html>
