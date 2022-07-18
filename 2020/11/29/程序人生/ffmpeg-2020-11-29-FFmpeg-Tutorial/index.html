@@ -7,7 +7,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://www.wangbase.com/blogimg/asset/202001/bg2020011401.jpg">
 <meta property="article:published_time" content="2020-11-29T11:38:11.000Z">
-<meta property="article:modified_time" content="2021-07-22T09:01:44.649Z">
+<meta property="article:modified_time" content="2022-07-18T10:25:00.608Z">
 <meta property="article:author" content="ogreks">
 <meta property="article:tag" content="ffmpeg">
 <meta name="twitter:card" content="summary">
@@ -93,7 +93,7 @@ var saveToLocal = {
   isHome: false,
   isHighlightShrink: false,
   isToc: true,
-  postUpdate: '2021-07-22 17:01:44'
+  postUpdate: '2022-07-18 18:25:00'
 }</script><noscript><style type="text/css">
   #nav {
     opacity: 1
@@ -159,7 +159,7 @@ if (asideStatus !== undefined) {
      document.documentElement.classList.remove('hide-aside')
    }
 }})()</script><meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/rss.xml" title="Cat at ngint" type="application/atom+xml">
-</head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="author-avatar"><img class="avatar-img" data-lazy-src="https://s2.ax1x.com/2019/10/19/KnfGQJ.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">75</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">标签</div><div class="length-num">127</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">分类</div><div class="length-num">28</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div></div></div></div><div id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(https://www.wangbase.com/blogimg/asset/202001/bg2020011401.jpg)"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Cat at ngint</a></span><span id="menus"><div id="search_button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div></div><span class="close" id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></span></span></nav><div id="post-info"><h1 class="post-title">FFmpeg Tutorial</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2020-11-29T11:38:11.000Z" title="发表于 2020-11-29 19:38:11">2020-11-29</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2021-07-22T09:01:44.649Z" title="更新于 2021-07-22 17:01:44">2021-07-22</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E7%A8%8B%E5%BA%8F%E4%BA%BA%E7%94%9F/">程序人生</a></span></div><div class="meta-secondline"> <span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">16.3k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>66分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="FFmpeg-Tutorial"><a href="#FFmpeg-Tutorial" class="headerlink" title="FFmpeg_Tutorial"></a>FFmpeg_Tutorial</h1><p><strong>FFmpeg工具和sdk库的使用demo</strong><br>github link (<a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/MagicConch17/FFmpeg_Tutorial)[https://github.com/MagicConch17/FFmpeg_Tutorial]">https://github.com/MagicConch17/FFmpeg_Tutorial)[https://github.com/MagicConch17/FFmpeg_Tutorial]</a></p>
+</head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="author-avatar"><img class="avatar-img" data-lazy-src="https://s2.ax1x.com/2019/10/19/KnfGQJ.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">75</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">标签</div><div class="length-num">127</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">分类</div><div class="length-num">28</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div></div></div></div><div id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(https://www.wangbase.com/blogimg/asset/202001/bg2020011401.jpg)"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Cat at ngint</a></span><span id="menus"><div id="search_button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div></div><span class="close" id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></span></span></nav><div id="post-info"><h1 class="post-title">FFmpeg Tutorial</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2020-11-29T11:38:11.000Z" title="发表于 2020-11-29 19:38:11">2020-11-29</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-07-18T10:25:00.608Z" title="更新于 2022-07-18 18:25:00">2022-07-18</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E7%A8%8B%E5%BA%8F%E4%BA%BA%E7%94%9F/">程序人生</a></span></div><div class="meta-secondline"> <span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">16.3k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>66分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="FFmpeg-Tutorial"><a href="#FFmpeg-Tutorial" class="headerlink" title="FFmpeg_Tutorial"></a>FFmpeg_Tutorial</h1><p><strong>FFmpeg工具和sdk库的使用demo</strong><br>github link (<a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/MagicConch17/FFmpeg_Tutorial)[https://github.com/MagicConch17/FFmpeg_Tutorial]">https://github.com/MagicConch17/FFmpeg_Tutorial)[https://github.com/MagicConch17/FFmpeg_Tutorial]</a></p>
 <hr>
 <h2 id="一、使用FFmpeg命令行工具和批处理脚本进行简单的音视频文件编辑"><a href="#一、使用FFmpeg命令行工具和批处理脚本进行简单的音视频文件编辑" class="headerlink" title="一、使用FFmpeg命令行工具和批处理脚本进行简单的音视频文件编辑"></a>一、使用FFmpeg命令行工具和批处理脚本进行简单的音视频文件编辑</h2><h3 id="1、基本介绍"><a href="#1、基本介绍" class="headerlink" title="1、基本介绍"></a>1、基本介绍</h3><p>对于每一个从事音视频技术开发的工程师，想必没有一个人对FFmpeg这个名称感到陌生。FFmpeg是一套非常知名的音视频处理的开源工具，它包含了开发完成的工具软件、封装好的函数库以及源代码供我们按需使用。FFmpeg提供了非常强大的功能，可以完成音视频的编码、解码、转码、视频采集、后处理（抓图、水印、封装/解封装、格式转换等），还有流媒体服务等诸多功能，可以说涵盖了音视频开发中绝大多数的领域。原生的FFmpeg是在Linux环境下开发的，但是通过各种方法（比如交叉编译等）可以使它运行在多种平台环境上，具有比较好的可移植性。</p>
 <p>FFmpeg项目的官方网址为：<a target="_blank" rel="noopener external nofollow noreferrer" href="https://ffmpeg.org/">https://ffmpeg.org/</a>。在它的官网上我们可以找到许多非常有用的内容，如项目的简介、版本更新日志、库和源代码的地址、使用文档等信息。官方的使用文档是我们在开发时必不可少的信息来源，其重要性不言而喻。除了官方网站以外，我们下载的FFmpeg的程序包中也有使用参考文档的离线版本。</p>
@@ -189,8 +189,7 @@ if (asideStatus !== undefined) {
 <li><strong>dev</strong>: 提供了库的头文件和dll的引导库；</li>
 </ul>
 <h4 id="2-ffplay-exe的使用"><a href="#2-ffplay-exe的使用" class="headerlink" title="(2)ffplay.exe的使用"></a>(2)ffplay.exe的使用</h4><p>ffplay是一个极为简单的音视频媒体播放器。ffplay.exe使用了ffmpeg库和SDL库开发成的，可以用作FFmpeg API的测试工具。<br>ffplay的使用方法，最简单的是直接按照默认格式播放某一个音视频文件或流：</p>
-<pre><code>ffplay.exe  -i ../video/IMG_0886.MOV
-</code></pre>
+<pre><code>ffplay.exe  -i ../video/IMG_0886.MOV</code></pre>
 <p>除此之外，ffplay还支持传入各种参数来控制播放行为。比较常用的参数有：</p>
 <ul>
 <li>-i input_file：输入文件名</li>
@@ -202,32 +201,25 @@ if (asideStatus !== undefined) {
 </ul>
 <p>其他参数可以参考官网的文档：<a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.ffmpeg.org/ffplay.html">https://www.ffmpeg.org/ffplay.html</a>或下载包里的文档</p>
 <h4 id="3-ffprobe的使用"><a href="#3-ffprobe的使用" class="headerlink" title="(3)ffprobe的使用"></a>(3)ffprobe的使用</h4><p>ffprobe可以提供简单的音视频文件分析功能。最简单的方法同ffplay类似：</p>
-<pre><code>ffprobe.exe  -i ../video/IMG_0886.MOV
-</code></pre>
+<pre><code>ffprobe.exe  -i ../video/IMG_0886.MOV</code></pre>
 <p>分析完成后，ffprobe会显示音视频文件中包含的每个码流的信息，包括编码格式、像素分辨率、码率、帧率等信息：</p>
 <p><img src= "/img/loading.gif" data-lazy-src="http://cl.ly/2h2l1g1U1m1F/QQ%E6%88%AA%E5%9B%BE20160331231357.png" alt="ffprobe"></p>
 <h4 id="4-ffmpeg的使用"><a href="#4-ffmpeg的使用" class="headerlink" title="(4)ffmpeg的使用"></a>(4)ffmpeg的使用</h4><p>ffmpeg.exe可谓是整个工程的核心所在，它的主要功能是完成音视频各种各样的转换操作。<br>视频转码：ffmpeg.exe可以将视频文件由原格式转换为其他格式，如从avi转为mp4等：</p>
-<pre><code>ffmpeg -i ../video/IMG_0886.MOV ../video/output_mpeg4_mp3.avi 
-</code></pre>
+<pre><code>ffmpeg -i ../video/IMG_0886.MOV ../video/output_mpeg4_mp3.avi </code></pre>
 <p>这里，ffmpeg默认将视频编码格式选择为mpeg4，音频转码格式为mp3。如果我们希望保留原始编码，需要增加参数-c copy，表明不做任何转码操作：</p>
-<pre><code>ffmpeg -i ../video/IMG_0886.MOV -c copy ../video/output_copy.avi
-</code></pre>
+<pre><code>ffmpeg -i ../video/IMG_0886.MOV -c copy ../video/output_copy.avi</code></pre>
 <p>如果我们希望将视频转换为其他编码格式，则需要在参数中指定目标格式-c:v libx265或-vcodec libx265。ffmpeg支持的所有编码器格式可以通过以下命令查看：</p>
-<pre><code>ffmpeg.exe -encoders
-</code></pre>
+<pre><code>ffmpeg.exe -encoders</code></pre>
 <p>实际操作：</p>
-<pre><code>ffmpeg -i ../video/IMG_0886.MOV -c:v mjpeg  ../video/output_mjpeg.avi
-</code></pre>
+<pre><code>ffmpeg -i ../video/IMG_0886.MOV -c:v mjpeg  ../video/output_mjpeg.avi</code></pre>
 <p>视频解封装：ffmpeg可以将视频中的音频和视频流分别提取出来。需要在命令行中添加参数-an和-vn，分别表示屏蔽音频和视频流：</p>
 <pre><code>@REM 提取视频流
 ffmpeg -i ../video/IMG_0886.MOV -c:v copy -an ../video/IMG_0886_v.MOV
 @REM 提取音频流
-ffmpeg -i ../video/IMG_0886.MOV -c:a copy -vn ../video/IMG_0886_a.aac
-</code></pre>
+ffmpeg -i ../video/IMG_0886.MOV -c:a copy -vn ../video/IMG_0886_a.aac</code></pre>
 <p>视频截取：使用ffmpeg命令并指定参数-ss和-t，分别表示截取开始时刻和截取时长</p>
 <pre><code>@REM 视频截取
-ffmpeg -ss 5 -t 5 -i ../video/IMG_0886.MOV -c copy ../video/IMG_0886_cut.MOV
-</code></pre>
+ffmpeg -ss 5 -t 5 -i ../video/IMG_0886.MOV -c copy ../video/IMG_0886_cut.MOV</code></pre>
 <hr>
 <h2 id="二、调用FFmpeg-SDK对YUV视频序列进行编码"><a href="#二、调用FFmpeg-SDK对YUV视频序列进行编码" class="headerlink" title="二、调用FFmpeg SDK对YUV视频序列进行编码"></a>二、调用FFmpeg SDK对YUV视频序列进行编码</h2><p>视频由像素格式编码为码流格式是FFMpeg的一项基本功能。通常，视频编码器的输入视频通常为原始的图像像素值，输出格式为符合某种格式规定的二进制码流。</p>
 <h3 id="1、FFMpeg进行视频编码所需要的结构："><a href="#1、FFMpeg进行视频编码所需要的结构：" class="headerlink" title="1、FFMpeg进行视频编码所需要的结构："></a>1、FFMpeg进行视频编码所需要的结构：</h3><ul>
@@ -247,15 +239,12 @@ typedef struct
     AVFrame            *frame;        //保存解码之后/编码之前的像素数据
     AVCodecContext    *c;            //编解码器上下文，保存编解码器的一些参数设置
     AVPacket        pkt;        //码流包结构，包含编码码流数据
-&#125; CodecCtx;
-</code></pre>
+&#125; CodecCtx;</code></pre>
 <h3 id="2、FFMpeg编码的主要步骤："><a href="#2、FFMpeg编码的主要步骤：" class="headerlink" title="2、FFMpeg编码的主要步骤："></a>2、FFMpeg编码的主要步骤：</h3><h4 id="1-、输入编码参数"><a href="#1-、输入编码参数" class="headerlink" title="(1)、输入编码参数"></a>(1)、输入编码参数</h4><p>这一步我们可以设置一个专门的配置文件，并将参数按照某个事写入这个配置文件中，再在程序中解析这个配置文件获得编码的参数。如果参数不多的话，我们可以直接使用命令行将编码参数传入即可。</p>
 <h4 id="2-、按照要求初始化需要的FFMpeg结构"><a href="#2-、按照要求初始化需要的FFMpeg结构" class="headerlink" title="(2)、按照要求初始化需要的FFMpeg结构"></a>(2)、按照要求初始化需要的FFMpeg结构</h4><p>首先，所有涉及到编解码的的功能，都必须要注册音视频编解码器之后才能使用。注册编解码调用下面的函数：</p>
-<pre><code>avcodec_register_all();
-</code></pre>
+<pre><code>avcodec_register_all();</code></pre>
 <p>编解码器注册完成之后，根据指定的CODEC_ID查找指定的codec实例。CODEC_ID通常指定了编解码器的格式，在这里我们使用当前应用最为广泛的H.264格式为例。查找codec调用的函数为avcodec_find_encoder，其声明格式为：</p>
-<pre><code>AVCodec *avcodec_find_encoder(enum AVCodecID id);
-</code></pre>
+<pre><code>AVCodec *avcodec_find_encoder(enum AVCodecID id);</code></pre>
 <p>该函数的输入参数为一个AVCodecID的枚举类型，返回值为一个指向AVCodec结构的指针，用于接收找到的编解码器实例。如果没有找到，那么该函数会返回一个空指针。调用方法如下：</p>
 <pre><code>/* find the mpeg1 video encoder */
 ctx.codec = avcodec_find_encoder(AV_CODEC_ID_H264);    //根据CODEC_ID查找编解码器对象实例的指针
@@ -263,30 +252,25 @@ if (!ctx.codec)
 &#123;
     fprintf(stderr, &quot;Codec not found\n&quot;);
     return false;
-&#125;
-</code></pre>
+&#125;</code></pre>
 <p>AVCodec查找成功后，下一步是分配AVCodecContext实例。分配AVCodecContext实例需要我们前面查找到的AVCodec作为参数，调用的是avcodec_alloc_context3函数。其声明方式为：</p>
-<pre><code>AVCodecContext *avcodec_alloc_context3(const AVCodec *codec);
-</code></pre>
+<pre><code>AVCodecContext *avcodec_alloc_context3(const AVCodec *codec);</code></pre>
 <p>其特点同avcodec_find_encoder类似，返回一个指向AVCodecContext实例的指针。如果分配失败，会返回一个空指针。调用方式为：</p>
 <pre><code>ctx.c = avcodec_alloc_context3(ctx.codec);            //分配AVCodecContext实例
 if (!ctx.c)
 &#123;
     fprintf(stderr, &quot;Could not allocate video codec context\n&quot;);
     return false;
-&#125;
-</code></pre>
+&#125;</code></pre>
 <p>需注意，在分配成功之后，应将编码的参数设置赋值给AVCodecContext的成员。</p>
 <p>现在，AVCodec、AVCodecContext的指针都已经分配好，然后以这两个对象的指针作为参数打开编码器对象。调用的函数为avcodec_open2，声明方式为：</p>
-<pre><code>int avcodec_open2(AVCodecContext *avctx, const AVCodec *codec, AVDictionary **options);
-</code></pre>
+<pre><code>int avcodec_open2(AVCodecContext *avctx, const AVCodec *codec, AVDictionary **options);</code></pre>
 <p>该函数的前两个参数是我们刚刚建立的两个对象，第三个参数为一个字典类型对象，用于保存函数执行过程总未能识别的AVCodecContext和另外一些私有设置选项。函数的返回值表示编码器是否打开成功，若成功返回0，失败返回一个负数。调用方式为：</p>
 <pre><code>if (avcodec_open2(ctx.c, ctx.codec, NULL) &lt; 0)        //根据编码器上下文打开编码器
 &#123;
     fprintf(stderr, &quot;Could not open codec\n&quot;);
     exit(1);
-&#125;
-</code></pre>
+&#125;</code></pre>
 <p>然后，我们需要处理AVFrame对象。AVFrame表示视频原始像素数据的一个容器，处理该类型数据需要两个步骤，其一是分配AVFrame对象，其二是分配实际的像素数据的存储空间。分配对象空间类似于new操作符一样，只是需要调用函数av_frame_alloc。如果失败，那么函数返回一个空指针。AVFrame对象分配成功后，需要设置图像的分辨率和像素格式等。实际调用过程如下：</p>
 <pre><code>ctx.frame = av_frame_alloc();                        //分配AVFrame对象
 if (!ctx.frame) 
@@ -296,32 +280,27 @@ if (!ctx.frame)
 &#125;
 ctx.frame-&gt;format = ctx.c-&gt;pix_fmt;
 ctx.frame-&gt;width = ctx.c-&gt;width;
-ctx.frame-&gt;height = ctx.c-&gt;height;
-</code></pre>
+ctx.frame-&gt;height = ctx.c-&gt;height;</code></pre>
 <p>分配像素的存储空间需要调用av_image_alloc函数，其声明方式为：</p>
-<pre><code>int av_image_alloc(uint8_t *pointers[4], int linesizes[4], int w, int h, enum AVPixelFormat pix_fmt, int align);
-</code></pre>
+<pre><code>int av_image_alloc(uint8_t *pointers[4], int linesizes[4], int w, int h, enum AVPixelFormat pix_fmt, int align);</code></pre>
 <p>该函数的四个参数分别表示AVFrame结构中的缓存指针、各个颜色分量的宽度、图像分辨率（宽、高）、像素格式和内存对其的大小。该函数会返回分配的内存的大小，如果失败则返回一个负值。具体调用方式如：</p>
 <pre><code>ret = av_image_alloc(ctx.frame-&gt;data, ctx.frame-&gt;linesize, ctx.c-&gt;width, ctx.c-&gt;height, ctx.c-&gt;pix_fmt, 32);
 if (ret &lt; 0) 
 &#123;
     fprintf(stderr, &quot;Could not allocate raw picture buffer\n&quot;);
     return false;
-&#125;
-</code></pre>
+&#125;</code></pre>
 <h4 id="3-、编码循环体"><a href="#3-、编码循环体" class="headerlink" title="(3)、编码循环体"></a>(3)、编码循环体</h4><p>到此为止，我们的准备工作已经大致完成，下面开始执行实际编码的循环过程。用伪代码大致表示编码的流程为：</p>
 <pre><code>while (numCoded &lt; maxNumToCode)
 &#123;
     read_yuv_data();
     encode_video_frame();
     write_out_h264();
-&#125;
-</code></pre>
+&#125;</code></pre>
 <p>其中，read_yuv_data部分直接使用fread语句读取即可，只需要知道的是，三个颜色分量Y/U/V的地址分别为AVframe::data[0]、AVframe::data[1]和AVframe::data[2]，图像的宽度分别为AVframe::linesize[0]、AVframe::linesize[1]和AVframe::linesize[2]。需要注意的是，linesize中的值通常指的是stride而不是width，也就是说，像素保存区可能是带有一定宽度的无效边区的，在读取数据时需注意。</p>
 <p>编码前另外需要完成的操作时初始化AVPacket对象。该对象保存了编码之后的码流数据。对其进行初始化的操作非常简单，只需要调用av_init_packet并传入AVPacket对象的指针。随后将AVPacket::data设为NULL，AVPacket::size赋值0.</p>
 <p>成功将原始的YUV像素值保存到了AVframe结构中之后，便可以调用avcodec_encode_video2函数进行实际的编码操作。该函数可谓是整个工程的核心所在，其声明方式为：</p>
-<pre><code>int avcodec_encode_video2(AVCodecContext *avctx, AVPacket *avpkt, const AVFrame *frame, int *got_packet_ptr);
-</code></pre>
+<pre><code>int avcodec_encode_video2(AVCodecContext *avctx, AVPacket *avpkt, const AVFrame *frame, int *got_packet_ptr);</code></pre>
 <p>其参数和返回值的意义：</p>
 <ul>
 <li>avctx: AVCodecContext结构，指定了编码的一些参数；</li>
@@ -345,8 +324,7 @@ if (got_output)
     printf(&quot;Write frame %3d (size=%5d)\n&quot;, frameIdx, ctx.pkt.size);
     fwrite(ctx.pkt.data, 1, ctx.pkt.size, io_param.pFout);
     av_packet_unref(&amp;(ctx.pkt));
-&#125;
-</code></pre>
+&#125;</code></pre>
 <p>因此，一个完整的编码循环提就可以使用下面的代码实现：</p>
 <pre><code>/* encode 1 second of video */
 for (frameIdx = 0; frameIdx &lt; io_param.nTotalFrames; frameIdx++)
@@ -356,7 +334,7 @@ for (frameIdx = 0; frameIdx &lt; io_param.nTotalFrames; frameIdx++)
     ctx.pkt.size = 0;
 
     fflush(stdout);
-            
+
     Read_yuv_data(ctx, io_param, 0);        //Y分量
     Read_yuv_data(ctx, io_param, 1);        //U分量
     Read_yuv_data(ctx, io_param, 2);        //V分量
@@ -378,8 +356,7 @@ for (frameIdx = 0; frameIdx &lt; io_param.nTotalFrames; frameIdx++)
         fwrite(ctx.pkt.data, 1, ctx.pkt.size, io_param.pFout);
         av_packet_unref(&amp;(ctx.pkt));
     &#125;
-&#125; //for (frameIdx = 0; frameIdx &lt; io_param.nTotalFrames; frameIdx++)
-</code></pre>
+&#125; //for (frameIdx = 0; frameIdx &lt; io_param.nTotalFrames; frameIdx++)</code></pre>
 <h4 id="4-、收尾处理"><a href="#4-、收尾处理" class="headerlink" title="(4)、收尾处理"></a>(4)、收尾处理</h4><p>如果我们就此结束编码器的整个运行过程，我们会发现，编码完成之后的码流对比原来的数据少了一帧。这是因为我们是根据读取原始像素数据结束来判断循环结束的，这样最后一帧还保留在编码器中尚未输出。所以在关闭整个解码过程之前，我们必须继续执行编码的操作，直到将最后一帧输出为止。执行这项操作依然调用avcodec_encode_video2函数，只是表示AVFrame的参数设为NULL即可：</p>
 <pre><code>/* get the delayed frames */
 for (got_output = 1; got_output; frameIdx++) 
@@ -399,14 +376,12 @@ for (got_output = 1; got_output; frameIdx++)
         fwrite(ctx.pkt.data, 1, ctx.pkt.size, io_param.pFout);
         av_packet_unref(&amp;(ctx.pkt));
     &#125;
-&#125; //for (got_output = 1; got_output; frameIdx++) 
-</code></pre>
+&#125; //for (got_output = 1; got_output; frameIdx++) </code></pre>
 <p>此后，我们就可以按计划关闭编码器的各个组件，结束整个编码的流程。编码器组件的释放流程可类比建立流程，需要关闭AVCocec、释放AVCodecContext、释放AVFrame中的图像缓存和对象本身：</p>
 <pre><code>avcodec_close(ctx.c);
 av_free(ctx.c);
 av_freep(&amp;(ctx.frame-&gt;data[0]));
-av_frame_free(&amp;(ctx.frame));
-</code></pre>
+av_frame_free(&amp;(ctx.frame));</code></pre>
 <h3 id="3、总结"><a href="#3、总结" class="headerlink" title="3、总结"></a>3、总结</h3><p>使用FFMpeg进行视频编码的主要流程如：</p>
 <ol>
 <li>首先解析、处理输入参数，如编码器的参数、图像的参数、输入输出文件；</li>
@@ -429,15 +404,12 @@ typedef struct
 
     AVFrame            *frame;                    //封装图像对象指针
     AVPacket        pkt;                    //封装码流对象实例
-&#125; CodecCtx;
-</code></pre>
+&#125; CodecCtx;</code></pre>
 <h3 id="2、FFMpeg进行解码操作的主要步骤"><a href="#2、FFMpeg进行解码操作的主要步骤" class="headerlink" title="2、FFMpeg进行解码操作的主要步骤"></a>2、FFMpeg进行解码操作的主要步骤</h3><h4 id="1-参数传递和解析"><a href="#1-参数传递和解析" class="headerlink" title="(1). 参数传递和解析"></a>(1). 参数传递和解析</h4><p>同编码器类似，解码器也需要传递参数。不过相比编码器，解码器在运行时所需要的大部分信息都包含在输入码流中，因此输入参数一般只需要指定一个待解码的视频码流文件即可</p>
 <h4 id="2-按照要求初始化需要的FFMpeg结构"><a href="#2-按照要求初始化需要的FFMpeg结构" class="headerlink" title="(2). 按照要求初始化需要的FFMpeg结构"></a>(2). 按照要求初始化需要的FFMpeg结构</h4><p>首先，所有涉及到编解码的的功能，都必须要注册音视频编解码器之后才能使用。注册编解码调用下面的函数：</p>
-<pre><code>avcodec_register_all();
-</code></pre>
+<pre><code>avcodec_register_all();</code></pre>
 <p>编解码器注册完成之后，根据指定的CODEC_ID查找指定的codec实例。CODEC_ID通常指定了编解码器的格式，在这里我们使用当前应用最为广泛的H.264格式为例。查找codec调用的函数为avcodec_find_encoder，其声明格式为：</p>
-<pre><code>AVCodec *avcodec_find_encoder(enum AVCodecID id);
-</code></pre>
+<pre><code>AVCodec *avcodec_find_encoder(enum AVCodecID id);</code></pre>
 <p>该函数的输入参数为一个AVCodecID的枚举类型，返回值为一个指向AVCodec结构的指针，用于接收找到的编解码器实例。如果没有找到，那么该函数会返回一个空指针。调用方法如下：</p>
 <pre><code>/* find the mpeg1 video encoder */
 ctx.codec = avcodec_find_encoder(AV_CODEC_ID_H264);    //根据CODEC_ID查找编解码器对象实例的指针
@@ -445,31 +417,26 @@ if (!ctx.codec)
 &#123;
     fprintf(stderr, &quot;Codec not found\n&quot;);
     return false;
-&#125;
-</code></pre>
+&#125;</code></pre>
 <p>AVCodec查找成功后，下一步是分配AVCodecContext实例。分配AVCodecContext实例需要我们前面查找到的AVCodec作为参数，调用的是avcodec_alloc_context3函数。其声明方式为：</p>
-<pre><code>AVCodecContext *avcodec_alloc_context3(const AVCodec *codec);
-</code></pre>
+<pre><code>AVCodecContext *avcodec_alloc_context3(const AVCodec *codec);</code></pre>
 <p>其特点同avcodec_find_encoder类似，返回一个指向AVCodecContext实例的指针。如果分配失败，会返回一个空指针。调用方式为：</p>
 <pre><code>ctx.c = avcodec_alloc_context3(ctx.codec);            //分配AVCodecContext实例
 if (!ctx.c)
 &#123;
     fprintf(stderr, &quot;Could not allocate video codec context\n&quot;);
     return false;
-&#125;
-</code></pre>
+&#125;</code></pre>
 <p>我们应该记得，在FFMpeg视频编码的实现中，AVCodecContext对象分配完成后，下一步实在该对象中设置编码的参数。而在解码器的实现中，基本不需要额外设置参数信息，因此这个对象更多地作为输出参数接收数据。因此对象分配完成后，不需要进一步的初始化操作。</p>
 <p>解码器与编码器实现中不同的一点在于，解码器的实现中需要额外的一个AVCodecParserContext结构，用于从码流中截取一个完整的NAL单元。因此我们需要分配一个AVCodecParserContext类型的对象，使用函数av_parser_init，声明为：</p>
-<pre><code>AVCodecParserContext *av_parser_init(int codec_id);
-</code></pre>
+<pre><code>AVCodecParserContext *av_parser_init(int codec_id);</code></pre>
 <p>调用方式为：</p>
 <pre><code>ctx.pCodecParserCtx = av_parser_init(AV_CODEC_ID_H264);
 if (!ctx.pCodecParserCtx)
 &#123;
     printf(&quot;Could not allocate video parser context\n&quot;);
     return false;
-&#125;
-</code></pre>
+&#125;</code></pre>
 <p>随后，打开AVCodec对象，然后分配AVFrame对象：</p>
 <pre><code>//打开AVCodec对象
 if (avcodec_open2(ctx.pCodecContext, ctx.pCodec, NULL) &lt; 0)
@@ -484,8 +451,7 @@ if (!ctx.frame)
 &#123;
     fprintf(stderr, &quot;Could not allocate video frame\n&quot;);
     return false;
-&#125;
-</code></pre>
+&#125;</code></pre>
 <h4 id="3-、解码循环体"><a href="#3-、解码循环体" class="headerlink" title="(3)、解码循环体"></a>(3)、解码循环体</h4><p>完成必须的codec组件的建立和初始化之后，开始进入正式的解码循环过程。解码循环通常按照以下几个步骤实现：</p>
 <p>首先按照某个指定的长度读取一段码流保存到缓存区中。</p>
 <p>由于H.264中一个包的长度是不定的，我们读取一段固定长度的码流通常不可能刚好读出一个包的长度。所以我们就需要使用AVCodecParserContext结构对我们读出的码流信息进行解析，直到取出一个完整的H.264包。对码流解析的函数为av_parser_parse2，声明方式如：</p>
@@ -494,8 +460,7 @@ if (!ctx.frame)
                  uint8_t **poutbuf, int *poutbuf_size,
                  const uint8_t *buf, int buf_size,
                  int64_t pts, int64_t dts,
-                 int64_t pos);
-</code></pre>
+                 int64_t pos);</code></pre>
 <p>这个函数的各个参数的意义：</p>
 <ul>
 <li><strong>AVCodecParserContext *s</strong>：初始化过的AVCodecParserContext对象，决定了码流该以怎样的标准进行解析；</li>
@@ -511,14 +476,12 @@ if (!ctx.frame)
 <pre><code>len = av_parser_parse2(ctx.pCodecParserCtx, ctx.pCodecContext, 
                         &amp;(ctx.pkt.data), &amp;(ctx.pkt.size), 
                         pDataPtr, uDataSize, 
-                        AV_NOPTS_VALUE, AV_NOPTS_VALUE, AV_NOPTS_VALUE);
-</code></pre>
+                        AV_NOPTS_VALUE, AV_NOPTS_VALUE, AV_NOPTS_VALUE);</code></pre>
 <p>如果参数poutbuf_size的值为0，那么应继续解析缓存中剩余的码流；如果缓存中的数据全部解析后依然未能找到一个完整的包，那么继续从输入文件中读取数据到缓存，继续解析操作，直到pkt.size不为0为止。</p>
 <p>在最终解析出一个完整的包之后，我们就可以调用解码API进行实际的解码过程了。解码过程调用的函数为avcodec_decode_video2，该函数的声明为：</p>
 <pre><code>int avcodec_decode_video2(AVCodecContext *avctx, AVFrame *picture,
                      int *got_picture_ptr,
-                     const AVPacket *avpkt);
-</code></pre>
+                     const AVPacket *avpkt);</code></pre>
 <p>这个函数与前篇所遇到的编码函数avcodec_encode_video2有些类似，只是参数的顺序略有不同，解码函数的输入输出参数与编码函数相比交换了位置。该函数各个参数的意义：</p>
 <ul>
 <li><strong>AVCodecContext *avctx</strong>：编解码器上下文对象，在打开编解码器时生成；</li>
@@ -539,8 +502,7 @@ if (got_picture)
     //获得一帧完整的图像，写出到输出文件
     write_out_yuv_frame(ctx, inputoutput);
     printf(&quot;Succeed to decode 1 frame!\n&quot;);
-&#125;
-</code></pre>
+&#125;</code></pre>
 <p>最后，同编码器一样，解码过程的最后一帧可能也存在延迟。处理最后这一帧的方法也跟解码器类似：将AVPacket::data设为NULL，AVPacket::size设为0，然后在调用avcodec_encode_video2完成最后的解码过程：</p>
 <pre><code>ctx.pkt.data = NULL;
 ctx.pkt.size = 0;
@@ -563,13 +525,11 @@ while(1)
     &#123;
         break;
     &#125;
-&#125; //while(1)
-</code></pre>
+&#125; //while(1)</code></pre>
 <p>####(4). 收尾工作<br>收尾工作主要包括关闭输入输出文件、关闭FFMpeg解码器各个组件。其中关闭解码器组件需要：</p>
 <pre><code>avcodec_close(ctx.pCodecContext);
 av_free(ctx.pCodecContext);
-av_frame_free(&amp;(ctx.frame));
-</code></pre>
+av_frame_free(&amp;(ctx.frame));</code></pre>
 <h3 id="3、总结-1"><a href="#3、总结-1" class="headerlink" title="3、总结"></a>3、总结</h3><p>解码器的流程与编码器类似，只是中间需要加入一个解析的过程。整个流程大致为：</p>
 <p>1.读取码流数据 -&gt; 2.解析数据，是否尚未解析出一个包就已经用完？是返回1，否继续 -&gt; 3.解析出一个包？是则继续，否则返回上一步继续解析 -&gt; 4.调用avcodec_decode_video2进行解码 -&gt; 5.是否解码出一帧完整的图像？是则继续，否则返回上一步继续解码 -&gt; 6.写出图像数据 -&gt; 返回步骤2继续解析。</p>
 <hr>
@@ -596,8 +556,7 @@ typedef struct
     int video_dst_linesize[4];
     int video_dst_bufsize;
     enum AVPixelFormat pix_fmt;
-&#125; DemuxingVideoAudioContex;
-</code></pre>
+&#125; DemuxingVideoAudioContex;</code></pre>
 <p>这个结构体中的大部分数据类型我们在前面做编码/解码等功能时已经见到过，另外几个是涉及到视频文件的复用的，其中有：</p>
 <ul>
 <li>AVFormatContext：用于处理音视频封装格式的上下文信息。</li>
@@ -605,11 +564,9 @@ typedef struct
 <li>AVPixelFormat：枚举类型，表示图像像素的格式，最常用的是AV_PIX_FMT_YUV420P</li>
 </ul>
 <h3 id="2、FFMpeg解复用-解码的过程"><a href="#2、FFMpeg解复用-解码的过程" class="headerlink" title="2、FFMpeg解复用-解码的过程"></a>2、FFMpeg解复用-解码的过程</h3><h4 id="1-、相关结构的初始化"><a href="#1-、相关结构的初始化" class="headerlink" title="(1)、相关结构的初始化"></a>(1)、相关结构的初始化</h4><p>与使用FFMpeg进行其他操作一样，首先需注册FFMpeg组件：</p>
-<pre><code>av_register_all();
-</code></pre>
+<pre><code>av_register_all();</code></pre>
 <p>随后，我们需要打开待处理的音视频文件。然而在此我们不使用打开文件的fopen函数，而是使用avformat_open_input函数。该函数不但会打开输入文件，而且可以根据输入文件读取相应的格式信息。该函数的声明如下：</p>
-<pre><code>int avformat_open_input(AVFormatContext **ps, const char *url, AVInputFormat *fmt, AVDictionary **options);
-</code></pre>
+<pre><code>int avformat_open_input(AVFormatContext **ps, const char *url, AVInputFormat *fmt, AVDictionary **options);</code></pre>
 <p>该函数的各个参数的作用为：</p>
 <ul>
 <li><strong>ps</strong>：根据输入文件接收与格式相关的句柄信息；可以指向NULL，那么AVFormatContext类型的实例将由该函数进行分配。</li>
@@ -623,27 +580,23 @@ typedef struct
 &#123;
     fprintf(stderr, &quot;Could not open source file %s\n&quot;, files.src_filename);
     return -1;
-&#125;
-</code></pre>
+&#125;</code></pre>
 <p>打开文件后，调用avformat_find_stream_info函数获取文件中的流信息。该函数的声明为：</p>
-<pre><code>int avformat_find_stream_info(AVFormatContext *ic, AVDictionary **options);
-</code></pre>
+<pre><code>int avformat_find_stream_info(AVFormatContext *ic, AVDictionary **options);</code></pre>
 <p>该函数的第一个参数即前面的文件句柄，第二个参数也是用于保存无法识别的信息的AVDictionary的结构，通常可设为NULL。调用方式如：</p>
 <pre><code>/* retrieve stream information */
 if (avformat_find_stream_info(va_ctx.fmt_ctx, NULL) &lt; 0) 
 &#123;
     fprintf(stderr, &quot;Could not find stream information\n&quot;);
     return -1;
-&#125;
-</code></pre>
+&#125;</code></pre>
 <p>获取文件中的流信息后，下一步则是获取文件中的音频和视频流，并准备对音频和视频信息进行解码。获取文件中的流使用av_find_best_stream函数，其声明如：</p>
 <pre><code>int av_find_best_stream(AVFormatContext *ic,
                     enum AVMediaType type,
                     int wanted_stream_nb,
                     int related_stream,
                     AVCodec **decoder_ret,
-                    int flags);
-</code></pre>
+                    int flags);</code></pre>
 <p>其中各个参数的意义：</p>
 <ul>
 <li><strong>ic</strong>：视频文件句柄；</li>
@@ -710,8 +663,7 @@ if (avformat_find_stream_info(va_ctx.fmt_ctx, NULL) &lt; 0)
     &#125;
 
     return 0;
-&#125;
-</code></pre>
+&#125;</code></pre>
 <p>整体初始化的函数代码为：</p>
 <pre><code>int InitDemuxContext(IOFileName &amp;files, DemuxingVideoAudioContex &amp;va_ctx)
 &#123;
@@ -786,8 +738,7 @@ if (avformat_find_stream_info(va_ctx.fmt_ctx, NULL) &lt; 0)
     &#125;
 
     return 0;
-&#125;
-</code></pre>
+&#125;</code></pre>
 <p>随后要做的，是分配AVFrame和初始化AVPacket对象：</p>
 <pre><code>va_ctx.frame = av_frame_alloc();            //分配AVFrame结构对象
 if (!va_ctx.frame)
@@ -800,8 +751,7 @@ if (!va_ctx.frame)
 /* initialize packet, set data to NULL, let the demuxer fill it */
 av_init_packet(&amp;va_ctx.pkt);                //初始化AVPacket对象
 va_ctx.pkt.data = NULL;
-va_ctx.pkt.size = 0;
-</code></pre>
+va_ctx.pkt.size = 0;</code></pre>
 <h4 id="2-、循环解析视频文件的包数据"><a href="#2-、循环解析视频文件的包数据" class="headerlink" title="(2)、循环解析视频文件的包数据"></a>(2)、循环解析视频文件的包数据</h4><p>解析视频文件的循环代码段为：</p>
 <pre><code>/* read frames from the file */
 while (av_read_frame(va_ctx.fmt_ctx, &amp;va_ctx.pkt) &gt;= 0)        //从输入程序中读取一个包的数据
@@ -816,8 +766,7 @@ while (av_read_frame(va_ctx.fmt_ctx, &amp;va_ctx.pkt) &gt;= 0)        //从输�
         va_ctx.pkt.size -= ret;
     &#125; while (va_ctx.pkt.size &gt; 0);
     av_packet_unref(&amp;orig_pkt);
-&#125;
-</code></pre>
+&#125;</code></pre>
 <p>这部分代码逻辑上非常简单，首先调用av_read_frame函数，从文件中读取一个packet的数据，并实现了一个Decode_packet对这个packet进行解码。Decode_packet函数的实现如下：</p>
 <pre><code>int Decode_packet(IOFileName &amp;files, DemuxingVideoAudioContex &amp;va_ctx, int *got_frame, int cached)
 &#123;
@@ -907,10 +856,9 @@ while (av_read_frame(va_ctx.fmt_ctx, &amp;va_ctx.pkt) &gt;= 0)        //从输�
         * to de-reference it when we don&#39;t use it anymore */
         if (*got_frame &amp;&amp; files.refcount)
             av_frame_unref(va_ctx.frame);
-    
+
         return decoded;
-&#125;
-</code></pre>
+&#125;</code></pre>
 <p>在该函数中，首先对读取到的packet中的stream_index分别于先前获取的音频和视频的stream_index进行对比来确定是音频还是视频流。而后分别调用相应的解码函数进行解码，以视频流为例，判断当前stream为视频流后，调用avcodec_decode_video2函数将流数据解码为像素数据，并在获取完整的一帧之后，将其写出到输出文件中。</p>
 <h3 id="3、总结-2"><a href="#3、总结-2" class="headerlink" title="3、总结"></a>3、总结</h3><p>相对于前文讲述过的解码H.264格式裸码流，解封装+解码过程看似多了一个步骤，然而在实现起来实际上并无过多差别。这主要是由于FFMpeg中的多个API已经很好地实现了封装文件的解析和读取过程，如打开文件我们使用avformat_open_input代替fopen，读取数据包使用av_read_frame代替fread，其他方面只需要多一步判断封装文件中数据流的类型即可，剩余部分与裸码流的解码并无太多差别。</p>
 <hr>
@@ -920,8 +868,7 @@ while (av_read_frame(va_ctx.fmt_ctx, &amp;va_ctx.pkt) &gt;= 0)        //从输�
 <p>在FFMpeg中，表示音频流或视频流有一个专门的结构，即”AVStream”实现。该结构主要对音频和视频数据的处理进行管理和控制。另外，”AVFormatContext”结构也是必须的，因为它包含了控制输入和输出的信息。</p>
 <p>音频和视频数据封装为视频文件的主要步骤为：</p>
 <h3 id="1-相关数据结构的准备"><a href="#1-相关数据结构的准备" class="headerlink" title="1. 相关数据结构的准备"></a>1. 相关数据结构的准备</h3><p>首先，根据输出文件的格式获取AVFormatContext结构，获取AVFormatContext结构使用函数avformat_alloc_output_context2实现。该函数的声明为：</p>
-<pre><code>int avformat_alloc_output_context2(AVFormatContext **ctx, AVOutputFormat *oformat, const char *format_name, const char *filename);
-</code></pre>
+<pre><code>int avformat_alloc_output_context2(AVFormatContext **ctx, AVOutputFormat *oformat, const char *format_name, const char *filename);</code></pre>
 <p>其中：</p>
 <ul>
 <li>ctx：输出到AVFormatContext结构的指针，如果函数失败则返回给该指针为NULL；</li>
@@ -931,8 +878,7 @@ while (av_read_frame(va_ctx.fmt_ctx, &amp;va_ctx.pkt) &gt;= 0)        //从输�
 </ul>
 <p>分配AVFormatContext成功后，我们需要添加希望封装的数据流，一般是一路视频流+一路音频流（可能还有其他音频流和字幕流等）。添加流首先需要查找流所包含的媒体的编码器，这需要传入codec_id后使用avcodec_find_encoder函数实现，将查找到的编码器保存在AVCodec指针中。</p>
 <p>之后，调用avformat_new_stream函数向AVFormatContext结构中所代表的媒体文件中添加数据流。该函数的声明如下：</p>
-<pre><code>AVStream *avformat_new_stream(AVFormatContext *s, const AVCodec *c);
-</code></pre>
+<pre><code>AVStream *avformat_new_stream(AVFormatContext *s, const AVCodec *c);</code></pre>
 <p>其中各个参数的含义：</p>
 <ul>
 <li>s：AVFormatContext结构，表示要封装生成的视频文件；</li>
@@ -1038,8 +984,7 @@ static void add_stream(OutputStream *ost, AVFormatContext *oc,    AVCodec **code
     /* Some formats want stream headers to be separate. */
     if (oc-&gt;oformat-&gt;flags &amp; AVFMT_GLOBALHEADER)
         c-&gt;flags |= AV_CODEC_FLAG_GLOBAL_HEADER;
-&#125;    
-</code></pre>
+&#125;    </code></pre>
 <h3 id="2-打开音视频"><a href="#2-打开音视频" class="headerlink" title="2. 打开音视频"></a>2. 打开音视频</h3><p>打开音视频主要涉及到打开编码音视频数据所需要的编码器，以及分配相应的frame对象。其中打开编码器如之前一样，调用avcodec_open函数，分配frame对象调用av_frame_alloc以及av_frame_get_buffer。分配frame对象的实现如下：</p>
 <pre><code>static AVFrame *alloc_picture(enum AVPixelFormat pix_fmt, int width, int height)
 &#123;
@@ -1065,8 +1010,7 @@ static void add_stream(OutputStream *ost, AVFormatContext *oc,    AVCodec **code
     &#125;
 
     return picture;
-&#125;
-</code></pre>
+&#125;</code></pre>
 <p>而上层打开音视频部分的实现如：</p>
 <pre><code>void Open_video(AVFormatContext *oc, AVCodec *codec, OutputStream *ost, AVDictionary *opt_arg, IOParam &amp;io)
 &#123;
@@ -1114,11 +1058,9 @@ static void add_stream(OutputStream *ost, AVFormatContext *oc,    AVCodec **code
         fprintf(stderr, &quot;Open input yuv file failed.\n&quot;);
         exit(1);
     &#125;
-&#125;
-</code></pre>
+&#125;</code></pre>
 <h3 id="3-打开输出文件并写入文件头"><a href="#3-打开输出文件并写入文件头" class="headerlink" title="3. 打开输出文件并写入文件头"></a>3. 打开输出文件并写入文件头</h3><p>如果判断需要写出文件的话，则需要打开输出文件。在这里，我们可以不再定义输出文件指针，并使用fopen打开，而是直接使用FFMpeg的API——avio_open来实现输出文件的打开功能。该函数的声明如下：</p>
-<pre><code>int avio_open(AVIOContext **s, const char *url, int flags);
-</code></pre>
+<pre><code>int avio_open(AVIOContext **s, const char *url, int flags);</code></pre>
 <p>该函数的输入参数为：</p>
 <ul>
 <li>s：输出参数，返回一个AVIOContext；如果打开失败则返回NULL；</li>
@@ -1135,11 +1077,9 @@ if (!(fmt-&gt;flags &amp; AVFMT_NOFILE))
         fprintf(stderr, &quot;Could not open &#39;%s&#39;: %d\n&quot;, io.output_file_name, ret);
         return 1;
     &#125;
-&#125;
-</code></pre>
+&#125;</code></pre>
 <p>写入文件头操作是生成视频文件中极为重要的一步，而实现过程却非常简单，只需要通过函数avformat_write_header即可，该函数的声明为：</p>
-<pre><code>int avformat_write_header(AVFormatContext *s, AVDictionary **options);
-</code></pre>
+<pre><code>int avformat_write_header(AVFormatContext *s, AVDictionary **options);</code></pre>
 <p>其输入参数实际上重要的只有第一个，即标记输出文件的句柄对象指针；options用于保存无法识别的设置项，可以传入一个空指针。其返回值表示写文件头成功与否，成功则返回0，失败则返回负的错误码。</p>
 <p>实现方式如：</p>
 <pre><code>/* Write the stream header, if any. */
@@ -1148,8 +1088,7 @@ if (ret &lt; 0)
 &#123;
     fprintf(stderr, &quot;Error occurred when opening output file: %d\n&quot;,ret);
     return 1;
-&#125;
-</code></pre>
+&#125;</code></pre>
 <p>###4. 编码和封装循环</p>
 <p>以视频流为例。编解码循环的过程实际上可以封装在一个函数Write_video_frame中。该函数从逻辑上可以分为3个部分：获取原始视频信号、视频编码、写入输出文件。</p>
 <h4 id="1-读取原始视频数据"><a href="#1-读取原始视频数据" class="headerlink" title="(1) 读取原始视频数据"></a>(1) 读取原始视频数据</h4><p>这一部分主要实现根据时长判断是否需要继续进行处理、读取视频到AVFrame和设置pts。其中时长判断部分根据pts和AVCodecContext的time_base判断。实现如下：</p>
@@ -1162,8 +1101,7 @@ if (ret &lt; 0)
     &#123;
         return NULL;
     &#125;
-&#125;
-</code></pre>
+&#125;</code></pre>
 <p>读取视频到AVFrame我们定义一个fill_yuv_image函数实现：</p>
 <pre><code>static void fill_yuv_image(AVFrame *pict, int frame_index, int width, int height)
 &#123;
@@ -1213,11 +1151,9 @@ if (ret &lt; 0)
             exit(1);
         &#125;
     &#125;
-&#125;
-</code></pre>
+&#125;</code></pre>
 <p>然后进行pts的设置，很简单，就是上一个frame的pts递增1：</p>
-<pre><code>ost-&gt;frame-&gt;pts = ost-&gt;next_pts++;
-</code></pre>
+<pre><code>ost-&gt;frame-&gt;pts = ost-&gt;next_pts++;</code></pre>
 <p>整个获取视频信号的实现如：</p>
 <pre><code>static AVFrame *get_video_frame(OutputStream *ost)
 &#123;
@@ -1237,8 +1173,7 @@ if (ret &lt; 0)
     ost-&gt;frame-&gt;pts = ost-&gt;next_pts++;
 
     return ost-&gt;frame;
-&#125;
-</code></pre>
+&#125;</code></pre>
 <h4 id="2-视频编码"><a href="#2-视频编码" class="headerlink" title="(2) 视频编码"></a>(2) 视频编码</h4><p>视频编码的方式同之前几次使用的方式相同，即调用avcodec_encode_video2，实现方法如：</p>
 <pre><code>/* encode the image */
 ret = avcodec_encode_video2(c, &amp;pkt, frame, &amp;got_packet);
@@ -1246,8 +1181,7 @@ if (ret &lt; 0)
 &#123;
     fprintf(stderr, &quot;Error encoding video frame: %d\n&quot;, ret);
     exit(1);
-&#125;
-</code></pre>
+&#125;</code></pre>
 <h4 id="3-写出编码后的数据到输出视频文件"><a href="#3-写出编码后的数据到输出视频文件" class="headerlink" title="(3) 写出编码后的数据到输出视频文件"></a>(3) 写出编码后的数据到输出视频文件</h4><p>这部分的实现过程很简单，方式如下：</p>
 <pre><code>/* rescale output packet timestamp values from codec to stream timebase */
 av_packet_rescale_ts(pkt, *time_base, st-&gt;time_base);
@@ -1255,11 +1189,9 @@ pkt-&gt;stream_index = st-&gt;index;
 
 /* Write the compressed frame to the media file. */
 //    log_packet(fmt_ctx, pkt);
-return av_interleaved_write_frame(fmt_ctx, pkt);
-</code></pre>
+return av_interleaved_write_frame(fmt_ctx, pkt);</code></pre>
 <p>av_packet_rescale_ts函数的作用为不同time_base度量之间的转换，在这里起到的作用是将AVCodecContext的time_base转换为AVStream中的time_base。av_interleaved_write_frame函数的作用是写出AVPacket到输出文件。该函数的声明为：</p>
-<pre><code>int av_interleaved_write_frame(AVFormatContext *s, AVPacket *pkt);
-</code></pre>
+<pre><code>int av_interleaved_write_frame(AVFormatContext *s, AVPacket *pkt);</code></pre>
 <p>该函数的声明也很简单，第一个参数是之前打开并写入文件头的文件句柄，第二个参数是写入文件的packet。返回值为错误码，成功返回0，失败则返回一个负值。</p>
 <p>Write_video_frame函数的整体实现如：</p>
 <pre><code>int Write_video_frame(AVFormatContext *oc, OutputStream *ost)
@@ -1300,8 +1232,7 @@ return av_interleaved_write_frame(fmt_ctx, pkt);
     &#125;
 
     return (frame || got_packet) ? 0 : 1;
-&#125;
-</code></pre>
+&#125;</code></pre>
 <p>以上是写入一帧视频数据的方法，写入音频的方法于此大同小异。整个编码封装的循环上层实现如：</p>
 <pre><code>while (encode_video || encode_audio) 
 &#123;
@@ -1330,12 +1261,10 @@ return av_interleaved_write_frame(fmt_ctx, pkt);
             printf(&quot;Audio ended, exit.\n&quot;);
         &#125;
     &#125;
-&#125;
-</code></pre>
+&#125;</code></pre>
 <p>###5. 写入文件尾，并进行收尾工作</p>
 <p>写入文件尾的数据同写文件头一样简单，只需要调用函数av_write_trailer即可实现：</p>
-<pre><code>int av_write_trailer(AVFormatContext *s);
-</code></pre>
+<pre><code>int av_write_trailer(AVFormatContext *s);</code></pre>
 <p>该函数只有一个参数即视频文件的句柄，当返回值为0时表示函数执行成功。</p>
 <p>整个流程的收尾工作包括关闭文件中的数据流、关闭输出文件和释放AVCodecContext对象。其中关闭数据流的实现方式如：</p>
 <pre><code>void Close_stream(AVFormatContext *oc, OutputStream *ost)
@@ -1345,16 +1274,14 @@ return av_interleaved_write_frame(fmt_ctx, pkt);
     av_frame_free(&amp;ost-&gt;tmp_frame);
     sws_freeContext(ost-&gt;sws_ctx);
     swr_free(&amp;ost-&gt;swr_ctx);
-&#125;
-</code></pre>
+&#125;</code></pre>
 <p>关闭输出文件和释放AVCodecContext对象：</p>
 <pre><code>if (!(fmt-&gt;flags &amp; AVFMT_NOFILE))
     /* Close the output file. */
     avio_closep(&amp;oc-&gt;pb);
 
 /* free the stream */
-avformat_free_context(oc);
-</code></pre>
+avformat_free_context(oc);</code></pre>
 <p>至此，整个处理流程便结束了。正确设置输入的YUV文件就可以获取封装好的音视频文件。</p>
 <hr>
 <p>##六、调用FFMpeg SDK实现视频文件的转封装</p>
@@ -1379,8 +1306,7 @@ static bool hello(int argc, char **argv, IOFiles &amp;io_param)
     io_param.outputName = argv[2];
 
     return true;
-&#125;
-</code></pre>
+&#125;</code></pre>
 <p>在main函数执行时，调用hello函数解析命令行并保存到IOFiles结构中：</p>
 <pre><code>int main(int argc, char **argv)
 &#123;
@@ -1390,13 +1316,11 @@ static bool hello(int argc, char **argv, IOFiles &amp;io_param)
         return -1;
     &#125;
     //......
-&#125;
-</code></pre>
+&#125;</code></pre>
 <h3 id="2、所需要的结构与初始化操作"><a href="#2、所需要的结构与初始化操作" class="headerlink" title="2、所需要的结构与初始化操作"></a>2、所需要的结构与初始化操作</h3><p>为了实现视频文件的转封装操作，我们需要以下的结构：</p>
 <pre><code>AVOutputFormat *ofmt = NULL;
 AVFormatContext *ifmt_ctx = NULL, *ofmt_ctx = NULL;
-AVPacket pkt;
-</code></pre>
+AVPacket pkt;</code></pre>
 <p>然后所需要的初始化操作有打开输入视频文件、获取其中的流信息和获取输出文件的句柄：</p>
 <pre><code>av_register_all();
 
@@ -1422,8 +1346,7 @@ if (!ofmt_ctx)
     printf(&quot;Error: Could not create output context.\n&quot;);
     goto end;
 &#125;
-ofmt = ofmt_ctx-&gt;oformat;
-</code></pre>
+ofmt = ofmt_ctx-&gt;oformat;</code></pre>
 <h3 id="3、-向输出文件中添加Stream并打开输出文件"><a href="#3、-向输出文件中添加Stream并打开输出文件" class="headerlink" title="3、 向输出文件中添加Stream并打开输出文件"></a>3、 向输出文件中添加Stream并打开输出文件</h3><p>在我们获取到了输入文件中的流信息后，保持输入流中的codec不变，并以其为依据添加到输出文件中：</p>
 <pre><code>for (unsigned int i = 0; i &lt; ifmt_ctx-&gt;nb_streams ; i++)
 &#123;
@@ -1443,11 +1366,9 @@ ofmt = ofmt_ctx-&gt;oformat;
     &#125;
 &#125;
 
-av_dump_format(ofmt_ctx, 0, io_param.outputName, 1);
-</code></pre>
+av_dump_format(ofmt_ctx, 0, io_param.outputName, 1);</code></pre>
 <p>这里调用了函数avcodec_copy_context函数，该函数的声明如下：</p>
-<pre><code>int avcodec_copy_context(AVCodecContext *dest, const AVCodecContext *src);
-</code></pre>
+<pre><code>int avcodec_copy_context(AVCodecContext *dest, const AVCodecContext *src);</code></pre>
 <p>该函数的作用是将src表示的AVCodecContext中的内容拷贝到dest中。</p>
 <p>随后，调用avio_open函数打开输出文件：</p>
 <pre><code>av_dump_format(ofmt_ctx, 0, io_param.outputName, 1);
@@ -1460,16 +1381,14 @@ if (!(ofmt-&gt;flags &amp; AVFMT_NOFILE))
         printf(&quot;Error: Could not open output file.\n&quot;);
         goto end;
     &#125;
-&#125;
-</code></pre>
+&#125;</code></pre>
 <h3 id="4、写入文件的音视频数据"><a href="#4、写入文件的音视频数据" class="headerlink" title="4、写入文件的音视频数据"></a>4、写入文件的音视频数据</h3><p>首先向输出文件中写入文件头:</p>
 <pre><code>ret = avformat_write_header(ofmt_ctx, NULL);
 if (ret &lt; 0) 
 &#123;
     printf(&quot;Error: Could not write output file header.\n&quot;);
     goto end;
-&#125;
-</code></pre>
+&#125;</code></pre>
 <p>写入文件的视频和音频包数据，其实就是将音频和视频Packets从输入文件中读出来，正确设置pts和dts等时间量之后，再写入到输出文件中去：</p>
 <pre><code>while (1) 
 &#123;
@@ -1481,7 +1400,7 @@ if (ret &lt; 0)
 
     in_stream  = ifmt_ctx-&gt;streams[pkt.stream_index];
     out_stream = ofmt_ctx-&gt;streams[pkt.stream_index];
-    
+
     /* copy packet */
     pkt.pts = av_rescale_q_rnd(pkt.pts, in_stream-&gt;time_base, out_stream-&gt;time_base, (AVRounding)(AV_ROUND_NEAR_INF|AV_ROUND_PASS_MINMAX));
     pkt.dts = av_rescale_q_rnd(pkt.dts, in_stream-&gt;time_base, out_stream-&gt;time_base, (AVRounding)(AV_ROUND_NEAR_INF|AV_ROUND_PASS_MINMAX));
@@ -1495,11 +1414,9 @@ if (ret &lt; 0)
         break;
     &#125;
     av_free_packet(&amp;pkt);
-&#125;
-</code></pre>
+&#125;</code></pre>
 <p>最后要做的就是写入文件尾：</p>
-<pre><code>av_write_trailer(ofmt_ctx);
-</code></pre>
+<pre><code>av_write_trailer(ofmt_ctx);</code></pre>
 <h3 id="5、-收尾工作"><a href="#5、-收尾工作" class="headerlink" title="5、 收尾工作"></a>5、 收尾工作</h3><p>写入输出文件完成后，需要对打开的结构进行关闭或释放等操作。主要有关闭输入输出文件、释放输出文件的句柄等：</p>
 <pre><code>avformat_close_input(&amp;ifmt_ctx);
 
@@ -1513,8 +1430,7 @@ if (ret &lt; 0 &amp;&amp; ret != AVERROR_EOF)
 &#123;
     fprintf(stderr, &quot;Error failed to write packet to output file.\n&quot;);
     return 1;
-&#125;
-</code></pre>
+&#125;</code></pre>
 <hr>
 <p>##七、 FFMpeg实现视频水印</p>
 <p>视频的水印通常指附加在原始视频上的可见或者不可见的，与原始视频无直接关联的标识。通常在有线电视画面上电视台的台标以及视频网站上的logo就是典型的视频水印的应用场景。通常实现视频水印可以通过FFMpeg提供的libavfilter库实现。libavfilter库实际上实现的是视频的滤镜功能，除了水印之外，还可以实现视频帧的灰度化、平滑、翻转、直方图均衡、裁剪等操作。</p>
@@ -1533,8 +1449,7 @@ if (ret &lt; 0 &amp;&amp; ret != AVERROR_EOF)
 
     unsigned int frameWidth;        //图像宽度
     unsigned int frameHeight;        //图像高度
-&#125;IOFiles;
-</code></pre>
+&#125;IOFiles;</code></pre>
 <p>在这个结构体中，filterIdx用于表示当前工程选择哪一种filter，即希望实现哪一种功能。</p>
 <p>在进入main函数之后，调用hello函数来解析命令行参数：</p>
 <pre><code>static int hello(int argc, char **argv, IOFiles &amp;files)
@@ -1576,18 +1491,15 @@ if (ret &lt; 0 &amp;&amp; ret != AVERROR_EOF)
     &#125;
 
     return 0;
-&#125;
-</code></pre>
+&#125;</code></pre>
 <p>该函数实现了输入输出文件的文件名获取并打开，并读取filter索引。</p>
 <p>###2. Video Filter初始化</p>
 <p>在进行初始化之前，必须调用filter的init函数，之后才能针对Video Filter进行各种操作。其声明如下：</p>
-<pre><code>void avfilter_register_all(void);
-</code></pre>
+<pre><code>void avfilter_register_all(void);</code></pre>
 <p>为了实现视频水印的功能，所需要的相关结构主要有：</p>
 <pre><code>AVFilterContext *buffersink_ctx;  
 AVFilterContext *buffersrc_ctx;  
-AVFilterGraph *filter_graph;
-</code></pre>
+AVFilterGraph *filter_graph;</code></pre>
 <p>其中AVFilterContext用于表示一个filter的实例上下文，AVFilterGraph表示一个video filtering的工作流。Video Filter的初始化实现如以下函数：</p>
 <pre><code>//初始化video filter相关的结构
 int Init_video_filter(const char *filter_descr, int width, int height)
@@ -1646,15 +1558,13 @@ int Init_video_filter(const char *filter_descr, int width, int height)
     &#125;
 
     return 0;
-&#125;
-</code></pre>
+&#125;</code></pre>
 <p>###3. 初始化输入输出AVFrame并分配内存</p>
 <p>我们首先声明AVFrame类型的对象和指向像素缓存的指针：</p>
 <pre><code>AVFrame *frame_in = NULL;  
 AVFrame *frame_out = NULL;  
 unsigned char *frame_buffer_in = NULL;  
-unsigned char *frame_buffer_out = NULL; 
-</code></pre>
+unsigned char *frame_buffer_out = NULL; </code></pre>
 <p>然后分配AVFrame对象，并分配其中的缓存区：</p>
 <pre><code>void Init_video_frame_in_out(AVFrame **frameIn, AVFrame **frameOut, unsigned char **frame_buffer_in, unsigned char **frame_buffer_out, int frameWidth, int frameHeight)
 &#123;
@@ -1669,8 +1579,7 @@ unsigned char *frame_buffer_out = NULL;
     (*frameIn)-&gt;width = frameWidth;  
     (*frameIn)-&gt;height = frameHeight;  
     (*frameIn)-&gt;format = AV_PIX_FMT_YUV420P;
-&#125;
-</code></pre>
+&#125;</code></pre>
 <p>###4. Video Filtering循环体</p>
 <p>这一部分主要包括三大部分：</p>
 <ol>
@@ -1696,8 +1605,7 @@ bool Read_yuv_data_to_buf(unsigned char *frame_buffer_in, const IOFiles &amp;fil
     pFrameIn-&gt;data[2] = pFrameIn-&gt;data[1] + width * height / 4;
 
     return true;
-&#125;
-</code></pre>
+&#125;</code></pre>
 <p>第二部分实际上分为两部分，即将输入frame送入filter graph，以及从filter graph中取出输出frame。实现方法分别为：</p>
 <pre><code>//将待处理的输入frame添加进filter graph
 bool Add_frame_to_filter(AVFrame *frameIn)
@@ -1719,8 +1627,7 @@ int Get_frame_from_filter(AVFrame **frameOut)
     &#125;
 
     return true;
-&#125;
-</code></pre>
+&#125;</code></pre>
 <p>第三部分，写出输出frame到输出yuv文件：</p>
 <pre><code>//从输出frame中写出像素数据到输出文件
 void Write_yuv_to_outfile(const AVFrame *frame_out, IOFiles &amp;files)
@@ -1740,8 +1647,7 @@ void Write_yuv_to_outfile(const AVFrame *frame_out, IOFiles &amp;files)
             fwrite(frame_out-&gt;data[2]+frame_out-&gt;linesize[2]*i,1,frame_out-&gt;width/2,files.oFile);  
         &#125;  
     &#125;  
-&#125;
-</code></pre>
+&#125;</code></pre>
 <p>该部分的综合实现如下：</p>
 <pre><code>while (Read_yuv_data_to_buf(frame_buffer_in, files, &amp;frame_in)) 
 &#123;
@@ -1764,8 +1670,7 @@ void Write_yuv_to_outfile(const AVFrame *frame_out, IOFiles &amp;files)
 
     printf(&quot;Process 1 frame!\n&quot;);  
     av_frame_unref(frame_out);  
-&#125;
-</code></pre>
+&#125;</code></pre>
 <p>###5、 收尾工作</p>
 <p>整体实现完成后，需要进行善后的收尾工作有释放输入和输出frame、关闭输入输出文件，以及释放filter graph：</p>
 <pre><code>//关闭文件及相关结构
@@ -1775,8 +1680,7 @@ fclose(files.oFile);
 av_frame_free(&amp;frame_in);
 av_frame_free(&amp;frame_out);
 
-avfilter_graph_free(&amp;filter_graph);
-</code></pre>
+avfilter_graph_free(&amp;filter_graph);</code></pre>
 <hr>
 <h2 id="八、-FFMpeg实现视频缩放"><a href="#八、-FFMpeg实现视频缩放" class="headerlink" title="八、 FFMpeg实现视频缩放"></a>八、 FFMpeg实现视频缩放</h2><p>视频缩放是视频开发中一项最基本的功能。通过对视频的像素数据进行采样或插值，可以将低分辨率的视频转换到更高的分辨率，或者将高分辨率的视频转换为更低的分辨率。通过FFMpeg提供了libswscale库，可以轻松实现视频的分辨率转换功能。除此之外，libswscale库还可以实现颜色空间转换等功能。</p>
 <p>通常情况下视频缩放的主要思想是对视频进行解码到像素域后，针对像素域的像素值进行采样或差值操作。这种方式需要在解码端消耗一定时间，但是通用性最好，不需要对码流格式作出任何特殊处理。在FFMpeg中libswscale库也是针对AVFrame结构进行缩放处理。</p>
@@ -1791,8 +1695,7 @@ avfilter_graph_free(&amp;filter_graph);
     FILE *iFile;                //输入文件指针
     FILE *oFile;                //输出文件指针
 
-&#125; IOFiles;
-</code></pre>
+&#125; IOFiles;</code></pre>
 <p>输入参数解析过程为：</p>
 <pre><code>static bool hello(int argc, char **argv, IOFiles &amp;files)
 &#123;
@@ -1823,15 +1726,12 @@ avfilter_graph_free(&amp;filter_graph);
     &#125;
 
     return true;
-&#125;
-</code></pre>
+&#125;</code></pre>
 <p>在参数读入完成后，需要从表示视频分辨率的字符串中解析出图像的宽和高两个值。我们在命令行中传入的视频分辨率字符串的格式为“width x height”，例如”720x480”。解析过程需要调用av_parse_video_size函数。声明如下：</p>
-<pre><code>int av_parse_video_size(int *width_ptr, int *height_ptr, const char *str);
-</code></pre>
+<pre><code>int av_parse_video_size(int *width_ptr, int *height_ptr, const char *str);</code></pre>
 <p>例如，我们传入下面的参数：</p>
 <pre><code>int frameWidth, frameHeight;
-av_parse_video_size(&amp;frameWidth, &amp;frameHeight, &quot;720x480&quot;);
-</code></pre>
+av_parse_video_size(&amp;frameWidth, &amp;frameHeight, &quot;720x480&quot;);</code></pre>
 <p>函数将分别把720和480传入frameWidth和frameHeight中。</p>
 <p>在获取命令行参数后，调用该函数解析图像分辨率：</p>
 <pre><code>int srcWidth, srcHeight, dstWidth, dstHeight;
@@ -1844,15 +1744,13 @@ if (av_parse_video_size(&amp;dstWidth, &amp;dstHeight, files.outputFrameSize))
 &#123;
     printf(&quot;Error: parsing output size failed.\n&quot;);
     goto end;
-&#125;
-</code></pre>
+&#125;</code></pre>
 <p>这样，我们就获得了源和目标图像的宽和高度。</p>
 <h3 id="2-创建SwsContext结构"><a href="#2-创建SwsContext结构" class="headerlink" title="2. 创建SwsContext结构"></a>2. 创建SwsContext结构</h3><p>进行视频的缩放操作离不开libswscale的一个关键的结构，即SwsContext，该结构提供了缩放操作的必要参数。创建该结构需调用函数sws_getContext。该函数的声明如下：</p>
 <pre><code>struct SwsContext *sws_getContext(int srcW, int srcH, enum AVPixelFormat srcFormat,
                                   int dstW, int dstH, enum AVPixelFormat dstFormat,
                                   int flags, SwsFilter *srcFilter,
-                                  SwsFilter *dstFilter, const double *param);
-</code></pre>
+                                  SwsFilter *dstFilter, const double *param);</code></pre>
 <p>该函数的前两行参数分别表示输入和输出图像的宽、高、像素格式，参数flags表示采样和差值使用的算法，常用的有SWS_BILINEAR表示双线性差值等。剩余的不常用参数通常设为NULL。创建该结构的代码如：</p>
 <pre><code>//创建SwsContext结构
 enum AVPixelFormat src_pix_fmt = AV_PIX_FMT_YUV420P;
@@ -1862,8 +1760,7 @@ if (!sws_ctx)
 &#123;
     printf(&quot;Error: parsing output size failed.\n&quot;);
     goto end;
-&#125;
-</code></pre>
+&#125;</code></pre>
 <h3 id="3-分配像素缓存"><a href="#3-分配像素缓存" class="headerlink" title="3. 分配像素缓存"></a>3. 分配像素缓存</h3><p>视频缩放实际上是在像素域实现，但是实际上我们没有必要真的建立一个个AVFrame对象，我们只需要其像素缓存空间即可，我们定义两个指针数组和两个保存stride的数组，并为其分配内存区域：</p>
 <pre><code>//分配input和output
 uint8_t *src_data[4], *dst_data[4];
@@ -1877,8 +1774,7 @@ if ((ret = av_image_alloc(dst_data, dst_linesize, dstWidth, dstHeight, dst_pix_f
 &#123;
     printf(&quot;Error: allocating dst image failed.\n&quot;);
     goto end;
-&#125;
-</code></pre>
+&#125;</code></pre>
 <h3 id="4-循环处理输入frame"><a href="#4-循环处理输入frame" class="headerlink" title="4. 循环处理输入frame"></a>4. 循环处理输入frame</h3><p>循环处理的代码为：</p>
 <pre><code>//从输出frame中写出到输出文件
 int dst_bufsize = ret;
@@ -1891,22 +1787,19 @@ for (int idx = 0; idx &lt; MAX_FRAME_NUM; idx++)
     sws_scale(sws_ctx, (const uint8_t * const*)src_data, src_linesize, 0, srcHeight, dst_data, dst_linesize);
 
     fwrite(dst_data[0], 1, dst_bufsize, files.oFile);
-&#125;
-</code></pre>
+&#125;</code></pre>
 <p>其核心函数为sws_scale，其声明为：</p>
 <pre><code>int sws_scale(struct SwsContext *c, const uint8_t *const srcSlice[],
           const int srcStride[], int srcSliceY, int srcSliceH,
-          uint8_t *const dst[], const int dstStride[]);
-</code></pre>
+          uint8_t *const dst[], const int dstStride[]);</code></pre>
 <p>该函数的各个参数比较容易理解，除了第一个是之前创建的SwsContext之外，其他基本上都是源和目标图像的缓存区和大小等。在写完一帧后，调用fwrite将输出的目标图像写入输出yuv文件中。</p>
 <h3 id="5-收尾工作"><a href="#5-收尾工作" class="headerlink" title="5. 收尾工作"></a>5. 收尾工作</h3><p>收尾工作除了释放缓存区和关闭输入输出文件之外，就是需要释放SwsContext结构，需调用函数：sws_freeContext。实现过程为：</p>
 <pre><code>fclose(files.iFile);
 fclose(files.oFile);
 av_freep(&amp;src_data[0]);
 av_freep(&amp;dst_data[0]);
-sws_freeContext(sws_ctx);
-</code></pre>
-</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined" rel="external nofollow noreferrer">ogreks</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://bawcat.wiki/2020/11/29/%E7%A8%8B%E5%BA%8F%E4%BA%BA%E7%94%9F/ffmpeg-2020-11-29-FFmpeg-Tutorial/">https://bawcat.wiki/2020/11/29/程序人生/ffmpeg-2020-11-29-FFmpeg-Tutorial/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="external nofollow noreferrer" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://bawcat.wiki" target="_blank">Cat at ngint</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/ffmpeg/">ffmpeg</a></div><div class="post_share"><div class="social-share" data-image="https://www.wangbase.com/blogimg/asset/202001/bg2020011401.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i> 打赏<div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="https://ae01.alicdn.com/kf/Ued8241ec3d55425489539eb85ab806df0.png" rel="external nofollow noreferrer" target="_blank"><img class="post-qr-code-img" data-lazy-src="https://ae01.alicdn.com/kf/Ued8241ec3d55425489539eb85ab806df0.png" alt="微信"/></a><div class="post-qr-code-desc">微信</div></li><li class="reward-item"><a href="https://ae01.alicdn.com/kf/U2b9b5730a27d48f7ab8a660651e46861f.png" rel="external nofollow noreferrer" target="_blank"><img class="post-qr-code-img" data-lazy-src="https://ae01.alicdn.com/kf/U2b9b5730a27d48f7ab8a660651e46861f.png" alt="支付寶"/></a><div class="post-qr-code-desc">支付寶</div></li></ul></div></div></div><div class="post-ad"><ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-fb+5w+4e-db+86" data-ad-client="ca-pub-1585951485038445" data-ad-slot="4634156417"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({})</script></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2021/06/03/golang/%E5%8F%98%E9%87%8F/"><img class="prev-cover" data-lazy-src="https://z3.ax1x.com/2021/06/03/21nFg0.jpg" onerror="onerror=null;src='/img/404.jpg'"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">Golang 关于变量</div></div></a></div><div class="next-post pull-right"><a href="/2020/07/03/php/php-php-install-log-2020-07-03/"><img class="next-cover" data-lazy-src="https://s2.ax1x.com/2019/10/19/Kn0gZ4.png" onerror="onerror=null;src='/img/404.jpg'"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">关于php 编译安装 遇到的坑总结</div></div></a></div></nav><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div class="vcomment" id="vcomment"></div></div></div></div></div><div class="aside_content" id="aside_content"><div class="card-widget card-info"><div class="card-content"><div class="card-info-avatar is-center"><img class="avatar-img" data-lazy-src="https://s2.ax1x.com/2019/10/19/KnfGQJ.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/><div class="author-info__name">ogreks</div><div class="author-info__description">夜の猫~博客 分享技术和生活之中的琐事 记录生活和随笔</div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">75</div></a></div><div class="card-info-data-item is-center"><a href="/tags/"><div class="headline">标签</div><div class="length-num">127</div></a></div><div class="card-info-data-item is-center"><a href="/categories/"><div class="headline">分类</div><div class="length-num">28</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/ogreks"><i class="fab fa-github"></i><span>Github</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/ogreks" rel="external nofollow noreferrer" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:ogreks@hotmail.com" rel="external nofollow noreferrer" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div></div><div class="card-widget card-announcement"><div class="card-content"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">近期外出学习中~!<-_-></div></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="card-content"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#FFmpeg-Tutorial"><span class="toc-number">1.</span> <span class="toc-text">FFmpeg_Tutorial</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E4%BD%BF%E7%94%A8FFmpeg%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%B7%A5%E5%85%B7%E5%92%8C%E6%89%B9%E5%A4%84%E7%90%86%E8%84%9A%E6%9C%AC%E8%BF%9B%E8%A1%8C%E7%AE%80%E5%8D%95%E7%9A%84%E9%9F%B3%E8%A7%86%E9%A2%91%E6%96%87%E4%BB%B6%E7%BC%96%E8%BE%91"><span class="toc-number">1.1.</span> <span class="toc-text">一、使用FFmpeg命令行工具和批处理脚本进行简单的音视频文件编辑</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1%E3%80%81%E5%9F%BA%E6%9C%AC%E4%BB%8B%E7%BB%8D"><span class="toc-number">1.1.1.</span> <span class="toc-text">1、基本介绍</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2%E3%80%81FFmpeg%E7%BB%84%E6%88%90"><span class="toc-number">1.1.2.</span> <span class="toc-text">2、FFmpeg组成</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3%E3%80%81FFMpeg%E5%B7%A5%E5%85%B7%E7%9A%84%E4%B8%8B%E8%BD%BD%E5%92%8C%E4%BD%BF%E7%94%A8"><span class="toc-number">1.1.3.</span> <span class="toc-text">3、FFMpeg工具的下载和使用</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-FFmpeg%E5%B7%A5%E5%85%B7%E7%9A%84%E4%B8%8B%E8%BD%BD%EF%BC%9A"><span class="toc-number">1.1.3.1.</span> <span class="toc-text">(1)FFmpeg工具的下载：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-ffplay-exe%E7%9A%84%E4%BD%BF%E7%94%A8"><span class="toc-number">1.1.3.2.</span> <span class="toc-text">(2)ffplay.exe的使用</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-ffprobe%E7%9A%84%E4%BD%BF%E7%94%A8"><span class="toc-number">1.1.3.3.</span> <span class="toc-text">(3)ffprobe的使用</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-ffmpeg%E7%9A%84%E4%BD%BF%E7%94%A8"><span class="toc-number">1.1.3.4.</span> <span class="toc-text">(4)ffmpeg的使用</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E8%B0%83%E7%94%A8FFmpeg-SDK%E5%AF%B9YUV%E8%A7%86%E9%A2%91%E5%BA%8F%E5%88%97%E8%BF%9B%E8%A1%8C%E7%BC%96%E7%A0%81"><span class="toc-number">1.2.</span> <span class="toc-text">二、调用FFmpeg SDK对YUV视频序列进行编码</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1%E3%80%81FFMpeg%E8%BF%9B%E8%A1%8C%E8%A7%86%E9%A2%91%E7%BC%96%E7%A0%81%E6%89%80%E9%9C%80%E8%A6%81%E7%9A%84%E7%BB%93%E6%9E%84%EF%BC%9A"><span class="toc-number">1.2.1.</span> <span class="toc-text">1、FFMpeg进行视频编码所需要的结构：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2%E3%80%81FFMpeg%E7%BC%96%E7%A0%81%E7%9A%84%E4%B8%BB%E8%A6%81%E6%AD%A5%E9%AA%A4%EF%BC%9A"><span class="toc-number">1.2.2.</span> <span class="toc-text">2、FFMpeg编码的主要步骤：</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-%E3%80%81%E8%BE%93%E5%85%A5%E7%BC%96%E7%A0%81%E5%8F%82%E6%95%B0"><span class="toc-number">1.2.2.1.</span> <span class="toc-text">(1)、输入编码参数</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-%E3%80%81%E6%8C%89%E7%85%A7%E8%A6%81%E6%B1%82%E5%88%9D%E5%A7%8B%E5%8C%96%E9%9C%80%E8%A6%81%E7%9A%84FFMpeg%E7%BB%93%E6%9E%84"><span class="toc-number">1.2.2.2.</span> <span class="toc-text">(2)、按照要求初始化需要的FFMpeg结构</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-%E3%80%81%E7%BC%96%E7%A0%81%E5%BE%AA%E7%8E%AF%E4%BD%93"><span class="toc-number">1.2.2.3.</span> <span class="toc-text">(3)、编码循环体</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-%E3%80%81%E6%94%B6%E5%B0%BE%E5%A4%84%E7%90%86"><span class="toc-number">1.2.2.4.</span> <span class="toc-text">(4)、收尾处理</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3%E3%80%81%E6%80%BB%E7%BB%93"><span class="toc-number">1.2.3.</span> <span class="toc-text">3、总结</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89%E3%80%81%E8%B0%83%E7%94%A8FFmpeg-SDK%E5%AF%B9H-264%E6%A0%BC%E5%BC%8F%E7%9A%84%E8%A7%86%E9%A2%91%E5%8E%8B%E7%BC%A9%E7%A0%81%E6%B5%81%E8%BF%9B%E8%A1%8C%E8%A7%A3%E7%A0%81"><span class="toc-number">1.3.</span> <span class="toc-text">三、调用FFmpeg SDK对H.264格式的视频压缩码流进行解码</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1%E3%80%81FFMpeg%E8%A7%86%E9%A2%91%E8%A7%A3%E7%A0%81%E5%99%A8%E6%89%80%E5%8C%85%E5%90%AB%E7%9A%84%E7%BB%93%E6%9E%84"><span class="toc-number">1.3.1.</span> <span class="toc-text">1、FFMpeg视频解码器所包含的结构</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2%E3%80%81FFMpeg%E8%BF%9B%E8%A1%8C%E8%A7%A3%E7%A0%81%E6%93%8D%E4%BD%9C%E7%9A%84%E4%B8%BB%E8%A6%81%E6%AD%A5%E9%AA%A4"><span class="toc-number">1.3.2.</span> <span class="toc-text">2、FFMpeg进行解码操作的主要步骤</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-%E5%8F%82%E6%95%B0%E4%BC%A0%E9%80%92%E5%92%8C%E8%A7%A3%E6%9E%90"><span class="toc-number">1.3.2.1.</span> <span class="toc-text">(1). 参数传递和解析</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-%E6%8C%89%E7%85%A7%E8%A6%81%E6%B1%82%E5%88%9D%E5%A7%8B%E5%8C%96%E9%9C%80%E8%A6%81%E7%9A%84FFMpeg%E7%BB%93%E6%9E%84"><span class="toc-number">1.3.2.2.</span> <span class="toc-text">(2). 按照要求初始化需要的FFMpeg结构</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-%E3%80%81%E8%A7%A3%E7%A0%81%E5%BE%AA%E7%8E%AF%E4%BD%93"><span class="toc-number">1.3.2.3.</span> <span class="toc-text">(3)、解码循环体</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3%E3%80%81%E6%80%BB%E7%BB%93-1"><span class="toc-number">1.3.3.</span> <span class="toc-text">3、总结</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%9B%E3%80%81%E8%B0%83%E7%94%A8FFmpeg-SDK%E8%A7%A3%E6%9E%90%E5%B0%81%E8%A3%85%E6%A0%BC%E5%BC%8F%E7%9A%84%E8%A7%86%E9%A2%91%E4%B8%BA%E9%9F%B3%E9%A2%91%E6%B5%81%E5%92%8C%E8%A7%86%E9%A2%91%E6%B5%81"><span class="toc-number">1.4.</span> <span class="toc-text">四、调用FFmpeg SDK解析封装格式的视频为音频流和视频流</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-FFMpeg%E8%A7%A3%E5%A4%8D%E7%94%A8-%E8%A7%A3%E7%A0%81%E5%99%A8%E6%89%80%E5%8C%85%E5%90%AB%E7%9A%84%E7%BB%93%E6%9E%84"><span class="toc-number">1.4.1.</span> <span class="toc-text">1. FFMpeg解复用-解码器所包含的结构</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2%E3%80%81FFMpeg%E8%A7%A3%E5%A4%8D%E7%94%A8-%E8%A7%A3%E7%A0%81%E7%9A%84%E8%BF%87%E7%A8%8B"><span class="toc-number">1.4.2.</span> <span class="toc-text">2、FFMpeg解复用-解码的过程</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-%E3%80%81%E7%9B%B8%E5%85%B3%E7%BB%93%E6%9E%84%E7%9A%84%E5%88%9D%E5%A7%8B%E5%8C%96"><span class="toc-number">1.4.2.1.</span> <span class="toc-text">(1)、相关结构的初始化</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-%E3%80%81%E5%BE%AA%E7%8E%AF%E8%A7%A3%E6%9E%90%E8%A7%86%E9%A2%91%E6%96%87%E4%BB%B6%E7%9A%84%E5%8C%85%E6%95%B0%E6%8D%AE"><span class="toc-number">1.4.2.2.</span> <span class="toc-text">(2)、循环解析视频文件的包数据</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3%E3%80%81%E6%80%BB%E7%BB%93-2"><span class="toc-number">1.4.3.</span> <span class="toc-text">3、总结</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E7%9B%B8%E5%85%B3%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E7%9A%84%E5%87%86%E5%A4%87"><span class="toc-number">1.4.4.</span> <span class="toc-text">1. 相关数据结构的准备</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E6%89%93%E5%BC%80%E9%9F%B3%E8%A7%86%E9%A2%91"><span class="toc-number">1.4.5.</span> <span class="toc-text">2. 打开音视频</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E6%89%93%E5%BC%80%E8%BE%93%E5%87%BA%E6%96%87%E4%BB%B6%E5%B9%B6%E5%86%99%E5%85%A5%E6%96%87%E4%BB%B6%E5%A4%B4"><span class="toc-number">1.4.6.</span> <span class="toc-text">3. 打开输出文件并写入文件头</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-%E8%AF%BB%E5%8F%96%E5%8E%9F%E5%A7%8B%E8%A7%86%E9%A2%91%E6%95%B0%E6%8D%AE"><span class="toc-number">1.4.6.1.</span> <span class="toc-text">(1) 读取原始视频数据</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-%E8%A7%86%E9%A2%91%E7%BC%96%E7%A0%81"><span class="toc-number">1.4.6.2.</span> <span class="toc-text">(2) 视频编码</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-%E5%86%99%E5%87%BA%E7%BC%96%E7%A0%81%E5%90%8E%E7%9A%84%E6%95%B0%E6%8D%AE%E5%88%B0%E8%BE%93%E5%87%BA%E8%A7%86%E9%A2%91%E6%96%87%E4%BB%B6"><span class="toc-number">1.4.6.3.</span> <span class="toc-text">(3) 写出编码后的数据到输出视频文件</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1%E3%80%81%E8%A7%A3%E6%9E%90%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%8F%82%E6%95%B0"><span class="toc-number">1.4.7.</span> <span class="toc-text">1、解析命令行参数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2%E3%80%81%E6%89%80%E9%9C%80%E8%A6%81%E7%9A%84%E7%BB%93%E6%9E%84%E4%B8%8E%E5%88%9D%E5%A7%8B%E5%8C%96%E6%93%8D%E4%BD%9C"><span class="toc-number">1.4.8.</span> <span class="toc-text">2、所需要的结构与初始化操作</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3%E3%80%81-%E5%90%91%E8%BE%93%E5%87%BA%E6%96%87%E4%BB%B6%E4%B8%AD%E6%B7%BB%E5%8A%A0Stream%E5%B9%B6%E6%89%93%E5%BC%80%E8%BE%93%E5%87%BA%E6%96%87%E4%BB%B6"><span class="toc-number">1.4.9.</span> <span class="toc-text">3、 向输出文件中添加Stream并打开输出文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4%E3%80%81%E5%86%99%E5%85%A5%E6%96%87%E4%BB%B6%E7%9A%84%E9%9F%B3%E8%A7%86%E9%A2%91%E6%95%B0%E6%8D%AE"><span class="toc-number">1.4.10.</span> <span class="toc-text">4、写入文件的音视频数据</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5%E3%80%81-%E6%94%B6%E5%B0%BE%E5%B7%A5%E4%BD%9C"><span class="toc-number">1.4.11.</span> <span class="toc-text">5、 收尾工作</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%AB%E3%80%81-FFMpeg%E5%AE%9E%E7%8E%B0%E8%A7%86%E9%A2%91%E7%BC%A9%E6%94%BE"><span class="toc-number">1.5.</span> <span class="toc-text">八、 FFMpeg实现视频缩放</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E8%A7%A3%E6%9E%90%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%8F%82%E6%95%B0"><span class="toc-number">1.5.1.</span> <span class="toc-text">1. 解析命令行参数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E5%88%9B%E5%BB%BASwsContext%E7%BB%93%E6%9E%84"><span class="toc-number">1.5.2.</span> <span class="toc-text">2. 创建SwsContext结构</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E5%88%86%E9%85%8D%E5%83%8F%E7%B4%A0%E7%BC%93%E5%AD%98"><span class="toc-number">1.5.3.</span> <span class="toc-text">3. 分配像素缓存</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E5%BE%AA%E7%8E%AF%E5%A4%84%E7%90%86%E8%BE%93%E5%85%A5frame"><span class="toc-number">1.5.4.</span> <span class="toc-text">4. 循环处理输入frame</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-%E6%94%B6%E5%B0%BE%E5%B7%A5%E4%BD%9C"><span class="toc-number">1.5.5.</span> <span class="toc-text">5. 收尾工作</span></a></li></ol></li></ol></li></ol></div></div></div><div class="card-widget card-recent-post"><div class="card-content"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2021/07/22/golang/%E7%AB%9E%E4%BA%89%E6%9D%A1%E4%BB%B6%E6%A3%80%E6%B5%8B/" title="竞争条件检测"><img data-lazy-src="https://z3.ax1x.com/2021/06/03/21nFg0.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="竞争条件检测"/></a><div class="content"><a class="title" href="/2021/07/22/golang/%E7%AB%9E%E4%BA%89%E6%9D%A1%E4%BB%B6%E6%A3%80%E6%B5%8B/" title="竞争条件检测">竞争条件检测</a><time datetime="2021-07-22T08:57:00.000Z" title="发表于 2021-07-22 16:57:00">2021-07-22</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/06/03/golang/%E5%8F%98%E9%87%8F/" title="Golang 关于变量"><img data-lazy-src="https://z3.ax1x.com/2021/06/03/21nFg0.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Golang 关于变量"/></a><div class="content"><a class="title" href="/2021/06/03/golang/%E5%8F%98%E9%87%8F/" title="Golang 关于变量">Golang 关于变量</a><time datetime="2021-06-03T04:00:00.000Z" title="发表于 2021-06-03 12:00:00">2021-06-03</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2020/11/29/%E7%A8%8B%E5%BA%8F%E4%BA%BA%E7%94%9F/ffmpeg-2020-11-29-FFmpeg-Tutorial/" title="FFmpeg Tutorial"><img data-lazy-src="https://www.wangbase.com/blogimg/asset/202001/bg2020011401.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="FFmpeg Tutorial"/></a><div class="content"><a class="title" href="/2020/11/29/%E7%A8%8B%E5%BA%8F%E4%BA%BA%E7%94%9F/ffmpeg-2020-11-29-FFmpeg-Tutorial/" title="FFmpeg Tutorial">FFmpeg Tutorial</a><time datetime="2020-11-29T11:38:11.000Z" title="发表于 2020-11-29 19:38:11">2020-11-29</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2020/07/03/php/php-php-install-log-2020-07-03/" title="关于php 编译安装 遇到的坑总结"><img data-lazy-src="https://s2.ax1x.com/2019/10/19/Kn0gZ4.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="关于php 编译安装 遇到的坑总结"/></a><div class="content"><a class="title" href="/2020/07/03/php/php-php-install-log-2020-07-03/" title="关于php 编译安装 遇到的坑总结">关于php 编译安装 遇到的坑总结</a><time datetime="2020-07-03T18:16:04.000Z" title="发表于 2020-07-04 02:16:04">2020-07-04</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2020/06/26/docker/docker%20%E5%91%BD%E4%BB%A4%E7%AC%94%E8%AE%B0/" title="docker 命令笔记"><img data-lazy-src="https://s2.ax1x.com/2019/10/19/KnfBWD.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="docker 命令笔记"/></a><div class="content"><a class="title" href="/2020/06/26/docker/docker%20%E5%91%BD%E4%BB%A4%E7%AC%94%E8%AE%B0/" title="docker 命令笔记">docker 命令笔记</a><time datetime="2020-06-26T15:45:17.000Z" title="发表于 2020-06-26 23:45:17">2020-06-26</time></div></div></div></div></div></div></div></main><footer id="footer" style="background-image: url(https://www.wangbase.com/blogimg/asset/202001/bg2020011401.jpg)"><div id="footer-wrap"><div class="copyright">&copy;2018 - 2021 By ogreks</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener external nofollow noreferrer" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">Hi, welcome to my <a href="https://bawcat.wiki/">blog</a>!</div><div class="icp"><a target="_blank" rel="noopener external nofollow noreferrer" href="https://beian.miit.gov.cn"><img class="icp-icon" src="/img/icp.png" alt="ICP"/><span>鄂ICP备20014190号-1</span></a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="chat_btn" type="button" title="rightside.chat_btn"><i class="fas fa-sms"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div></div><hr/><div id="local-search-results"><div id="local-hits"></div><div id="local-stats"><div class="local-search-stats__hr" id="hr"><span>由</span> <a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/wzpan/hexo-generator-search" style="color:#49B1F5;">hexo-generator-search</a>
+sws_freeContext(sws_ctx);</code></pre>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined" rel="external nofollow noreferrer">ogreks</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://bawcat.wiki/2020/11/29/%E7%A8%8B%E5%BA%8F%E4%BA%BA%E7%94%9F/ffmpeg-2020-11-29-FFmpeg-Tutorial/">https://bawcat.wiki/2020/11/29/程序人生/ffmpeg-2020-11-29-FFmpeg-Tutorial/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="external nofollow noreferrer" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://bawcat.wiki" target="_blank">Cat at ngint</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/ffmpeg/">ffmpeg</a></div><div class="post_share"><div class="social-share" data-image="https://www.wangbase.com/blogimg/asset/202001/bg2020011401.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i> 打赏<div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="https://ae01.alicdn.com/kf/Ued8241ec3d55425489539eb85ab806df0.png" rel="external nofollow noreferrer" target="_blank"><img class="post-qr-code-img" data-lazy-src="https://ae01.alicdn.com/kf/Ued8241ec3d55425489539eb85ab806df0.png" alt="微信"/></a><div class="post-qr-code-desc">微信</div></li><li class="reward-item"><a href="https://ae01.alicdn.com/kf/U2b9b5730a27d48f7ab8a660651e46861f.png" rel="external nofollow noreferrer" target="_blank"><img class="post-qr-code-img" data-lazy-src="https://ae01.alicdn.com/kf/U2b9b5730a27d48f7ab8a660651e46861f.png" alt="支付寶"/></a><div class="post-qr-code-desc">支付寶</div></li></ul></div></div></div><div class="post-ad"><ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-fb+5w+4e-db+86" data-ad-client="ca-pub-1585951485038445" data-ad-slot="4634156417"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({})</script></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2021/06/03/golang/%E5%8F%98%E9%87%8F/"><img class="prev-cover" data-lazy-src="https://z3.ax1x.com/2021/06/03/21nFg0.jpg" onerror="onerror=null;src='/img/404.jpg'"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">Golang 关于变量</div></div></a></div><div class="next-post pull-right"><a href="/2020/07/03/php/php-php-install-log-2020-07-03/"><img class="next-cover" data-lazy-src="https://s2.ax1x.com/2019/10/19/Kn0gZ4.png" onerror="onerror=null;src='/img/404.jpg'"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">关于php 编译安装 遇到的坑总结</div></div></a></div></nav><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div class="vcomment" id="vcomment"></div></div></div></div></div><div class="aside_content" id="aside_content"><div class="card-widget card-info"><div class="card-content"><div class="card-info-avatar is-center"><img class="avatar-img" data-lazy-src="https://s2.ax1x.com/2019/10/19/KnfGQJ.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/><div class="author-info__name">ogreks</div><div class="author-info__description">夜の猫~博客 分享技术和生活之中的琐事 记录生活和随笔</div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">75</div></a></div><div class="card-info-data-item is-center"><a href="/tags/"><div class="headline">标签</div><div class="length-num">127</div></a></div><div class="card-info-data-item is-center"><a href="/categories/"><div class="headline">分类</div><div class="length-num">28</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/ogreks"><i class="fab fa-github"></i><span>Github</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/ogreks" rel="external nofollow noreferrer" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:ogreks@hotmail.com" rel="external nofollow noreferrer" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div></div><div class="card-widget card-announcement"><div class="card-content"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">近期外出学习中~!<-_-></div></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="card-content"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#FFmpeg-Tutorial"><span class="toc-number">1.</span> <span class="toc-text">FFmpeg_Tutorial</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E4%BD%BF%E7%94%A8FFmpeg%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%B7%A5%E5%85%B7%E5%92%8C%E6%89%B9%E5%A4%84%E7%90%86%E8%84%9A%E6%9C%AC%E8%BF%9B%E8%A1%8C%E7%AE%80%E5%8D%95%E7%9A%84%E9%9F%B3%E8%A7%86%E9%A2%91%E6%96%87%E4%BB%B6%E7%BC%96%E8%BE%91"><span class="toc-number">1.1.</span> <span class="toc-text">一、使用FFmpeg命令行工具和批处理脚本进行简单的音视频文件编辑</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1%E3%80%81%E5%9F%BA%E6%9C%AC%E4%BB%8B%E7%BB%8D"><span class="toc-number">1.1.1.</span> <span class="toc-text">1、基本介绍</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2%E3%80%81FFmpeg%E7%BB%84%E6%88%90"><span class="toc-number">1.1.2.</span> <span class="toc-text">2、FFmpeg组成</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3%E3%80%81FFMpeg%E5%B7%A5%E5%85%B7%E7%9A%84%E4%B8%8B%E8%BD%BD%E5%92%8C%E4%BD%BF%E7%94%A8"><span class="toc-number">1.1.3.</span> <span class="toc-text">3、FFMpeg工具的下载和使用</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-FFmpeg%E5%B7%A5%E5%85%B7%E7%9A%84%E4%B8%8B%E8%BD%BD%EF%BC%9A"><span class="toc-number">1.1.3.1.</span> <span class="toc-text">(1)FFmpeg工具的下载：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-ffplay-exe%E7%9A%84%E4%BD%BF%E7%94%A8"><span class="toc-number">1.1.3.2.</span> <span class="toc-text">(2)ffplay.exe的使用</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-ffprobe%E7%9A%84%E4%BD%BF%E7%94%A8"><span class="toc-number">1.1.3.3.</span> <span class="toc-text">(3)ffprobe的使用</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-ffmpeg%E7%9A%84%E4%BD%BF%E7%94%A8"><span class="toc-number">1.1.3.4.</span> <span class="toc-text">(4)ffmpeg的使用</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E8%B0%83%E7%94%A8FFmpeg-SDK%E5%AF%B9YUV%E8%A7%86%E9%A2%91%E5%BA%8F%E5%88%97%E8%BF%9B%E8%A1%8C%E7%BC%96%E7%A0%81"><span class="toc-number">1.2.</span> <span class="toc-text">二、调用FFmpeg SDK对YUV视频序列进行编码</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1%E3%80%81FFMpeg%E8%BF%9B%E8%A1%8C%E8%A7%86%E9%A2%91%E7%BC%96%E7%A0%81%E6%89%80%E9%9C%80%E8%A6%81%E7%9A%84%E7%BB%93%E6%9E%84%EF%BC%9A"><span class="toc-number">1.2.1.</span> <span class="toc-text">1、FFMpeg进行视频编码所需要的结构：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2%E3%80%81FFMpeg%E7%BC%96%E7%A0%81%E7%9A%84%E4%B8%BB%E8%A6%81%E6%AD%A5%E9%AA%A4%EF%BC%9A"><span class="toc-number">1.2.2.</span> <span class="toc-text">2、FFMpeg编码的主要步骤：</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-%E3%80%81%E8%BE%93%E5%85%A5%E7%BC%96%E7%A0%81%E5%8F%82%E6%95%B0"><span class="toc-number">1.2.2.1.</span> <span class="toc-text">(1)、输入编码参数</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-%E3%80%81%E6%8C%89%E7%85%A7%E8%A6%81%E6%B1%82%E5%88%9D%E5%A7%8B%E5%8C%96%E9%9C%80%E8%A6%81%E7%9A%84FFMpeg%E7%BB%93%E6%9E%84"><span class="toc-number">1.2.2.2.</span> <span class="toc-text">(2)、按照要求初始化需要的FFMpeg结构</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-%E3%80%81%E7%BC%96%E7%A0%81%E5%BE%AA%E7%8E%AF%E4%BD%93"><span class="toc-number">1.2.2.3.</span> <span class="toc-text">(3)、编码循环体</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-%E3%80%81%E6%94%B6%E5%B0%BE%E5%A4%84%E7%90%86"><span class="toc-number">1.2.2.4.</span> <span class="toc-text">(4)、收尾处理</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3%E3%80%81%E6%80%BB%E7%BB%93"><span class="toc-number">1.2.3.</span> <span class="toc-text">3、总结</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89%E3%80%81%E8%B0%83%E7%94%A8FFmpeg-SDK%E5%AF%B9H-264%E6%A0%BC%E5%BC%8F%E7%9A%84%E8%A7%86%E9%A2%91%E5%8E%8B%E7%BC%A9%E7%A0%81%E6%B5%81%E8%BF%9B%E8%A1%8C%E8%A7%A3%E7%A0%81"><span class="toc-number">1.3.</span> <span class="toc-text">三、调用FFmpeg SDK对H.264格式的视频压缩码流进行解码</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1%E3%80%81FFMpeg%E8%A7%86%E9%A2%91%E8%A7%A3%E7%A0%81%E5%99%A8%E6%89%80%E5%8C%85%E5%90%AB%E7%9A%84%E7%BB%93%E6%9E%84"><span class="toc-number">1.3.1.</span> <span class="toc-text">1、FFMpeg视频解码器所包含的结构</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2%E3%80%81FFMpeg%E8%BF%9B%E8%A1%8C%E8%A7%A3%E7%A0%81%E6%93%8D%E4%BD%9C%E7%9A%84%E4%B8%BB%E8%A6%81%E6%AD%A5%E9%AA%A4"><span class="toc-number">1.3.2.</span> <span class="toc-text">2、FFMpeg进行解码操作的主要步骤</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-%E5%8F%82%E6%95%B0%E4%BC%A0%E9%80%92%E5%92%8C%E8%A7%A3%E6%9E%90"><span class="toc-number">1.3.2.1.</span> <span class="toc-text">(1). 参数传递和解析</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-%E6%8C%89%E7%85%A7%E8%A6%81%E6%B1%82%E5%88%9D%E5%A7%8B%E5%8C%96%E9%9C%80%E8%A6%81%E7%9A%84FFMpeg%E7%BB%93%E6%9E%84"><span class="toc-number">1.3.2.2.</span> <span class="toc-text">(2). 按照要求初始化需要的FFMpeg结构</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-%E3%80%81%E8%A7%A3%E7%A0%81%E5%BE%AA%E7%8E%AF%E4%BD%93"><span class="toc-number">1.3.2.3.</span> <span class="toc-text">(3)、解码循环体</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3%E3%80%81%E6%80%BB%E7%BB%93-1"><span class="toc-number">1.3.3.</span> <span class="toc-text">3、总结</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%9B%E3%80%81%E8%B0%83%E7%94%A8FFmpeg-SDK%E8%A7%A3%E6%9E%90%E5%B0%81%E8%A3%85%E6%A0%BC%E5%BC%8F%E7%9A%84%E8%A7%86%E9%A2%91%E4%B8%BA%E9%9F%B3%E9%A2%91%E6%B5%81%E5%92%8C%E8%A7%86%E9%A2%91%E6%B5%81"><span class="toc-number">1.4.</span> <span class="toc-text">四、调用FFmpeg SDK解析封装格式的视频为音频流和视频流</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-FFMpeg%E8%A7%A3%E5%A4%8D%E7%94%A8-%E8%A7%A3%E7%A0%81%E5%99%A8%E6%89%80%E5%8C%85%E5%90%AB%E7%9A%84%E7%BB%93%E6%9E%84"><span class="toc-number">1.4.1.</span> <span class="toc-text">1. FFMpeg解复用-解码器所包含的结构</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2%E3%80%81FFMpeg%E8%A7%A3%E5%A4%8D%E7%94%A8-%E8%A7%A3%E7%A0%81%E7%9A%84%E8%BF%87%E7%A8%8B"><span class="toc-number">1.4.2.</span> <span class="toc-text">2、FFMpeg解复用-解码的过程</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-%E3%80%81%E7%9B%B8%E5%85%B3%E7%BB%93%E6%9E%84%E7%9A%84%E5%88%9D%E5%A7%8B%E5%8C%96"><span class="toc-number">1.4.2.1.</span> <span class="toc-text">(1)、相关结构的初始化</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-%E3%80%81%E5%BE%AA%E7%8E%AF%E8%A7%A3%E6%9E%90%E8%A7%86%E9%A2%91%E6%96%87%E4%BB%B6%E7%9A%84%E5%8C%85%E6%95%B0%E6%8D%AE"><span class="toc-number">1.4.2.2.</span> <span class="toc-text">(2)、循环解析视频文件的包数据</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3%E3%80%81%E6%80%BB%E7%BB%93-2"><span class="toc-number">1.4.3.</span> <span class="toc-text">3、总结</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E7%9B%B8%E5%85%B3%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E7%9A%84%E5%87%86%E5%A4%87"><span class="toc-number">1.4.4.</span> <span class="toc-text">1. 相关数据结构的准备</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E6%89%93%E5%BC%80%E9%9F%B3%E8%A7%86%E9%A2%91"><span class="toc-number">1.4.5.</span> <span class="toc-text">2. 打开音视频</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E6%89%93%E5%BC%80%E8%BE%93%E5%87%BA%E6%96%87%E4%BB%B6%E5%B9%B6%E5%86%99%E5%85%A5%E6%96%87%E4%BB%B6%E5%A4%B4"><span class="toc-number">1.4.6.</span> <span class="toc-text">3. 打开输出文件并写入文件头</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-%E8%AF%BB%E5%8F%96%E5%8E%9F%E5%A7%8B%E8%A7%86%E9%A2%91%E6%95%B0%E6%8D%AE"><span class="toc-number">1.4.6.1.</span> <span class="toc-text">(1) 读取原始视频数据</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-%E8%A7%86%E9%A2%91%E7%BC%96%E7%A0%81"><span class="toc-number">1.4.6.2.</span> <span class="toc-text">(2) 视频编码</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-%E5%86%99%E5%87%BA%E7%BC%96%E7%A0%81%E5%90%8E%E7%9A%84%E6%95%B0%E6%8D%AE%E5%88%B0%E8%BE%93%E5%87%BA%E8%A7%86%E9%A2%91%E6%96%87%E4%BB%B6"><span class="toc-number">1.4.6.3.</span> <span class="toc-text">(3) 写出编码后的数据到输出视频文件</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1%E3%80%81%E8%A7%A3%E6%9E%90%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%8F%82%E6%95%B0"><span class="toc-number">1.4.7.</span> <span class="toc-text">1、解析命令行参数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2%E3%80%81%E6%89%80%E9%9C%80%E8%A6%81%E7%9A%84%E7%BB%93%E6%9E%84%E4%B8%8E%E5%88%9D%E5%A7%8B%E5%8C%96%E6%93%8D%E4%BD%9C"><span class="toc-number">1.4.8.</span> <span class="toc-text">2、所需要的结构与初始化操作</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3%E3%80%81-%E5%90%91%E8%BE%93%E5%87%BA%E6%96%87%E4%BB%B6%E4%B8%AD%E6%B7%BB%E5%8A%A0Stream%E5%B9%B6%E6%89%93%E5%BC%80%E8%BE%93%E5%87%BA%E6%96%87%E4%BB%B6"><span class="toc-number">1.4.9.</span> <span class="toc-text">3、 向输出文件中添加Stream并打开输出文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4%E3%80%81%E5%86%99%E5%85%A5%E6%96%87%E4%BB%B6%E7%9A%84%E9%9F%B3%E8%A7%86%E9%A2%91%E6%95%B0%E6%8D%AE"><span class="toc-number">1.4.10.</span> <span class="toc-text">4、写入文件的音视频数据</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5%E3%80%81-%E6%94%B6%E5%B0%BE%E5%B7%A5%E4%BD%9C"><span class="toc-number">1.4.11.</span> <span class="toc-text">5、 收尾工作</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%AB%E3%80%81-FFMpeg%E5%AE%9E%E7%8E%B0%E8%A7%86%E9%A2%91%E7%BC%A9%E6%94%BE"><span class="toc-number">1.5.</span> <span class="toc-text">八、 FFMpeg实现视频缩放</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E8%A7%A3%E6%9E%90%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%8F%82%E6%95%B0"><span class="toc-number">1.5.1.</span> <span class="toc-text">1. 解析命令行参数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E5%88%9B%E5%BB%BASwsContext%E7%BB%93%E6%9E%84"><span class="toc-number">1.5.2.</span> <span class="toc-text">2. 创建SwsContext结构</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E5%88%86%E9%85%8D%E5%83%8F%E7%B4%A0%E7%BC%93%E5%AD%98"><span class="toc-number">1.5.3.</span> <span class="toc-text">3. 分配像素缓存</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E5%BE%AA%E7%8E%AF%E5%A4%84%E7%90%86%E8%BE%93%E5%85%A5frame"><span class="toc-number">1.5.4.</span> <span class="toc-text">4. 循环处理输入frame</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-%E6%94%B6%E5%B0%BE%E5%B7%A5%E4%BD%9C"><span class="toc-number">1.5.5.</span> <span class="toc-text">5. 收尾工作</span></a></li></ol></li></ol></li></ol></div></div></div><div class="card-widget card-recent-post"><div class="card-content"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2021/07/22/golang/%E7%AB%9E%E4%BA%89%E6%9D%A1%E4%BB%B6%E6%A3%80%E6%B5%8B/" title="竞争条件检测"><img data-lazy-src="https://z3.ax1x.com/2021/06/03/21nFg0.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="竞争条件检测"/></a><div class="content"><a class="title" href="/2021/07/22/golang/%E7%AB%9E%E4%BA%89%E6%9D%A1%E4%BB%B6%E6%A3%80%E6%B5%8B/" title="竞争条件检测">竞争条件检测</a><time datetime="2021-07-22T08:57:00.000Z" title="发表于 2021-07-22 16:57:00">2021-07-22</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/06/03/golang/%E5%8F%98%E9%87%8F/" title="Golang 关于变量"><img data-lazy-src="https://z3.ax1x.com/2021/06/03/21nFg0.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Golang 关于变量"/></a><div class="content"><a class="title" href="/2021/06/03/golang/%E5%8F%98%E9%87%8F/" title="Golang 关于变量">Golang 关于变量</a><time datetime="2021-06-03T04:00:00.000Z" title="发表于 2021-06-03 12:00:00">2021-06-03</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2020/11/29/%E7%A8%8B%E5%BA%8F%E4%BA%BA%E7%94%9F/ffmpeg-2020-11-29-FFmpeg-Tutorial/" title="FFmpeg Tutorial"><img data-lazy-src="https://www.wangbase.com/blogimg/asset/202001/bg2020011401.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="FFmpeg Tutorial"/></a><div class="content"><a class="title" href="/2020/11/29/%E7%A8%8B%E5%BA%8F%E4%BA%BA%E7%94%9F/ffmpeg-2020-11-29-FFmpeg-Tutorial/" title="FFmpeg Tutorial">FFmpeg Tutorial</a><time datetime="2020-11-29T11:38:11.000Z" title="发表于 2020-11-29 19:38:11">2020-11-29</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2020/07/03/php/php-php-install-log-2020-07-03/" title="关于php 编译安装 遇到的坑总结"><img data-lazy-src="https://s2.ax1x.com/2019/10/19/Kn0gZ4.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="关于php 编译安装 遇到的坑总结"/></a><div class="content"><a class="title" href="/2020/07/03/php/php-php-install-log-2020-07-03/" title="关于php 编译安装 遇到的坑总结">关于php 编译安装 遇到的坑总结</a><time datetime="2020-07-03T18:16:04.000Z" title="发表于 2020-07-04 02:16:04">2020-07-04</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2020/06/26/docker/docker%20%E5%91%BD%E4%BB%A4%E7%AC%94%E8%AE%B0/" title="docker 命令笔记"><img data-lazy-src="/img/post.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="docker 命令笔记"/></a><div class="content"><a class="title" href="/2020/06/26/docker/docker%20%E5%91%BD%E4%BB%A4%E7%AC%94%E8%AE%B0/" title="docker 命令笔记">docker 命令笔记</a><time datetime="2020-06-26T15:45:17.000Z" title="发表于 2020-06-26 23:45:17">2020-06-26</time></div></div></div></div></div></div></div></main><footer id="footer" style="background-image: url(https://www.wangbase.com/blogimg/asset/202001/bg2020011401.jpg)"><div id="footer-wrap"><div class="copyright">&copy;2018 - 2022 By ogreks</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener external nofollow noreferrer" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">Hi, welcome to my <a href="https://bawcat.wiki/">blog</a>!</div><div class="icp"><a target="_blank" rel="noopener external nofollow noreferrer" href="https://beian.miit.gov.cn"><img class="icp-icon" src="/img/icp.png" alt="ICP"/><span>鄂ICP备20014190号-1</span></a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="chat_btn" type="button" title="rightside.chat_btn"><i class="fas fa-sms"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div></div><hr/><div id="local-search-results"><div id="local-hits"></div><div id="local-stats"><div class="local-search-stats__hr" id="hr"><span>由</span> <a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/wzpan/hexo-generator-search" style="color:#49B1F5;">hexo-generator-search</a>
  <span>提供支持</span></div></div></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div></div><div><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module" defer></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script>function panguFn () {
   if (typeof pangu === 'object') pangu.spacingElementById('content-inner')
   else {
