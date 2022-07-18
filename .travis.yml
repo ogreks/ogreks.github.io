@@ -1,7 +1,8 @@
 language: node_js
 
 # use nodejs v10 LTS
-node_js: stable 
+node_js: 
+  - 17
 
 # Travis-CI Caching
 cache:
