@@ -1,7 +1,9 @@
 figure.highlight
   table
+    scrollbar-color: var(--hlscrollbar-bg) transparent
+
     &::-webkit-scrollbar-thumb
-      background: $highlight-scrollbar
+      background: var(--hlscrollbar-bg)
 
   pre .deletion
     color: $highlight-deletion

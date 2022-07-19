@@ -9,9 +9,9 @@
       hits: theme.algolia_search.hits,
       // search languages
       languages: {
-        input_placeholder: _p("algolia_search.input_placeholder"),
-        hits_empty: _p("algolia_search.hits_empty"),
-        hits_stats: _p("algolia_search.hits_stats")
+        input_placeholder: _p("search.algolia_search.input_placeholder"),
+        hits_empty: _p("search.algolia_search.hits_empty"),
+        hits_stats: _p("search.algolia_search.hits_stats"),
       }
     })
   }
@@ -19,10 +19,11 @@
   let localSearch = 'undefined';
   if (theme.local_search && theme.local_search.enable) {
     localSearch = JSON.stringify({
-      path: config.search.path,
+      path: theme.local_search.CDN ? theme.local_search.CDN : config.root + config.search.path,
+      preload: theme.local_search.preload,
       languages: {
         // search languages
-        hits_empty: _p("local_search.hits_empty")
+        hits_empty: _p("search.local_search.hits_empty"),
       }
     })
   }
@@ -47,14 +48,6 @@
         source: _p("copy_copyright.source") + ': ' + config.title,
         info: _p("copy_copyright.info")
       }
-    })
-  }
-
-  let ClickShowText = 'undefined';
-  if (theme.ClickShowText && theme.ClickShowText.enable) {
-    ClickShowText = JSON.stringify({
-    text: theme.ClickShowText.text.join(","),
-      fontSize: theme.ClickShowText.fontSize
     })
   }
 
@@ -86,12 +79,13 @@
     highlight = JSON.stringify({
       plugin: config.highlight.enable ? 'highlighjs' : 'prismjs',
       highlightCopy: theme.highlight_copy,
-      highlightLang: theme.highlight_lang
+      highlightLang: theme.highlight_lang,
+      highlightHeightLimit: theme.highlight_height_limit
     })
   }
 
 script.
-  var GLOBAL_CONFIG = { 
+  const GLOBAL_CONFIG = { 
     root: '!{config.root}',
     algolia: !{algolia},
     localSearch: !{localSearch},
@@ -116,45 +110,15 @@ script.
       month: '!{_p("date_suffix.month")}'
     },
     copyright: !{copyright},
-    ClickShowText: !{ClickShowText},
     lightbox: '!{ theme.medium_zoom ? "mediumZoom" : (theme.fancybox ? "fancybox" : "null" )}',
     Snackbar: !{Snackbar},
-    justifiedGallery: {
-      js: '!{theme.CDN.justifiedGallery_js}',
-      css: '!{theme.CDN.justifiedGallery_css}'
+    source: {
+      justifiedGallery: {
+        js: '!{url_for(theme.asset.flickr_justified_gallery_js)}',
+        css: '!{url_for(theme.asset.flickr_justified_gallery_css)}'
+      }
     },
     isPhotoFigcaption: !{theme.photofigcaption},
     islazyload: !{theme.lazyload.enable},
-    isanchor: !{theme.anchor}
-  };
-
-  var saveToLocal = {
-    set: function setWithExpiry(key, value, ttl) {
-      const now = new Date()
-      const expiryDay = ttl * 86400000
-      const item = {
-        value: value,
-        expiry: now.getTime() + expiryDay,
-      }
-      localStorage.setItem(key, JSON.stringify(item))
-    },
-
-    get: function getWithExpiry(key) {
-      const itemStr = localStorage.getItem(key)
-
-      if (!itemStr) {
-        return undefined
-      }
-      const item = JSON.parse(itemStr)
-      const now = new Date()
-
-      if (now.getTime() > item.expiry) {
-        localStorage.removeItem(key)
-        return undefined
-      }
-      return item.value
-    }
+    isAnchor: !{theme.anchor}
   }
-
-
-

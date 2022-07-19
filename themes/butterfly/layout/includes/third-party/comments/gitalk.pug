@@ -2,33 +2,29 @@ script.
   function addGitalkSource () {
     const ele = document.createElement('link')
     ele.rel = 'stylesheet'
-    ele.href= '!{url_for(theme.CDN.gitalk_css)}'
+    ele.href= '!{url_for(theme.asset.gitalk_css)}'
     document.getElementsByTagName('head')[0].appendChild(ele)
   }
 
   function loadGitalk () {
     function initGitalk () {
-      var gitalk = new Gitalk({
+      var gitalk = new Gitalk(Object.assign({
         clientID: '!{theme.gitalk.client_id}',
         clientSecret: '!{theme.gitalk.client_secret}',
         repo: '!{theme.gitalk.repo}',
         owner: '!{theme.gitalk.owner}',
         admin: ['!{theme.gitalk.admin}'],
         id: '!{md5(page.path)}',
-        language: '!{theme.gitalk.language}',
-        perPage: !{theme.gitalk.perPage},
-        distractionFreeMode: !{theme.gitalk.distractionFreeMode},
-        pagerDirection: '!{theme.gitalk.pagerDirection}',
-        createIssueManually: !{theme.gitalk.createIssueManually},
         updateCountCallback: commentCount
-      })
+      },!{JSON.stringify(theme.gitalk.option)}))
+
       gitalk.render('gitalk-container')
     }
 
     if (typeof Gitalk === 'function') initGitalk()
     else {
       addGitalkSource()
-      $.getScript('!{url_for(theme.CDN.gitalk)}', initGitalk)
+      getScript('!{url_for(theme.asset.gitalk)}').then(initGitalk)
     }
   }
   

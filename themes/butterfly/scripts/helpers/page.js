@@ -15,7 +15,7 @@ hexo.extend.helper.register('page_description', function () {
   let description = page.description || page.content || page.title || config.description
 
   if (description) {
-    description = escapeHTML(stripHTML(description).substring(0, 200)
+    description = escapeHTML(stripHTML(description).substring(0, 150)
       .trim()
     ).replace(/\n/g, ' ')
     return description
@@ -54,8 +54,8 @@ hexo.extend.helper.register('cloudTags', function (options = {}) {
   return result
 })
 
-hexo.extend.helper.register('urlNoIndex', function () {
-  return prettyUrls(this.url, { trailing_index: false, trailing_html: false })
+hexo.extend.helper.register('urlNoIndex', function (url = null) {
+  return prettyUrls(url || this.url, { trailing_index: false, trailing_html: false })
 })
 
 hexo.extend.helper.register('md5', function (path) {
@@ -69,4 +69,29 @@ hexo.extend.helper.register('injectHtml', function (data) {
     result += data[i]
   }
   return result
+})
+
+hexo.extend.helper.register('findArchivesTitle', function (page, menu, date) {
+  if (page.year) {
+    const dateStr = page.month ? `${page.year}-${page.month}` : `${page.year}`
+    const date_format = page.month ? hexo.theme.config.aside.card_archives.format : 'YYYY'
+    return date(dateStr, date_format)
+  }
+
+  const defaultTitle = this._p('page.archives')
+  if (!menu) return defaultTitle
+
+  const loop = (m) => {
+    for (const key in m) {
+      if (typeof m[key] === 'object') {
+        loop(m[key])
+      }
+
+      if (/\/archives\//.test(m[key])) {
+        return key
+      }
+    }
+  }
+
+  return loop(menu) || defaultTitle
 })

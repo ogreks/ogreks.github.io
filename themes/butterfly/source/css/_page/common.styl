@@ -1,33 +1,35 @@
+#body-wrap
+  display: flex
+  flex-direction: column
+  min-height: 100vh
+
 .layout
   display: flex
+  flex: 1 auto
   margin: 0 auto
-  padding: 2rem 15px
+  padding: 40px 15px
   max-width: 1200px
+  width: 100%
 
   +maxWidth900()
     flex-direction: column
 
   +maxWidth768()
-    padding: 1rem 5px !important
+    padding: 20px 5px
 
   +minWidth2000()
     max-width: 1500px
 
   & > div:first-child:not(.recent-posts)
+    @extend .cardHover
     align-self: flex-start
     padding: 50px 40px
-    border-radius: 8px
-    background: var(--card-bg)
-    box-shadow: 0 4px 8px 6px rgba(7, 17, 27, .06)
-
-    &:hover
-      box-shadow: 0 4px 12px 12px rgba(7, 17, 27, .15)
 
     +maxWidth768()
-      padding: 1.8rem .7rem !important
+      padding: 36px 14px
 
   & > div:first-child
-    width: 75%
+    width: 74%
     transition: all .3s
 
     +maxWidth900()
@@ -47,6 +49,12 @@
     & > div
       width: 100% !important
 
-#page
-  h1.page-title
-    margin-top: .4rem
+// for apple device
+.apple
+  #page-header.full_page
+    background-attachment: scroll !important
+
+  .recent-post-item,
+  .avatar-img,
+  .flink-item-icon
+    transform: translateZ(0)
