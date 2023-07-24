@@ -37,6 +37,26 @@
     <lastmod>2023-07-24</lastmod>
   </url>
   <url>
+    <loc>https://bawcat.wiki/2020/01/09/%E5%A4%A7%E6%95%B0%E6%8D%AE/scala/%E5%9F%BA%E7%A1%80%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/</loc>
+    <lastmod>2023-07-24</lastmod>
+  </url>
+  <url>
+    <loc>https://bawcat.wiki/2020/01/09/%E5%A4%A7%E6%95%B0%E6%8D%AE/scala/%E5%BC%80%E5%A7%8B%E5%AD%A6%E4%B9%A0Scala/</loc>
+    <lastmod>2023-07-24</lastmod>
+  </url>
+  <url>
+    <loc>https://bawcat.wiki/2020/01/08/%E5%A4%A7%E6%95%B0%E6%8D%AE/scala/%E5%BC%80%E5%A7%8B%E7%BC%96%E7%A8%8B/</loc>
+    <lastmod>2023-07-24</lastmod>
+  </url>
+  <url>
+    <loc>https://bawcat.wiki/2020/01/09/%E5%A4%A7%E6%95%B0%E6%8D%AE/scala/%E6%8E%A7%E5%88%B6%E8%AF%AD%E5%8F%A5/</loc>
+    <lastmod>2023-07-24</lastmod>
+  </url>
+  <url>
+    <loc>https://bawcat.wiki/2020/01/10/%E5%A4%A7%E6%95%B0%E6%8D%AE/scala/%E7%B1%BB%E5%92%8C%E5%AF%B9%E8%B1%A1%EF%BC%88%E4%B8%80%EF%BC%89/</loc>
+    <lastmod>2023-07-24</lastmod>
+  </url>
+  <url>
     <loc>https://bawcat.wiki/2020/01/10/%E5%A4%A7%E6%95%B0%E6%8D%AE/scala/%E7%B1%BB%E5%92%8C%E5%AF%B9%E8%B1%A1%EF%BC%88%E4%BA%8C%EF%BC%89/</loc>
     <lastmod>2023-07-24</lastmod>
   </url>
@@ -113,14 +133,6 @@
     <lastmod>2023-07-24</lastmod>
   </url>
   <url>
-    <loc>https://bawcat.wiki/2019/12/29/java/%E5%9F%BA%E7%A1%80%E6%95%99%E5%AD%A6/Calendar-Math-Date/</loc>
-    <lastmod>2023-07-24</lastmod>
-  </url>
-  <url>
-    <loc>https://bawcat.wiki/2019/12/20/java/%E5%9F%BA%E7%A1%80%E6%95%99%E5%AD%A6/JDBC/</loc>
-    <lastmod>2023-07-24</lastmod>
-  </url>
-  <url>
     <loc>https://bawcat.wiki/2019/12/23/java/%E5%9F%BA%E7%A1%80%E6%95%99%E5%AD%A6/Socket/</loc>
     <lastmod>2023-07-24</lastmod>
   </url>
@@ -186,26 +198,6 @@
   </url>
   <url>
     <loc>https://bawcat.wiki/2020/01/13/%E5%A4%A7%E6%95%B0%E6%8D%AE/hadoop/%E5%8D%95%E6%9C%BA%E6%A8%A1%E5%BC%8F%E9%83%A8%E7%BD%B2/</loc>
-    <lastmod>2023-07-24</lastmod>
-  </url>
-  <url>
-    <loc>https://bawcat.wiki/2020/01/09/%E5%A4%A7%E6%95%B0%E6%8D%AE/scala/%E5%9F%BA%E7%A1%80%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/</loc>
-    <lastmod>2023-07-24</lastmod>
-  </url>
-  <url>
-    <loc>https://bawcat.wiki/2020/01/09/%E5%A4%A7%E6%95%B0%E6%8D%AE/scala/%E5%BC%80%E5%A7%8B%E5%AD%A6%E4%B9%A0Scala/</loc>
-    <lastmod>2023-07-24</lastmod>
-  </url>
-  <url>
-    <loc>https://bawcat.wiki/2020/01/08/%E5%A4%A7%E6%95%B0%E6%8D%AE/scala/%E5%BC%80%E5%A7%8B%E7%BC%96%E7%A8%8B/</loc>
-    <lastmod>2023-07-24</lastmod>
-  </url>
-  <url>
-    <loc>https://bawcat.wiki/2020/01/09/%E5%A4%A7%E6%95%B0%E6%8D%AE/scala/%E6%8E%A7%E5%88%B6%E8%AF%AD%E5%8F%A5/</loc>
-    <lastmod>2023-07-24</lastmod>
-  </url>
-  <url>
-    <loc>https://bawcat.wiki/2020/01/10/%E5%A4%A7%E6%95%B0%E6%8D%AE/scala/%E7%B1%BB%E5%92%8C%E5%AF%B9%E8%B1%A1%EF%BC%88%E4%B8%80%EF%BC%89/</loc>
     <lastmod>2023-07-24</lastmod>
   </url>
   <url>
@@ -298,6 +290,14 @@
   </url>
   <url>
     <loc>https://bawcat.wiki/2020/04/02/java/spring/java-spring-%E6%9D%BE%E8%80%A6%E5%90%88-2020-04-02/</loc>
+    <lastmod>2023-07-24</lastmod>
+  </url>
+  <url>
+    <loc>https://bawcat.wiki/2019/12/29/java/%E5%9F%BA%E7%A1%80%E6%95%99%E5%AD%A6/Calendar-Math-Date/</loc>
+    <lastmod>2023-07-24</lastmod>
+  </url>
+  <url>
+    <loc>https://bawcat.wiki/2019/12/20/java/%E5%9F%BA%E7%A1%80%E6%95%99%E5%AD%A6/JDBC/</loc>
     <lastmod>2023-07-24</lastmod>
   </url>
 </urlset> 
