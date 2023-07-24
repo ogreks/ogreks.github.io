@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://bawcat.wiki/2020/07/03/php/php-php-install-log-2020-07-03/</loc>
-    <lastmod>2023-07-24</lastmod>
-  </url>
-  <url>
     <loc>https://bawcat.wiki/2018/09/14/php/php-querylist-2018-09-14/</loc>
     <lastmod>2023-07-24</lastmod>
   </url>
@@ -125,6 +121,22 @@
     <lastmod>2023-07-24</lastmod>
   </url>
   <url>
+    <loc>https://bawcat.wiki/2020/06/26/docker/docker%20%E5%91%BD%E4%BB%A4%E7%AC%94%E8%AE%B0/</loc>
+    <lastmod>2023-07-24</lastmod>
+  </url>
+  <url>
+    <loc>https://bawcat.wiki/2021/06/03/golang/%E5%8F%98%E9%87%8F/</loc>
+    <lastmod>2023-07-24</lastmod>
+  </url>
+  <url>
+    <loc>https://bawcat.wiki/2021/07/22/golang/%E7%AB%9E%E4%BA%89%E6%9D%A1%E4%BB%B6%E6%A3%80%E6%B5%8B/</loc>
+    <lastmod>2023-07-24</lastmod>
+  </url>
+  <url>
+    <loc>https://bawcat.wiki/2020/06/26/java/java-swing-helloSwing-2020-04-14/</loc>
+    <lastmod>2023-07-24</lastmod>
+  </url>
+  <url>
     <loc>https://bawcat.wiki/2019/10/19/linux/linux-centos-2018-09-10-1/</loc>
     <lastmod>2023-07-24</lastmod>
   </url>
@@ -142,6 +154,18 @@
   </url>
   <url>
     <loc>https://bawcat.wiki/2020/06/12/php/php-pcntl-%E5%A4%9A%E8%BF%9B%E7%A8%8B%E6%89%A9%E5%B1%95%E6%8E%A2%E5%AF%BB-2020-06-12/</loc>
+    <lastmod>2023-07-24</lastmod>
+  </url>
+  <url>
+    <loc>https://bawcat.wiki/2020/07/03/php/php-php-install-log-2020-07-03/</loc>
+    <lastmod>2023-07-24</lastmod>
+  </url>
+  <url>
+    <loc>https://bawcat.wiki/2020/06/25/java/spring/java-spring-IOC-contrion-2020-06-25/</loc>
+    <lastmod>2023-07-24</lastmod>
+  </url>
+  <url>
+    <loc>https://bawcat.wiki/2020/06/21/java/spring/java-spring-aop-2020-06-22/</loc>
     <lastmod>2023-07-24</lastmod>
   </url>
   <url>
@@ -274,30 +298,6 @@
   </url>
   <url>
     <loc>https://bawcat.wiki/2020/01/02/java/%E5%9F%BA%E7%A1%80%E6%95%99%E5%AD%A6/%E6%95%B0%E6%8D%AE%E6%B5%81%E8%AF%B4%E6%98%8E(IO)/%E6%96%87%E4%BB%B6%E6%B5%81/</loc>
-    <lastmod>2023-07-24</lastmod>
-  </url>
-  <url>
-    <loc>https://bawcat.wiki/2020/06/26/docker/docker%20%E5%91%BD%E4%BB%A4%E7%AC%94%E8%AE%B0/</loc>
-    <lastmod>2023-07-24</lastmod>
-  </url>
-  <url>
-    <loc>https://bawcat.wiki/2021/06/03/golang/%E5%8F%98%E9%87%8F/</loc>
-    <lastmod>2023-07-24</lastmod>
-  </url>
-  <url>
-    <loc>https://bawcat.wiki/2021/07/22/golang/%E7%AB%9E%E4%BA%89%E6%9D%A1%E4%BB%B6%E6%A3%80%E6%B5%8B/</loc>
-    <lastmod>2023-07-24</lastmod>
-  </url>
-  <url>
-    <loc>https://bawcat.wiki/2020/06/26/java/java-swing-helloSwing-2020-04-14/</loc>
-    <lastmod>2023-07-24</lastmod>
-  </url>
-  <url>
-    <loc>https://bawcat.wiki/2020/06/25/java/spring/java-spring-IOC-contrion-2020-06-25/</loc>
-    <lastmod>2023-07-24</lastmod>
-  </url>
-  <url>
-    <loc>https://bawcat.wiki/2020/06/21/java/spring/java-spring-aop-2020-06-22/</loc>
     <lastmod>2023-07-24</lastmod>
   </url>
 </urlset> 
