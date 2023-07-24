@@ -33,7 +33,7 @@ jobs:
       - name: Script Run
         run: |
           cp README.md ./public/
-          echo "google.com, pub-1585951485038445, DIRECT, f08c47fec0942fa0">./public/ads.txt
+          echo ${{ secrets.ADS }} >./public/ads.txt
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
