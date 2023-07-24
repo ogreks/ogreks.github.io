@@ -14,7 +14,6 @@ jobs:
       - uses: actions/checkout@v3
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          # If your repository depends on submodule, please see: https://github.com/actions/checkout
           submodules: recursive
       - name: Use Node.js 16.x
         uses: actions/setup-node@v2
@@ -36,3 +35,8 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
+          cname: bawcat.wiki
+      - name: Script Run
+        run: |
+          cp README.md ./public/
+          echo "google.com, pub-1585951485038445, DIRECT, f08c47fec0942fa0">./public/ads.txt
