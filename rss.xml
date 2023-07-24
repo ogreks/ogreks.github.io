@@ -1,0 +1,626 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Cat at ngint</title>
+  <icon>https://bawcat.wiki/icon.png</icon>
+  <subtitle>夜の猫</subtitle>
+  <link href="https://bawcat.wiki/rss.xml" rel="self"/>
+  
+  <link href="https://bawcat.wiki/"/>
+  <updated>2023-07-24T08:07:52.192Z</updated>
+  <id>https://bawcat.wiki/</id>
+  
+  <author>
+    <name>ogreks</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>竞争条件检测</title>
+    <link href="https://bawcat.wiki/2021/07/22/golang/%E7%AB%9E%E4%BA%89%E6%9D%A1%E4%BB%B6%E6%A3%80%E6%B5%8B/"/>
+    <id>https://bawcat.wiki/2021/07/22/golang/%E7%AB%9E%E4%BA%89%E6%9D%A1%E4%BB%B6%E6%A3%80%E6%B5%8B/</id>
+    <published>2021-07-22T08:57:00.000Z</published>
+    <updated>2023-07-24T08:07:52.192Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;竞争条件检测-摘抄自-GO语言圣经&quot;&gt;&lt;a href=&quot;#竞争条件检测-摘抄自-GO语言圣经&quot; class=&quot;headerlink&quot; title=&quot;竞争条件检测 (摘抄自 GO语言圣经)&quot;&gt;&lt;/a&gt;竞争条件检测 (摘抄自</summary>
+        
+      
+    
+    
+    
+    <category term="golang" scheme="https://bawcat.wiki/categories/golang/"/>
+    
+    
+    <category term="golang" scheme="https://bawcat.wiki/tags/golang/"/>
+    
+    <category term="go" scheme="https://bawcat.wiki/tags/go/"/>
+    
+    <category term="协程" scheme="https://bawcat.wiki/tags/%E5%8D%8F%E7%A8%8B/"/>
+    
+    <category term="进程锁" scheme="https://bawcat.wiki/tags/%E8%BF%9B%E7%A8%8B%E9%94%81/"/>
+    
+    <category term="debug 方法" scheme="https://bawcat.wiki/tags/debug-%E6%96%B9%E6%B3%95/"/>
+    
+    <category term="竞争调试" scheme="https://bawcat.wiki/tags/%E7%AB%9E%E4%BA%89%E8%B0%83%E8%AF%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Golang 关于变量</title>
+    <link href="https://bawcat.wiki/2021/06/03/golang/%E5%8F%98%E9%87%8F/"/>
+    <id>https://bawcat.wiki/2021/06/03/golang/%E5%8F%98%E9%87%8F/</id>
+    <published>2021-06-03T04:00:00.000Z</published>
+    <updated>2023-07-24T08:07:52.192Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;关于-Golang-变量的理解-摘抄自-GO语言圣经&quot;&gt;&lt;a href=&quot;#关于-Golang-变量的理解-摘抄自-GO语言圣经&quot; class=&quot;headerlink&quot; title=&quot;关于 Golang 变量的理解(摘抄自 GO语言圣经)&quot;&gt;&lt;/a&gt;关于</summary>
+        
+      
+    
+    
+    
+    <category term="golang" scheme="https://bawcat.wiki/categories/golang/"/>
+    
+    
+    <category term="golang" scheme="https://bawcat.wiki/tags/golang/"/>
+    
+    <category term="go" scheme="https://bawcat.wiki/tags/go/"/>
+    
+    <category term="指针" scheme="https://bawcat.wiki/tags/%E6%8C%87%E9%92%88/"/>
+    
+    <category term="变量" scheme="https://bawcat.wiki/tags/%E5%8F%98%E9%87%8F/"/>
+    
+    <category term="gc" scheme="https://bawcat.wiki/tags/gc/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>FFmpeg Tutorial</title>
+    <link href="https://bawcat.wiki/2020/11/29/%E7%A8%8B%E5%BA%8F%E4%BA%BA%E7%94%9F/ffmpeg-2020-11-29-FFmpeg-Tutorial/"/>
+    <id>https://bawcat.wiki/2020/11/29/%E7%A8%8B%E5%BA%8F%E4%BA%BA%E7%94%9F/ffmpeg-2020-11-29-FFmpeg-Tutorial/</id>
+    <published>2020-11-29T11:38:11.000Z</published>
+    <updated>2023-07-24T08:07:52.200Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;FFmpeg-Tutorial&quot;&gt;&lt;a href=&quot;#FFmpeg-Tutorial&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="程序人生" scheme="https://bawcat.wiki/categories/%E7%A8%8B%E5%BA%8F%E4%BA%BA%E7%94%9F/"/>
+    
+    
+    <category term="ffmpeg" scheme="https://bawcat.wiki/tags/ffmpeg/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>关于php 编译安装 遇到的坑总结</title>
+    <link href="https://bawcat.wiki/2020/07/03/php/php-php-install-log-2020-07-03/"/>
+    <id>https://bawcat.wiki/2020/07/03/php/php-php-install-log-2020-07-03/</id>
+    <published>2020-07-03T18:16:04.000Z</published>
+    <updated>2023-07-24T08:07:52.196Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;关于php-编译安装-遇到的坑总结&quot;&gt;&lt;a href=&quot;#关于php-编译安装-遇到的坑总结&quot; class=&quot;headerlink&quot; title=&quot;关于php 编译安装 遇到的坑总结&quot;&gt;&lt;/a&gt;关于php 编译安装</summary>
+        
+      
+    
+    
+    
+    <category term="PHP" scheme="https://bawcat.wiki/categories/PHP/"/>
+    
+    
+    <category term="php" scheme="https://bawcat.wiki/tags/php/"/>
+    
+    <category term="php 安装" scheme="https://bawcat.wiki/tags/php-%E5%AE%89%E8%A3%85/"/>
+    
+    <category term="编译安装" scheme="https://bawcat.wiki/tags/%E7%BC%96%E8%AF%91%E5%AE%89%E8%A3%85/"/>
+    
+    <category term="错误排坑" scheme="https://bawcat.wiki/tags/%E9%94%99%E8%AF%AF%E6%8E%92%E5%9D%91/"/>
+    
+    <category term="php 编译错误解决" scheme="https://bawcat.wiki/tags/php-%E7%BC%96%E8%AF%91%E9%94%99%E8%AF%AF%E8%A7%A3%E5%86%B3/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>docker 命令笔记</title>
+    <link href="https://bawcat.wiki/2020/06/26/docker/docker%20%E5%91%BD%E4%BB%A4%E7%AC%94%E8%AE%B0/"/>
+    <id>https://bawcat.wiki/2020/06/26/docker/docker%20%E5%91%BD%E4%BB%A4%E7%AC%94%E8%AE%B0/</id>
+    <published>2020-06-26T15:45:17.000Z</published>
+    <updated>2023-07-24T08:07:52.192Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;docker简介-docker-命令笔记&quot;&gt;&lt;a href=&quot;#docker简介-docker-命令笔记&quot; class=&quot;headerlink&quot; title=&quot;docker简介(docker 命令笔记)&quot;&gt;&lt;/a&gt;docker简介(docker</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>初识 Swing</title>
+    <link href="https://bawcat.wiki/2020/06/26/java/java-swing-helloSwing-2020-04-14/"/>
+    <id>https://bawcat.wiki/2020/06/26/java/java-swing-helloSwing-2020-04-14/</id>
+    <published>2020-06-26T15:36:05.000Z</published>
+    <updated>2023-07-24T08:07:52.192Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;初识-Swing&quot;&gt;&lt;a href=&quot;#初识-Swing&quot; class=&quot;headerlink&quot; title=&quot;初识 Swing&quot;&gt;&lt;/a&gt;初识 Swing&lt;/h2&gt;&lt;h3 id=&quot;什么是Swing&quot;&gt;&lt;a href=&quot;#什么是Swing&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="java" scheme="https://bawcat.wiki/categories/java/"/>
+    
+    <category term="Swing" scheme="https://bawcat.wiki/categories/java/Swing/"/>
+    
+    
+    <category term="java" scheme="https://bawcat.wiki/tags/java/"/>
+    
+    <category term="Swing" scheme="https://bawcat.wiki/tags/Swing/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Spring Web MVC 框架</title>
+    <link href="https://bawcat.wiki/2020/06/25/java/spring/java-spring-web-mvc-framwork-2020-06-26/"/>
+    <id>https://bawcat.wiki/2020/06/25/java/spring/java-spring-web-mvc-framwork-2020-06-26/</id>
+    <published>2020-06-25T18:08:09.000Z</published>
+    <updated>2023-07-24T08:07:52.196Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;Spring-Web-MVC-框架&quot;&gt;&lt;a href=&quot;#Spring-Web-MVC-框架&quot; class=&quot;headerlink&quot; title=&quot;Spring Web MVC 框架&quot;&gt;&lt;/a&gt;Spring Web MVC 框架&lt;/h2&gt;&lt;p&gt;Spring</summary>
+        
+      
+    
+    
+    
+    <category term="java" scheme="https://bawcat.wiki/categories/java/"/>
+    
+    <category term="Spring" scheme="https://bawcat.wiki/categories/java/Spring/"/>
+    
+    
+    <category term="java" scheme="https://bawcat.wiki/tags/java/"/>
+    
+    <category term="Spring" scheme="https://bawcat.wiki/tags/Spring/"/>
+    
+    <category term="事务管理" scheme="https://bawcat.wiki/tags/%E4%BA%8B%E5%8A%A1%E7%AE%A1%E7%90%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Spring 事务管理</title>
+    <link href="https://bawcat.wiki/2020/06/25/java/spring/java-spring-%E4%BA%8B%E5%8A%A1%E7%AE%A1%E7%90%86-2020-06-25/"/>
+    <id>https://bawcat.wiki/2020/06/25/java/spring/java-spring-%E4%BA%8B%E5%8A%A1%E7%AE%A1%E7%90%86-2020-06-25/</id>
+    <published>2020-06-25T18:06:56.000Z</published>
+    <updated>2023-07-24T08:07:52.196Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;Spring-事务管理&quot;&gt;&lt;a href=&quot;#Spring-事务管理&quot; class=&quot;headerlink&quot; title=&quot;Spring 事务管理&quot;&gt;&lt;/a&gt;Spring 事务管理&lt;/h2&gt;&lt;p&gt;Spring</summary>
+        
+      
+    
+    
+    
+    <category term="java" scheme="https://bawcat.wiki/categories/java/"/>
+    
+    <category term="Spring" scheme="https://bawcat.wiki/categories/java/Spring/"/>
+    
+    
+    <category term="java" scheme="https://bawcat.wiki/tags/java/"/>
+    
+    <category term="Spring" scheme="https://bawcat.wiki/tags/Spring/"/>
+    
+    <category term="事务管理" scheme="https://bawcat.wiki/tags/%E4%BA%8B%E5%8A%A1%E7%AE%A1%E7%90%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Spring JDBC Template</title>
+    <link href="https://bawcat.wiki/2020/06/25/java/spring/java-spring-jdbc-template-2020-06-26/"/>
+    <id>https://bawcat.wiki/2020/06/25/java/spring/java-spring-jdbc-template-2020-06-26/</id>
+    <published>2020-06-25T18:05:38.000Z</published>
+    <updated>2023-07-24T08:07:52.192Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;Spring-JDBC-Template&quot;&gt;&lt;a href=&quot;#Spring-JDBC-Template&quot; class=&quot;headerlink&quot; title=&quot;Spring JDBC Template&quot;&gt;&lt;/a&gt;Spring JDBC</summary>
+        
+      
+    
+    
+    
+    <category term="java" scheme="https://bawcat.wiki/categories/java/"/>
+    
+    <category term="Spring" scheme="https://bawcat.wiki/categories/java/Spring/"/>
+    
+    
+    <category term="java" scheme="https://bawcat.wiki/tags/java/"/>
+    
+    <category term="Spring" scheme="https://bawcat.wiki/tags/Spring/"/>
+    
+    <category term="JDBC" scheme="https://bawcat.wiki/tags/JDBC/"/>
+    
+    <category term="Templeate" scheme="https://bawcat.wiki/tags/Templeate/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Spring IOC 容器</title>
+    <link href="https://bawcat.wiki/2020/06/25/java/spring/java-spring-IOC-contrion-2020-06-25/"/>
+    <id>https://bawcat.wiki/2020/06/25/java/spring/java-spring-IOC-contrion-2020-06-25/</id>
+    <published>2020-06-25T11:31:03.000Z</published>
+    <updated>2023-07-24T08:07:52.192Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;Spring-IOC-容器&quot;&gt;&lt;a href=&quot;#Spring-IOC-容器&quot; class=&quot;headerlink&quot; title=&quot;Spring IOC 容器&quot;&gt;&lt;/a&gt;Spring IOC 容器&lt;/h2&gt;&lt;h3 id=&quot;理论基础&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="java" scheme="https://bawcat.wiki/categories/java/"/>
+    
+    <category term="Spring" scheme="https://bawcat.wiki/categories/java/Spring/"/>
+    
+    
+    <category term="java" scheme="https://bawcat.wiki/tags/java/"/>
+    
+    <category term="Spring" scheme="https://bawcat.wiki/tags/Spring/"/>
+    
+    <category term="IOC" scheme="https://bawcat.wiki/tags/IOC/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Spring Aop</title>
+    <link href="https://bawcat.wiki/2020/06/21/java/spring/java-spring-aop-2020-06-22/"/>
+    <id>https://bawcat.wiki/2020/06/21/java/spring/java-spring-aop-2020-06-22/</id>
+    <published>2020-06-21T18:09:08.000Z</published>
+    <updated>2023-07-24T08:07:52.192Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;Spring-Aop&quot;&gt;&lt;a href=&quot;#Spring-Aop&quot; class=&quot;headerlink&quot; title=&quot;Spring Aop&quot;&gt;&lt;/a&gt;Spring</summary>
+        
+      
+    
+    
+    
+    <category term="java" scheme="https://bawcat.wiki/categories/java/"/>
+    
+    <category term="Spring" scheme="https://bawcat.wiki/categories/java/Spring/"/>
+    
+    
+    <category term="java" scheme="https://bawcat.wiki/tags/java/"/>
+    
+    <category term="Spring" scheme="https://bawcat.wiki/tags/Spring/"/>
+    
+    <category term="AOP" scheme="https://bawcat.wiki/tags/AOP/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>pcntl 多进程扩展探寻</title>
+    <link href="https://bawcat.wiki/2020/06/12/php/php-pcntl-%E5%A4%9A%E8%BF%9B%E7%A8%8B%E6%89%A9%E5%B1%95%E6%8E%A2%E5%AF%BB-2020-06-12/"/>
+    <id>https://bawcat.wiki/2020/06/12/php/php-pcntl-%E5%A4%9A%E8%BF%9B%E7%A8%8B%E6%89%A9%E5%B1%95%E6%8E%A2%E5%AF%BB-2020-06-12/</id>
+    <published>2020-06-12T15:39:44.000Z</published>
+    <updated>2023-07-24T08:07:52.196Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;php-实现-并发-进程控制-pcntl&quot;&gt;&lt;a href=&quot;#php-实现-并发-进程控制-pcntl&quot; class=&quot;headerlink&quot; title=&quot;php 实现 并发-进程控制 pcntl&quot;&gt;&lt;/a&gt;php 实现 并发-进程控制</summary>
+        
+      
+    
+    
+    
+    <category term="PHP" scheme="https://bawcat.wiki/categories/PHP/"/>
+    
+    <category term="Pcntl" scheme="https://bawcat.wiki/categories/PHP/Pcntl/"/>
+    
+    
+    <category term="php" scheme="https://bawcat.wiki/tags/php/"/>
+    
+    <category term="pcntl" scheme="https://bawcat.wiki/tags/pcntl/"/>
+    
+    <category term="进程管理" scheme="https://bawcat.wiki/tags/%E8%BF%9B%E7%A8%8B%E7%AE%A1%E7%90%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>PHP文件上传源码分析(RFC1867)</title>
+    <link href="https://bawcat.wiki/2020/04/09/php/php-%E4%BC%98%E7%A7%80%E6%96%87%E7%AB%A0-PHP%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90-%E9%A3%8E%E9%9B%AA%E4%B9%8B%E9%9A%85/"/>
+    <id>https://bawcat.wiki/2020/04/09/php/php-%E4%BC%98%E7%A7%80%E6%96%87%E7%AB%A0-PHP%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90-%E9%A3%8E%E9%9B%AA%E4%B9%8B%E9%9A%85/</id>
+    <published>2020-04-09T13:17:12.000Z</published>
+    <updated>2023-07-24T08:07:52.196Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;PHP文件上传源码分析&quot;&gt;&lt;a href=&quot;#PHP文件上传源码分析&quot; class=&quot;headerlink&quot; title=&quot;PHP文件上传源码分析&quot;&gt;&lt;/a&gt;PHP文件上传源码分析&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;@author 风雪之隅</summary>
+        
+      
+    
+    
+    
+    <category term="PHP" scheme="https://bawcat.wiki/categories/PHP/"/>
+    
+    <category term="优秀文章" scheme="https://bawcat.wiki/categories/PHP/%E4%BC%98%E7%A7%80%E6%96%87%E7%AB%A0/"/>
+    
+    
+    <category term="php" scheme="https://bawcat.wiki/tags/php/"/>
+    
+    <category term="文件上传" scheme="https://bawcat.wiki/tags/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/"/>
+    
+    <category term="上传原理" scheme="https://bawcat.wiki/tags/%E4%B8%8A%E4%BC%A0%E5%8E%9F%E7%90%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>curl上传文件$_FILES为空问题</title>
+    <link href="https://bawcat.wiki/2020/04/09/php/php-curl%E4%B8%8A%E4%BC%A0%E6%96%87%E4%BB%B6%E4%B8%BA%E7%A9%BA%E9%97%AE%E9%A2%98/"/>
+    <id>https://bawcat.wiki/2020/04/09/php/php-curl%E4%B8%8A%E4%BC%A0%E6%96%87%E4%BB%B6%E4%B8%BA%E7%A9%BA%E9%97%AE%E9%A2%98/</id>
+    <published>2020-04-09T13:05:29.000Z</published>
+    <updated>2023-07-24T08:07:52.196Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;php使用curl上传文件&quot;&gt;&lt;a href=&quot;#php使用curl上传文件&quot; class=&quot;headerlink&quot; title=&quot;php使用curl上传文件&quot;&gt;&lt;/a&gt;php使用curl上传文件&lt;/h2&gt;&lt;p&gt;代码如下:&lt;/p&gt;
+&lt;figure</summary>
+        
+      
+    
+    
+    
+    <category term="PHP" scheme="https://bawcat.wiki/categories/PHP/"/>
+    
+    
+    <category term="php" scheme="https://bawcat.wiki/tags/php/"/>
+    
+    <category term="$_FILES" scheme="https://bawcat.wiki/tags/FILES/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>深入理解PHP原理之文件上传（风雪之隅）</title>
+    <link href="https://bawcat.wiki/2020/04/09/php/php-%E4%BC%98%E7%A7%80%E6%96%87%E7%AB%A0-%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3PHP%E5%8E%9F%E7%90%86%E4%B9%8B%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0-%E9%A3%8E%E9%9B%AA%E4%B9%8B%E9%9A%85/"/>
+    <id>https://bawcat.wiki/2020/04/09/php/php-%E4%BC%98%E7%A7%80%E6%96%87%E7%AB%A0-%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3PHP%E5%8E%9F%E7%90%86%E4%B9%8B%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0-%E9%A3%8E%E9%9B%AA%E4%B9%8B%E9%9A%85/</id>
+    <published>2020-04-09T12:52:02.000Z</published>
+    <updated>2023-07-24T08:07:52.196Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;深入理解PHP原理之文件上传&quot;&gt;&lt;a href=&quot;#深入理解PHP原理之文件上传&quot; class=&quot;headerlink&quot; title=&quot;深入理解PHP原理之文件上传&quot;&gt;&lt;/a&gt;深入理解PHP原理之文件上传&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;@author</summary>
+        
+      
+    
+    
+    
+    <category term="PHP" scheme="https://bawcat.wiki/categories/PHP/"/>
+    
+    <category term="优秀文章" scheme="https://bawcat.wiki/categories/PHP/%E4%BC%98%E7%A7%80%E6%96%87%E7%AB%A0/"/>
+    
+    
+    <category term="php" scheme="https://bawcat.wiki/tags/php/"/>
+    
+    <category term="文件上传" scheme="https://bawcat.wiki/tags/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/"/>
+    
+    <category term="上传原理" scheme="https://bawcat.wiki/tags/%E4%B8%8A%E4%BC%A0%E5%8E%9F%E7%90%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Spring 松耦合</title>
+    <link href="https://bawcat.wiki/2020/04/02/java/spring/java-spring-%E6%9D%BE%E8%80%A6%E5%90%88-2020-04-02/"/>
+    <id>https://bawcat.wiki/2020/04/02/java/spring/java-spring-%E6%9D%BE%E8%80%A6%E5%90%88-2020-04-02/</id>
+    <published>2020-04-02T09:00:00.000Z</published>
+    <updated>2023-07-24T08:07:52.196Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;Spring-松耦合&quot;&gt;&lt;a href=&quot;#Spring-松耦合&quot; class=&quot;headerlink&quot; title=&quot;Spring 松耦合&quot;&gt;&lt;/a&gt;Spring</summary>
+        
+      
+    
+    
+    
+    <category term="java" scheme="https://bawcat.wiki/categories/java/"/>
+    
+    <category term="Spring" scheme="https://bawcat.wiki/categories/java/Spring/"/>
+    
+    
+    <category term="java" scheme="https://bawcat.wiki/tags/java/"/>
+    
+    <category term="Spring" scheme="https://bawcat.wiki/tags/Spring/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Spring</title>
+    <link href="https://bawcat.wiki/2020/04/01/java/spring/java-spring-helloworld-2020-04-01/"/>
+    <id>https://bawcat.wiki/2020/04/01/java/spring/java-spring-helloworld-2020-04-01/</id>
+    <published>2020-04-01T09:00:00.000Z</published>
+    <updated>2023-07-24T08:07:52.192Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;Spring&quot;&gt;&lt;a href=&quot;#Spring&quot; class=&quot;headerlink&quot; title=&quot;Spring&quot;&gt;&lt;/a&gt;Spring&lt;/h2&gt;&lt;h3 id=&quot;什么是-Spring&quot;&gt;&lt;a href=&quot;#什么是-Spring&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="java" scheme="https://bawcat.wiki/categories/java/"/>
+    
+    <category term="Spring" scheme="https://bawcat.wiki/categories/java/Spring/"/>
+    
+    
+    <category term="java" scheme="https://bawcat.wiki/tags/java/"/>
+    
+    <category term="Spring" scheme="https://bawcat.wiki/tags/Spring/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Java 文件操作</title>
+    <link href="https://bawcat.wiki/2020/03/23/java/%E5%9F%BA%E7%A1%80%E6%95%99%E5%AD%A6/%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C/"/>
+    <id>https://bawcat.wiki/2020/03/23/java/%E5%9F%BA%E7%A1%80%E6%95%99%E5%AD%A6/%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C/</id>
+    <published>2020-03-23T16:00:00.000Z</published>
+    <updated>2023-07-24T08:07:52.196Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;Java-文件操作&quot;&gt;&lt;a href=&quot;#Java-文件操作&quot; class=&quot;headerlink&quot; title=&quot;Java 文件操作&quot;&gt;&lt;/a&gt;Java</summary>
+        
+      
+    
+    
+    
+    <category term="java" scheme="https://bawcat.wiki/categories/java/"/>
+    
+    <category term="java 基础" scheme="https://bawcat.wiki/categories/java/java-%E5%9F%BA%E7%A1%80/"/>
+    
+    
+    <category term="java File" scheme="https://bawcat.wiki/tags/java-File/"/>
+    
+    <category term="java nio" scheme="https://bawcat.wiki/tags/java-nio/"/>
+    
+    <category term="java Files" scheme="https://bawcat.wiki/tags/java-Files/"/>
+    
+    <category term="java StandardCopyOption" scheme="https://bawcat.wiki/tags/java-StandardCopyOption/"/>
+    
+    <category term="java Paths" scheme="https://bawcat.wiki/tags/java-Paths/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>java 泛型和集合</title>
+    <link href="https://bawcat.wiki/2020/03/16/java/%E5%9F%BA%E7%A1%80%E6%95%99%E5%AD%A6/%E5%9F%BA%E7%A1%80%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/%E6%B3%9B%E5%9E%8B%E5%92%8C%E9%9B%86%E5%90%88/"/>
+    <id>https://bawcat.wiki/2020/03/16/java/%E5%9F%BA%E7%A1%80%E6%95%99%E5%AD%A6/%E5%9F%BA%E7%A1%80%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/%E6%B3%9B%E5%9E%8B%E5%92%8C%E9%9B%86%E5%90%88/</id>
+    <published>2020-03-16T15:40:20.000Z</published>
+    <updated>2023-07-24T08:07:52.196Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;泛型和集合&quot;&gt;&lt;a href=&quot;#泛型和集合&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="java" scheme="https://bawcat.wiki/categories/java/"/>
+    
+    <category term="java 基础" scheme="https://bawcat.wiki/categories/java/java-%E5%9F%BA%E7%A1%80/"/>
+    
+    
+    <category term="java" scheme="https://bawcat.wiki/tags/java/"/>
+    
+    <category term="java 泛型和集合" scheme="https://bawcat.wiki/tags/java-%E6%B3%9B%E5%9E%8B%E5%92%8C%E9%9B%86%E5%90%88/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Java Throwable 抛出异常</title>
+    <link href="https://bawcat.wiki/2020/03/16/java/%E5%9F%BA%E7%A1%80%E6%95%99%E5%AD%A6/Throwable/"/>
+    <id>https://bawcat.wiki/2020/03/16/java/%E5%9F%BA%E7%A1%80%E6%95%99%E5%AD%A6/Throwable/</id>
+    <published>2020-03-16T15:37:50.000Z</published>
+    <updated>2023-07-24T08:07:52.196Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;Java-关于抛出异常&quot;&gt;&lt;a href=&quot;#Java-关于抛出异常&quot; class=&quot;headerlink&quot; title=&quot;Java 关于抛出异常&quot;&gt;&lt;/a&gt;Java</summary>
+        
+      
+    
+    
+    
+    <category term="java" scheme="https://bawcat.wiki/categories/java/"/>
+    
+    <category term="java 函数式编程" scheme="https://bawcat.wiki/categories/java/java-%E5%87%BD%E6%95%B0%E5%BC%8F%E7%BC%96%E7%A8%8B/"/>
+    
+    
+    <category term="java" scheme="https://bawcat.wiki/tags/java/"/>
+    
+    <category term="java Throwable" scheme="https://bawcat.wiki/tags/java-Throwable/"/>
+    
+  </entry>
+  
+</feed>
