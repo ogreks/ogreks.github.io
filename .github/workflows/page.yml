@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - hexo
-      
+
 jobs:
   pages:
     runs-on: ubuntu-latest
@@ -27,7 +27,7 @@ jobs:
           restore-keys: |
             ${{ runner.OS }}-npm-cache
       - name: Install Dependencies
-        run: npm install
+        run: npm install && npm update
       - name: Build
         run: npm run build
       - name: Script Run
