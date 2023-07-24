@@ -31,9 +31,11 @@ jobs:
       - name: Build
         run: npm run build
       - name: Script Run
+        env: 
+          ADS: ${{ secrets.ADS }}
         run: |
           cp README.md ./public/
-          echo ${{ secrets.ADS }} >./public/ads.txt
+          echo $ADS >./public/ads.txt
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
