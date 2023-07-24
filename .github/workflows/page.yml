@@ -30,13 +30,13 @@ jobs:
         run: npm install
       - name: Build
         run: npm run build
+      - name: Script Run
+        run: |
+          cp README.md ./public/
+          echo "google.com, pub-1585951485038445, DIRECT, f08c47fec0942fa0">./public/ads.txt
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
           cname: bawcat.wiki
-      - name: Script Run
-        run: |
-          cp README.md ./public/
-          echo "google.com, pub-1585951485038445, DIRECT, f08c47fec0942fa0">./public/ads.txt
