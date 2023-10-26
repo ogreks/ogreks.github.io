@@ -6,7 +6,7 @@
   <link href="https://bawcat.wiki/rss.xml" rel="self"/>
   
   <link href="https://bawcat.wiki/"/>
-  <updated>2023-10-25T08:07:02.175Z</updated>
+  <updated>2023-10-26T10:22:26.217Z</updated>
   <id>https://bawcat.wiki/</id>
   
   <author>
@@ -17,11 +17,61 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>变量绑定(Rust入门)</title>
+    <link href="https://bawcat.wiki/2023/10/26/rust/%E5%85%A5%E9%97%A8-%E5%8F%98%E9%87%8F%E7%BB%91%E5%AE%9A/"/>
+    <id>https://bawcat.wiki/2023/10/26/rust/%E5%85%A5%E9%97%A8-%E5%8F%98%E9%87%8F%E7%BB%91%E5%AE%9A/</id>
+    <published>2023-10-26T02:00:00.000Z</published>
+    <updated>2023-10-26T10:22:26.217Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;变量绑定-Rust入门&quot;&gt;&lt;a href=&quot;#变量绑定-Rust入门&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="rust" scheme="https://bawcat.wiki/categories/rust/"/>
+    
+    
+    <category term="rust" scheme="https://bawcat.wiki/tags/rust/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>自定义类型 (Rust 入门)</title>
+    <link href="https://bawcat.wiki/2023/10/26/rust/%E5%85%A5%E9%97%A8-%E8%87%AA%E5%AE%9A%E4%B9%89%E7%B1%BB%E5%9E%8B/"/>
+    <id>https://bawcat.wiki/2023/10/26/rust/%E5%85%A5%E9%97%A8-%E8%87%AA%E5%AE%9A%E4%B9%89%E7%B1%BB%E5%9E%8B/</id>
+    <published>2023-10-26T02:00:00.000Z</published>
+    <updated>2023-10-26T10:22:26.217Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;自定义类型-Rust入门&quot;&gt;&lt;a href=&quot;#自定义类型-Rust入门&quot; class=&quot;headerlink&quot; title=&quot;自定义类型 (Rust入门)&quot;&gt;&lt;/a&gt;自定义类型</summary>
+        
+      
+    
+    
+    
+    <category term="rust" scheme="https://bawcat.wiki/categories/rust/"/>
+    
+    
+    <category term="rust" scheme="https://bawcat.wiki/tags/rust/"/>
+    
+  </entry>
+  
+  <entry>
     <title>原生类型 (Rust 入门)</title>
     <link href="https://bawcat.wiki/2023/10/24/rust/%E5%85%A5%E9%97%A8-%E5%8E%9F%E7%94%9F%E7%B1%BB%E5%9E%8B/"/>
     <id>https://bawcat.wiki/2023/10/24/rust/%E5%85%A5%E9%97%A8-%E5%8E%9F%E7%94%9F%E7%B1%BB%E5%9E%8B/</id>
     <published>2023-10-24T00:00:00.000Z</published>
-    <updated>2023-10-25T08:07:02.175Z</updated>
+    <updated>2023-10-26T10:22:26.217Z</updated>
     
     
       
@@ -46,7 +96,7 @@
     <link href="https://bawcat.wiki/2021/07/22/golang/%E7%AB%9E%E4%BA%89%E6%9D%A1%E4%BB%B6%E6%A3%80%E6%B5%8B/"/>
     <id>https://bawcat.wiki/2021/07/22/golang/%E7%AB%9E%E4%BA%89%E6%9D%A1%E4%BB%B6%E6%A3%80%E6%B5%8B/</id>
     <published>2021-07-22T08:57:00.000Z</published>
-    <updated>2023-10-25T08:07:02.171Z</updated>
+    <updated>2023-10-26T10:22:26.209Z</updated>
     
     
       
@@ -81,7 +131,7 @@
     <link href="https://bawcat.wiki/2021/06/03/golang/%E5%8F%98%E9%87%8F/"/>
     <id>https://bawcat.wiki/2021/06/03/golang/%E5%8F%98%E9%87%8F/</id>
     <published>2021-06-03T04:00:00.000Z</published>
-    <updated>2023-10-25T08:07:02.171Z</updated>
+    <updated>2023-10-26T10:22:26.209Z</updated>
     
     
       
@@ -114,7 +164,7 @@
     <link href="https://bawcat.wiki/2020/11/29/%E7%A8%8B%E5%BA%8F%E4%BA%BA%E7%94%9F/ffmpeg-2020-11-29-FFmpeg-Tutorial/"/>
     <id>https://bawcat.wiki/2020/11/29/%E7%A8%8B%E5%BA%8F%E4%BA%BA%E7%94%9F/ffmpeg-2020-11-29-FFmpeg-Tutorial/</id>
     <published>2020-11-29T11:38:11.000Z</published>
-    <updated>2023-10-25T08:07:02.179Z</updated>
+    <updated>2023-10-26T10:22:26.217Z</updated>
     
     
       
@@ -139,7 +189,7 @@
     <link href="https://bawcat.wiki/2020/07/03/php/php-php-install-log-2020-07-03/"/>
     <id>https://bawcat.wiki/2020/07/03/php/php-php-install-log-2020-07-03/</id>
     <published>2020-07-03T18:16:04.000Z</published>
-    <updated>2023-10-25T08:07:02.175Z</updated>
+    <updated>2023-10-26T10:22:26.217Z</updated>
     
     
       
@@ -172,7 +222,7 @@
     <link href="https://bawcat.wiki/2020/06/26/docker/docker%20%E5%91%BD%E4%BB%A4%E7%AC%94%E8%AE%B0/"/>
     <id>https://bawcat.wiki/2020/06/26/docker/docker%20%E5%91%BD%E4%BB%A4%E7%AC%94%E8%AE%B0/</id>
     <published>2020-06-26T15:45:17.000Z</published>
-    <updated>2023-10-25T08:07:02.171Z</updated>
+    <updated>2023-10-26T10:22:26.209Z</updated>
     
     
       
@@ -193,7 +243,7 @@
     <link href="https://bawcat.wiki/2020/06/26/java/java-swing-helloSwing-2020-04-14/"/>
     <id>https://bawcat.wiki/2020/06/26/java/java-swing-helloSwing-2020-04-14/</id>
     <published>2020-06-26T15:36:05.000Z</published>
-    <updated>2023-10-25T08:07:02.171Z</updated>
+    <updated>2023-10-26T10:22:26.213Z</updated>
     
     
       
@@ -222,7 +272,7 @@
     <link href="https://bawcat.wiki/2020/06/25/java/spring/java-spring-web-mvc-framwork-2020-06-26/"/>
     <id>https://bawcat.wiki/2020/06/25/java/spring/java-spring-web-mvc-framwork-2020-06-26/</id>
     <published>2020-06-25T18:08:09.000Z</published>
-    <updated>2023-10-25T08:07:02.171Z</updated>
+    <updated>2023-10-26T10:22:26.213Z</updated>
     
     
       
@@ -253,7 +303,7 @@
     <link href="https://bawcat.wiki/2020/06/25/java/spring/java-spring-%E4%BA%8B%E5%8A%A1%E7%AE%A1%E7%90%86-2020-06-25/"/>
     <id>https://bawcat.wiki/2020/06/25/java/spring/java-spring-%E4%BA%8B%E5%8A%A1%E7%AE%A1%E7%90%86-2020-06-25/</id>
     <published>2020-06-25T18:06:56.000Z</published>
-    <updated>2023-10-25T08:07:02.171Z</updated>
+    <updated>2023-10-26T10:22:26.213Z</updated>
     
     
       
@@ -284,7 +334,7 @@
     <link href="https://bawcat.wiki/2020/06/25/java/spring/java-spring-jdbc-template-2020-06-26/"/>
     <id>https://bawcat.wiki/2020/06/25/java/spring/java-spring-jdbc-template-2020-06-26/</id>
     <published>2020-06-25T18:05:38.000Z</published>
-    <updated>2023-10-25T08:07:02.171Z</updated>
+    <updated>2023-10-26T10:22:26.213Z</updated>
     
     
       
@@ -317,7 +367,7 @@
     <link href="https://bawcat.wiki/2020/06/25/java/spring/java-spring-IOC-contrion-2020-06-25/"/>
     <id>https://bawcat.wiki/2020/06/25/java/spring/java-spring-IOC-contrion-2020-06-25/</id>
     <published>2020-06-25T11:31:03.000Z</published>
-    <updated>2023-10-25T08:07:02.171Z</updated>
+    <updated>2023-10-26T10:22:26.213Z</updated>
     
     
       
@@ -348,7 +398,7 @@
     <link href="https://bawcat.wiki/2020/06/21/java/spring/java-spring-aop-2020-06-22/"/>
     <id>https://bawcat.wiki/2020/06/21/java/spring/java-spring-aop-2020-06-22/</id>
     <published>2020-06-21T18:09:08.000Z</published>
-    <updated>2023-10-25T08:07:02.171Z</updated>
+    <updated>2023-10-26T10:22:26.213Z</updated>
     
     
       
@@ -379,7 +429,7 @@
     <link href="https://bawcat.wiki/2020/06/12/php/php-pcntl-%E5%A4%9A%E8%BF%9B%E7%A8%8B%E6%89%A9%E5%B1%95%E6%8E%A2%E5%AF%BB-2020-06-12/"/>
     <id>https://bawcat.wiki/2020/06/12/php/php-pcntl-%E5%A4%9A%E8%BF%9B%E7%A8%8B%E6%89%A9%E5%B1%95%E6%8E%A2%E5%AF%BB-2020-06-12/</id>
     <published>2020-06-12T15:39:44.000Z</published>
-    <updated>2023-10-25T08:07:02.175Z</updated>
+    <updated>2023-10-26T10:22:26.217Z</updated>
     
     
       
@@ -410,7 +460,7 @@
     <link href="https://bawcat.wiki/2020/04/09/php/php-%E4%BC%98%E7%A7%80%E6%96%87%E7%AB%A0-PHP%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90-%E9%A3%8E%E9%9B%AA%E4%B9%8B%E9%9A%85/"/>
     <id>https://bawcat.wiki/2020/04/09/php/php-%E4%BC%98%E7%A7%80%E6%96%87%E7%AB%A0-PHP%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90-%E9%A3%8E%E9%9B%AA%E4%B9%8B%E9%9A%85/</id>
     <published>2020-04-09T13:17:12.000Z</published>
-    <updated>2023-10-25T08:07:02.175Z</updated>
+    <updated>2023-10-26T10:22:26.217Z</updated>
     
     
       
@@ -442,7 +492,7 @@
     <link href="https://bawcat.wiki/2020/04/09/php/php-curl%E4%B8%8A%E4%BC%A0%E6%96%87%E4%BB%B6%E4%B8%BA%E7%A9%BA%E9%97%AE%E9%A2%98/"/>
     <id>https://bawcat.wiki/2020/04/09/php/php-curl%E4%B8%8A%E4%BC%A0%E6%96%87%E4%BB%B6%E4%B8%BA%E7%A9%BA%E9%97%AE%E9%A2%98/</id>
     <published>2020-04-09T13:05:29.000Z</published>
-    <updated>2023-10-25T08:07:02.175Z</updated>
+    <updated>2023-10-26T10:22:26.217Z</updated>
     
     
       
@@ -470,7 +520,7 @@
     <link href="https://bawcat.wiki/2020/04/09/php/php-%E4%BC%98%E7%A7%80%E6%96%87%E7%AB%A0-%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3PHP%E5%8E%9F%E7%90%86%E4%B9%8B%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0-%E9%A3%8E%E9%9B%AA%E4%B9%8B%E9%9A%85/"/>
     <id>https://bawcat.wiki/2020/04/09/php/php-%E4%BC%98%E7%A7%80%E6%96%87%E7%AB%A0-%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3PHP%E5%8E%9F%E7%90%86%E4%B9%8B%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0-%E9%A3%8E%E9%9B%AA%E4%B9%8B%E9%9A%85/</id>
     <published>2020-04-09T12:52:02.000Z</published>
-    <updated>2023-10-25T08:07:02.175Z</updated>
+    <updated>2023-10-26T10:22:26.217Z</updated>
     
     
       
@@ -502,7 +552,7 @@
     <link href="https://bawcat.wiki/2020/04/02/java/spring/java-spring-%E6%9D%BE%E8%80%A6%E5%90%88-2020-04-02/"/>
     <id>https://bawcat.wiki/2020/04/02/java/spring/java-spring-%E6%9D%BE%E8%80%A6%E5%90%88-2020-04-02/</id>
     <published>2020-04-02T09:00:00.000Z</published>
-    <updated>2023-10-25T08:07:02.171Z</updated>
+    <updated>2023-10-26T10:22:26.213Z</updated>
     
     
       
@@ -531,7 +581,7 @@
     <link href="https://bawcat.wiki/2020/04/01/java/spring/java-spring-helloworld-2020-04-01/"/>
     <id>https://bawcat.wiki/2020/04/01/java/spring/java-spring-helloworld-2020-04-01/</id>
     <published>2020-04-01T09:00:00.000Z</published>
-    <updated>2023-10-25T08:07:02.171Z</updated>
+    <updated>2023-10-26T10:22:26.213Z</updated>
     
     
       
@@ -552,70 +602,6 @@
     <category term="java" scheme="https://bawcat.wiki/tags/java/"/>
     
     <category term="Spring" scheme="https://bawcat.wiki/tags/Spring/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Java 文件操作</title>
-    <link href="https://bawcat.wiki/2020/03/23/java/%E5%9F%BA%E7%A1%80%E6%95%99%E5%AD%A6/%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C/"/>
-    <id>https://bawcat.wiki/2020/03/23/java/%E5%9F%BA%E7%A1%80%E6%95%99%E5%AD%A6/%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C/</id>
-    <published>2020-03-23T16:00:00.000Z</published>
-    <updated>2023-10-25T08:07:02.175Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;Java-文件操作&quot;&gt;&lt;a href=&quot;#Java-文件操作&quot; class=&quot;headerlink&quot; title=&quot;Java 文件操作&quot;&gt;&lt;/a&gt;Java</summary>
-        
-      
-    
-    
-    
-    <category term="java" scheme="https://bawcat.wiki/categories/java/"/>
-    
-    <category term="java 基础" scheme="https://bawcat.wiki/categories/java/java-%E5%9F%BA%E7%A1%80/"/>
-    
-    
-    <category term="java File" scheme="https://bawcat.wiki/tags/java-File/"/>
-    
-    <category term="java nio" scheme="https://bawcat.wiki/tags/java-nio/"/>
-    
-    <category term="java Files" scheme="https://bawcat.wiki/tags/java-Files/"/>
-    
-    <category term="java StandardCopyOption" scheme="https://bawcat.wiki/tags/java-StandardCopyOption/"/>
-    
-    <category term="java Paths" scheme="https://bawcat.wiki/tags/java-Paths/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>java 泛型和集合</title>
-    <link href="https://bawcat.wiki/2020/03/16/java/%E5%9F%BA%E7%A1%80%E6%95%99%E5%AD%A6/%E5%9F%BA%E7%A1%80%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/%E6%B3%9B%E5%9E%8B%E5%92%8C%E9%9B%86%E5%90%88/"/>
-    <id>https://bawcat.wiki/2020/03/16/java/%E5%9F%BA%E7%A1%80%E6%95%99%E5%AD%A6/%E5%9F%BA%E7%A1%80%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/%E6%B3%9B%E5%9E%8B%E5%92%8C%E9%9B%86%E5%90%88/</id>
-    <published>2020-03-16T15:40:20.000Z</published>
-    <updated>2023-10-25T08:07:02.175Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;泛型和集合&quot;&gt;&lt;a href=&quot;#泛型和集合&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="java" scheme="https://bawcat.wiki/categories/java/"/>
-    
-    <category term="java 基础" scheme="https://bawcat.wiki/categories/java/java-%E5%9F%BA%E7%A1%80/"/>
-    
-    
-    <category term="java" scheme="https://bawcat.wiki/tags/java/"/>
-    
-    <category term="java 泛型和集合" scheme="https://bawcat.wiki/tags/java-%E6%B3%9B%E5%9E%8B%E5%92%8C%E9%9B%86%E5%90%88/"/>
     
   </entry>
   
